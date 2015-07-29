@@ -29,6 +29,7 @@ add_action('jeo_init', 'jeo_blank_init');
 function jeo_blank_jeo_scripts() {
 
   // Register and enqueue scripts here
+  wp_enqueue_script('jeo-blank-jeo-scripts', get_stylesheet_directory_uri() . '/js/jeo-scripts.js', array('jquery') , '0.0.1');
 
 }
 add_action('jeo_enqueue_scripts', 'jeo_blank_jeo_scripts');
@@ -58,4 +59,4 @@ function jeo_blank_map_data($data, $map) {
 
   return $data;
 }
-add_filter('jeo_map_data', 'jeo_blank_map_data'), 10, 2);
+add_filter('jeo_map_data', 'jeo_blank_map_data', 10, 2);

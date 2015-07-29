@@ -7,6 +7,7 @@ A blank JEO child theme so you can start your own.
  - Deregisters default JEO site CSS
  - Deregisters default JEO site front-end JavaScript
  - Demonstrate most used JEO hooks
+ - Demonstrate useful JavaScript events
 
 ## Developing
 
