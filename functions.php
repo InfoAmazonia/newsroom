@@ -16,7 +16,7 @@ add_action('wp_enqueue_scripts', 'jeo_blank_scripts', 10);
 
 /*
  * JEO Hooks examples
- * Most common used hooks
+ * Most common hooks
  */
 
 // Action right after JEO functionality inits

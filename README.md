@@ -2,6 +2,8 @@
 
 A blank [JEO](https://github.com/oeco/jeo) child theme so you can start your own.
 
+JEO presents plenty of WordPress hooks (actions and filters) and JavaScript events so you can customize your child theme and transform JEO suiting your project needs. Here you will also have some ideas of what you can do.
+
 ## Features
 
  - Deregisters default JEO site CSS
