@@ -1,6 +1,6 @@
 # JEO Blank
 
-A blank JEO child theme so you can start your own.
+A blank [JEO](https://github.com/oeco/jeo) child theme so you can start your own.
 
 ## Features
 
