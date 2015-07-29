@@ -32,7 +32,7 @@ function jeo_blank_jeo_scripts() {
 
   wp_enqueue_script('jeo-blank-jeo-scripts', get_stylesheet_directory_uri() . '/js/jeo-scripts.js', array('jquery') , '0.0.1');
 
-  wp_enqueue_script('jeo-blank-styles', get_stylesheet_directory_uri() . '/css/main.css');
+  wp_enqueue_style('jeo-blank-styles', get_stylesheet_directory_uri() . '/css/main.css');
 
 }
 add_action('jeo_enqueue_scripts', 'jeo_blank_jeo_scripts', 20);
