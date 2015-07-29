@@ -32,7 +32,16 @@ function jeo_blank_jeo_scripts() {
   wp_enqueue_script('jeo-blank-jeo-scripts', get_stylesheet_directory_uri() . '/js/jeo-scripts.js', array('jquery') , '0.0.1');
 
 }
-add_action('jeo_enqueue_scripts', 'jeo_blank_jeo_scripts');
+add_action('jeo_enqueue_scripts', 'jeo_blank_jeo_scripts', 20);
+
+// Hook scripts after JEO Marker scripts has been initialized
+function jeo_blank_markers_scripts() {
+
+  // Register and enqueue scripts here
+  wp_enqueue_script('jeo-blank-jeo-markers-scripts', get_stylesheet_directory_uri() . '/js/jeo-markers-scripts.js', array('jquery') , '0.0.1');
+
+}
+add_action('jeo_markers_enqueue_scripts', 'jeo_blank_markers_scripts', 20);
 
 // Filter to change posts GeoJSON data (also changes the GeoJSON API output)
 function jeo_blank_marker_data($data, $post) {
