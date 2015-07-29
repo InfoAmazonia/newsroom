@@ -9,4 +9,4 @@ A blank JEO child theme so you can start your own.
 
 ## Developing
 
-Download this repository and start your own project as a new repository. **Clone this repository only if you have contributions for the JEO Blank itself**.
+Download this repository and start your own project as a new repository. **Fork this repository only if you have contributions for the JEO Blank itself**.
