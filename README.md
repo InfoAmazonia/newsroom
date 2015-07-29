@@ -11,11 +11,32 @@ JEO presents plenty of WordPress hooks (actions and filters) and JavaScript even
  - Demonstrate most used JEO hooks
  - Demonstrate useful JavaScript events
 
+## Covered WordPress hooks
+
+### Actions
+
+ - **jeo_init** -  JEO functionality inits
+ - **jeo_enqueue_scripts** - Hook scripts after JEO scripts are ready
+ - **jeo_markers_enqueue_scripts** - Hook scripts after JEO Markers scripts are ready
+
+### Filters
+
+ - **jeo_marker_data** - Change posts GeoJSON data (also changes the GeoJSON API output)
+ - **jeo_markers_data** - Change GeoJSON response
+ - **jeo_map_data** - Change map data
+
+## Covered JavaScript events
+
+ - **jeo.mapReady** - A map is ready
+ - **jeo.groupReady** - A map group is ready
+ - **jeo.groupChanged** - The user changes the map being displayed on the group
+ - **jeo.rangeSliderFiltered** - The map range slider filter changes
+
 ## Developing
 
 Download this repository and start your own project as a new repository. **Fork this repository only if you have contributions for the JEO Blank itself**.
 
-Make sure you read [WordPress child theme specifications](https://codex.wordpress.org/Child_Themes) so you understand how templates relationship works on between parent and child themes.
+Make sure you read [WordPress child theme specifications](https://codex.wordpress.org/Child_Themes) so you understand how templates relationship works between parent and child themes.
 
 ## JEO templates
 
