@@ -1,0 +1,21 @@
+{
+  "name": "newsroom",
+  "version": "0.0.0",
+  "homepage": "https://github.com/InfoAmazonia/newsroom",
+  "authors": [
+    "Miguel Peixe <miguel@cardume.art.br>"
+  ],
+  "license": "GPLv3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "~1.7.2",
+    "bourbon": "~4.2.3"
+  }
+}
