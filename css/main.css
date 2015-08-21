@@ -6,6 +6,17 @@ html {
   box-sizing: inherit;
 }
 
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 .map-container {
   width: 100%;
   height: 600px;

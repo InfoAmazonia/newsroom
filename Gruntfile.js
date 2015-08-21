@@ -11,6 +11,18 @@ module.exports = function(grunt) {
         }
       }
     },
+    copy: {
+      normalize: {
+        files: [
+          {
+            cwd: 'bower_components/normalize.css',
+            src: ['normalize.css'],
+            dest: 'css',
+            expand: true
+          }
+        ]
+      }
+    },
     pot: {
       options: {
         text_domain: 'newsroom',
@@ -39,28 +51,31 @@ module.exports = function(grunt) {
         tasks: ['pot']
       },
       sass: {
-        files: 'src/css/**/*.scss',
+        files: 'css/**/*.scss',
         tasks: ['sass']
+      },
+      copy: {
+        files: ['bower_components/normalize/**/*'],
+        tasks: ['copy']
       }
     }
   });
 
-  grunt.loadNpmTasks('grunt-browserify');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-pot');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask(
     'build',
     'Compiles everything.',
-    ['sass', 'pot']
+    ['sass', 'copy', 'pot']
   );
 
   grunt.registerTask(
     'default',
     'Build, start server and watch.',
-    ['sass', 'pot', 'watch']
+    ['sass', 'copy', 'pot', 'watch']
   );
 
 }
