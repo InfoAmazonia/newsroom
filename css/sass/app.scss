@@ -7,6 +7,7 @@
 }
 
 #masthead {
+  padding: 0.67em 0;
   h1.has-logo {
     a {
       display: block;
@@ -16,6 +17,36 @@
       img {
         display: block;
       }
+    }
+  }
+  .site-meta {
+    @include span-columns(6);
+  }
+  #mastnav {
+    margin: 0.67em 0;
+    @include span-columns(6);
+    .menu {
+      > ul {
+        list-style: none;
+        float: right;
+        > li {
+          float: left;
+          margin-left: 10px;
+          > a {
+            display: block;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 5px 10px;
+            background: steelblue;
+            color: #fff;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+    form {
+      float: right;
+      margin: 0.67em 0;
     }
   }
 }

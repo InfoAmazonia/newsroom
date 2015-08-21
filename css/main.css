@@ -19,6 +19,9 @@ html {
   display: table;
 }
 
+#masthead {
+  padding: 0.67em 0;
+}
 #masthead h1.has-logo a {
   display: block;
   text-indent: -9999px;
@@ -27,6 +30,46 @@ html {
 }
 #masthead h1.has-logo a img {
   display: block;
+}
+#masthead .site-meta {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+#masthead .site-meta:last-child {
+  margin-right: 0;
+}
+#masthead #mastnav {
+  margin: 0.67em 0;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+#masthead #mastnav:last-child {
+  margin-right: 0;
+}
+#masthead #mastnav .menu > ul {
+  list-style: none;
+  float: right;
+}
+#masthead #mastnav .menu > ul > li {
+  float: left;
+  margin-left: 10px;
+}
+#masthead #mastnav .menu > ul > li > a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  background: steelblue;
+  color: #fff;
+  border-radius: 6px;
+}
+#masthead #mastnav form {
+  float: right;
+  margin: 0.67em 0;
 }
 
 .map-container {
