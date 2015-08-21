@@ -29,6 +29,34 @@ function newsroom_register_required_plugins() {
 add_action('tgmpa_register', 'newsroom_register_required_plugins');
 
 /*
+ * Theme options
+ */
+
+require_once(STYLESHEETPATH . '/inc/theme-options.php');
+
+function newsroom_logo() {
+	$logo = newsroom_get_logo();
+	if($logo) {
+		?>
+		<h1 class="has-logo">
+			<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>">
+				<?php bloginfo('name'); ?>
+				<?php echo $logo; ?>
+			</a>
+		</h1>
+		<?php
+	} else {
+		?>
+		<h1>
+			<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>">
+				<?php bloginfo('name'); ?>
+			</a>
+		</h1>
+		<?php
+	}
+}
+
+/*
  * Clears JEO default front-end styles and scripts
  */
 function newsroom_scripts() {

@@ -25,22 +25,11 @@
 </head>
 <body <?php body_class(get_bloginfo('language')); ?>>
 	<header id="masthead">
-    <div class="container">
-  		<div class="site-meta">
-  			<h1>
-  				<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>">
-  					<?php bloginfo('name'); ?>
-  				</a>
-  			</h1>
-  			<h2><?php bloginfo('description'); ?></h2>
-  		</div>
-  		<div id="masthead-nav">
-  			<div class="clearfix">
-  				<nav id="main-nav">
-  					<?php wp_nav_menu(array('theme_location' => 'header_menu')); ?>
-  				</nav>
-  				<?php get_search_form(); ?>
-  			</div>
-  		</div>
-    </div>
+		<div class="site-meta">
+			<?php newsroom_logo(); ?>
+		</div>
+		<nav id="mastnav">
+			<?php wp_nav_menu(array('theme_location' => 'header_menu')); ?>
+      <?php get_search_form(); ?>
+		</nav>
 	</header>

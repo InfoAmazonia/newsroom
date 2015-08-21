@@ -1,8 +1,23 @@
 @import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../../bower_components/neat/app/assets/stylesheets/neat";
 
-.container {
+#masthead,
+.content-area {
   @include outer-container;
+}
+
+#masthead {
+  h1.has-logo {
+    a {
+      display: block;
+      text-indent: -9999px;
+      line-height: 0;
+      font-size: 1px;
+      img {
+        display: block;
+      }
+    }
+  }
 }
 
 .map-container {

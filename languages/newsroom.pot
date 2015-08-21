@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-21 15:26-0300\n"
+"POT-Creation-Date: 2015-08-21 17:22-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,4 +19,52 @@ msgstr ""
 
 #: header.php:17
 msgid "Page"
+msgstr ""
+
+#: inc/theme-options.php:33
+msgid "Newsroom Style"
+msgstr ""
+
+#: inc/theme-options.php:33
+msgid "Newsroom"
+msgstr ""
+
+#: inc/theme-options.php:44
+msgid "Newsroom Theme Options"
+msgstr ""
+
+#: inc/theme-options.php:62
+msgid "Style"
+msgstr ""
+
+#: inc/theme-options.php:69
+msgid "Links"
+msgstr ""
+
+#: inc/theme-options.php:76
+msgid "Choose a style"
+msgstr ""
+
+#: inc/theme-options.php:84
+msgid "Upload a custom logo"
+msgstr ""
+
+#: inc/theme-options.php:92
+msgid "Facebook url"
+msgstr ""
+
+#: inc/theme-options.php:100
+msgid "Twitter url"
+msgstr ""
+
+#: inc/theme-options.php:108
+msgid "Legal disclaimer"
+msgstr ""
+
+#: inc/theme-options.php:132
+msgid "Logo url"
+msgstr ""
+
+#: inc/theme-options.php:133
+msgid "Upload"
 msgstr ""

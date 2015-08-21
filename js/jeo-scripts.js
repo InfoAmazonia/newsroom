@@ -18,6 +18,6 @@ jeo.groupChanged(function(group, prevMap) {
 });
 
 // Triggered when the map range slider filter changes
-jeo.rangeSliderFiltered(function(markers, map) {
-  console.log(markers, map);
-});
+// jeo.rangeSliderFiltered(function(markers, map) {
+//   console.log(markers, map);
+// });
