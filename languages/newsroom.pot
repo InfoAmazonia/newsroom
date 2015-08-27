@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-27 15:32-0300\n"
+"POT-Creation-Date: 2015-08-27 16:27-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,6 +89,10 @@ msgstr ""
 msgid "Upload"
 msgstr ""
 
-#: page.php:12
+#: page.php:12 single.php:21
 msgid "Pages:"
+msgstr ""
+
+#: single.php:12
+msgid "by"
 msgstr ""
