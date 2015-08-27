@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-21 17:22-0300\n"
+"POT-Creation-Date: 2015-08-27 15:32-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,26 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: functions.php:72
+msgid "Header menu"
+msgstr ""
+
+#: functions.php:73
+msgid "Footer menu"
+msgstr ""
+
+#: functions.php:78
+msgid "Post sidebar"
+msgstr ""
+
+#: functions.php:84
+msgid "General sidebar"
+msgstr ""
+
+#: functions.php:90
+msgid "Front page"
+msgstr ""
 
 #: header.php:17
 msgid "Page"
@@ -67,4 +87,8 @@ msgstr ""
 
 #: inc/theme-options.php:133
 msgid "Upload"
+msgstr ""
+
+#: page.php:12
+msgid "Pages:"
 msgstr ""

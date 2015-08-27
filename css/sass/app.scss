@@ -6,6 +6,11 @@
   @include outer-container;
 }
 
+.row {
+  @include fill-parent();
+  @include row();
+}
+
 #masthead {
   padding: 0.67em 0;
   h1.has-logo {
@@ -22,31 +27,48 @@
   .site-meta {
     @include span-columns(6);
   }
-  #mastnav {
+  #langnav {
     margin: 0.67em 0;
     @include span-columns(6);
-    .menu {
-      > ul {
-        list-style: none;
-        float: right;
-        > li {
-          float: left;
-          margin-left: 10px;
-          > a {
-            display: block;
-            text-decoration: none;
-            font-size: 14px;
-            padding: 5px 10px;
-            background: steelblue;
-            color: #fff;
-            border-radius: 6px;
-          }
+    #qtranslate-chooser {
+      list-style: none;
+      float: right;
+      @include clearfix;
+      li {
+        float: left;
+        margin-left: 10px;
+        display: block;
+        a {
+          display: block;
+          text-decoration: none;
+          font-size: 12px;
+          padding: 4px 6px;
+          background: steelblue;
+          color: #fff;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+  #mastnav {
+    @include span-columns(12);
+    ul.menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin: 0 20px 0 0;
+        padding: 0;
+        float: left;
+        color: #333;
+        a {
+          color: inherit;
+          text-decoration: none;
         }
       }
     }
     form {
       float: right;
-      margin: 0.67em 0;
     }
   }
 }

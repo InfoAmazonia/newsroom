@@ -57,6 +57,45 @@ function newsroom_logo() {
 }
 
 /*
+ * Theme setup
+ */
+function newsroom_setup() {
+
+	add_theme_support('automatic-feed-links');
+	add_theme_support('post-thumbnails');
+
+	// text domain
+	load_child_theme_textdomain('newsroom', get_stylesheet_directory() . '/languages');
+
+	// nav
+	register_nav_menus(array(
+		'header_menu' => __('Header menu', 'newsroom'),
+		'footer_menu' => __('Footer menu', 'newsroom')
+	));
+
+	//sidebars
+	register_sidebar(array(
+		'name' => __('Post sidebar', 'jeo'),
+		'id' => 'post',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>'
+	));
+	register_sidebar(array(
+		'name' => __('General sidebar', 'jeo'),
+		'id' => 'general',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>'
+	));
+	register_sidebar(array(
+		'name' => __('Front page', 'jeo'),
+		'id' => 'front_page',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>'
+	));
+}
+add_action('after_setup_theme', 'newsroom_setup');
+
+/*
  * Clears JEO default front-end styles and scripts
  */
 function newsroom_scripts() {

@@ -19,6 +19,16 @@ html {
   display: table;
 }
 
+.row {
+  width: 100%;
+  display: block;
+}
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 #masthead {
   padding: 0.67em 0;
 }
@@ -40,36 +50,65 @@ html {
 #masthead .site-meta:last-child {
   margin-right: 0;
 }
-#masthead #mastnav {
+#masthead #langnav {
   margin: 0.67em 0;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
 }
-#masthead #mastnav:last-child {
+#masthead #langnav:last-child {
   margin-right: 0;
 }
-#masthead #mastnav .menu > ul {
+#masthead #langnav #qtranslate-chooser {
   list-style: none;
   float: right;
 }
-#masthead #mastnav .menu > ul > li {
+#masthead #langnav #qtranslate-chooser::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#masthead #langnav #qtranslate-chooser li {
   float: left;
   margin-left: 10px;
+  display: block;
 }
-#masthead #mastnav .menu > ul > li > a {
+#masthead #langnav #qtranslate-chooser li a {
   display: block;
   text-decoration: none;
-  font-size: 14px;
-  padding: 5px 10px;
+  font-size: 12px;
+  padding: 4px 6px;
   background: steelblue;
   color: #fff;
   border-radius: 6px;
 }
+#masthead #mastnav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+#masthead #mastnav:last-child {
+  margin-right: 0;
+}
+#masthead #mastnav ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#masthead #mastnav ul.menu li {
+  margin: 0 20px 0 0;
+  padding: 0;
+  float: left;
+  color: #333;
+}
+#masthead #mastnav ul.menu li a {
+  color: inherit;
+  text-decoration: none;
+}
 #masthead #mastnav form {
   float: right;
-  margin: 0.67em 0;
 }
 
 .map-container {

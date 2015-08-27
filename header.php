@@ -25,11 +25,23 @@
 </head>
 <body <?php body_class(get_bloginfo('language')); ?>>
 	<header id="masthead">
-		<div class="site-meta">
-			<?php newsroom_logo(); ?>
+		<div class="row">
+			<div class="site-meta">
+				<?php newsroom_logo(); ?>
+			</div>
+			<nav id="langnav">
+				<?php
+				if(function_exists('qtranxf_generateLanguageSelectCode')) {
+					echo qtranxf_generateLanguageSelectCode('text');
+				}
+				?>
+				<?php // wp_nav_menu(array('theme_location' => 'header_menu')); ?>
+			</nav>
 		</div>
-		<nav id="mastnav">
-			<?php wp_nav_menu(array('theme_location' => 'header_menu')); ?>
-      <?php get_search_form(); ?>
-		</nav>
+		<div class="row">
+			<nav id="mastnav">
+				<?php wp_nav_menu(array('theme_location' => 'header_menu')); ?>
+	      <?php get_search_form(); ?>
+			</nav>
+		</div>
 	</header>
