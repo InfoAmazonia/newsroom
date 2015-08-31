@@ -1,6 +1,6 @@
 <?php
 /*
- * Newsroom widgets
+ * Newsroom JEO Map Widget
  */
 
 class Newsroom_Map_Widget extends WP_Widget {
@@ -26,7 +26,7 @@ class Newsroom_Map_Widget extends WP_Widget {
     }
     $json = json_encode($conf);
     ?>
-    <div class="map-container" style="height:<?php echo $instance['height']; ?>px;">
+    <div class="map-container" style="width:100%;height:<?php echo $instance['height']; ?>px;">
     	<div id="map_<?php echo $conf['postID']; ?>_<?php echo $conf['count']; ?>" class="map"></div>
     </div>
     <script type="text/javascript">jeo(<?php echo $json ?>);</script>
