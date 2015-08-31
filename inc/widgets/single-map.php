@@ -20,7 +20,7 @@ class Newsroom_Map_Widget extends WP_Widget {
     $conf = jeo_get_map_conf($instance['map']);
     $json = json_encode($conf);
     ?>
-    <div class="map-container">
+    <div class="map-container" style="height:<?php echo $instance['height']; ?>px;">
     	<div id="map_<?php echo $conf['postID']; ?>_<?php echo $conf['count']; ?>" class="map"></div>
     </div>
     <script type="text/javascript">jeo(<?php echo $json ?>);</script>
@@ -45,6 +45,10 @@ class Newsroom_Map_Widget extends WP_Widget {
           <option value="<?php echo $m->ID; ?>" <?php if($map == $m->ID) echo 'selected'; ?>><?php echo apply_filters('the_title', $m->post_title); ?></option>
         <?php endforeach; ?>
       </select>
+    </p>
+    <p>
+      <label for="<?php echo $this->get_field_id('height'); ?>"><?php _e('Map height', 'newsroom'); ?></label>
+      <input id="<?php echo $this->get_field_id('height'); ?>" name="<?php echo $this->get_field_name('height'); ?>" type="text" value="<?php echo esc_attr($height); ?>" size="3" /> px
     </p>
     <?php
   }
