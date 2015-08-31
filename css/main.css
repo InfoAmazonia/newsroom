@@ -71,7 +71,7 @@ html {
 }
 #masthead #langnav #qtranslate-chooser li {
   float: left;
-  margin-left: 10px;
+  margin-left: 5px;
   display: block;
 }
 #masthead #langnav #qtranslate-chooser li a {
@@ -81,7 +81,7 @@ html {
   padding: 4px 6px;
   background: steelblue;
   color: #fff;
-  border-radius: 6px;
+  border-radius: 3px;
 }
 #masthead #mastnav {
   float: left;
