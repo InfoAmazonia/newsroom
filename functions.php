@@ -130,7 +130,8 @@ function newsroom_jeo_scripts() {
 
   // Enqueue child theme main CSS
 	wp_register_style('newsroom-normalize', get_stylesheet_directory_uri() . '/css/normalize.css');
-  wp_enqueue_style('newsroom-styles', get_stylesheet_directory_uri() . '/css/main.css', array('newsroom-normalize'));
+	wp_register_style('newsroom-entypo', get_stylesheet_directory_uri() . '/css/entypo.css');
+  wp_enqueue_style('newsroom-styles', get_stylesheet_directory_uri() . '/css/main.css', array('newsroom-normalize', 'newsroom-entypo'));
 
 }
 add_action('jeo_enqueue_scripts', 'newsroom_jeo_scripts', 20);
