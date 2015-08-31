@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-31 14:13-0300\n"
+"POT-Creation-Date: 2015-08-31 14:49-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,6 +87,14 @@ msgstr ""
 
 #: inc/theme-options.php:133
 msgid "Upload"
+msgstr ""
+
+#: inc/widgets/single-map.php:14
+msgid "JEO Map Widget"
+msgstr ""
+
+#: inc/widgets/single-map.php:15
+msgid "Display a map"
 msgstr ""
 
 #: page.php:12 single.php:21

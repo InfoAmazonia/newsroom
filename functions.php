@@ -96,6 +96,12 @@ function newsroom_setup() {
 add_action('after_setup_theme', 'newsroom_setup');
 
 /*
+ * Newsroom widgets
+ */
+
+include_once(STYLESHEETPATH . '/inc/widgets/single-map.php');
+
+/*
  * Clears JEO default front-end styles and scripts
  */
 function newsroom_scripts() {

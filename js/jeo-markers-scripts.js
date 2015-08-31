@@ -4,5 +4,4 @@
 
 // Triggered when markers are ready
 jeo.markersReady(function(map) {
-  console.log(map);
 });
