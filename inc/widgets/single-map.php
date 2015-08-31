@@ -18,6 +18,12 @@ class Newsroom_Map_Widget extends WP_Widget {
 
   public function widget($args, $instance) {
     $conf = jeo_get_map_conf($instance['map']);
+    if($instance['display_posts']) {
+      $conf['marker_query'] = array(
+        'is_marker_query' => true,
+        'map_id' => $instance['map']
+      );
+    }
     $json = json_encode($conf);
     ?>
     <div class="map-container" style="height:<?php echo $instance['height']; ?>px;">
@@ -45,6 +51,10 @@ class Newsroom_Map_Widget extends WP_Widget {
           <option value="<?php echo $m->ID; ?>" <?php if($map == $m->ID) echo 'selected'; ?>><?php echo apply_filters('the_title', $m->post_title); ?></option>
         <?php endforeach; ?>
       </select>
+    </p>
+    <p>
+      <input id="<?php echo $this->get_field_id('display_posts'); ?>" name="<?php echo $this->get_field_name('display_posts'); ?>" type="checkbox" <?php if($display_posts) echo 'checked'; ?>" />
+      <label for="<?php echo $this->get_field_id('display_posts'); ?>"><?php _e('Display map posts', 'newsroom'); ?></label>
     </p>
     <p>
       <label for="<?php echo $this->get_field_id('height'); ?>"><?php _e('Map height', 'newsroom'); ?></label>
