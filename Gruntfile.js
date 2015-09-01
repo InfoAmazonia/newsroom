@@ -6,9 +6,18 @@ module.exports = function(grunt) {
         options: {
           style: 'expanded'
         },
-        files: {
-          'css/main.css': 'css/sass/app.scss'
-        }
+        files: [
+          {
+            'css/main.css': 'css/sass/app.scss'
+          },
+          {
+            cwd: 'inc/siteorigin-widgets',
+            src: ['**/*.scss'],
+            dest: 'inc/siteorigin-widgets',
+            expand: true,
+            ext: '.css'
+          }
+        ]
       }
     },
     copy: {
@@ -47,11 +56,11 @@ module.exports = function(grunt) {
         livereload: true
       },
       php: {
-        files: ['**/*.php', '!inc/acf/**/*.php', '!node_modules/**/*.php', '!inc/class-tgm*'],
+        files: ['**/*.php', '**/*.less', '!inc/acf/**/*.php', '!node_modules/**/*.php', '!inc/class-tgm*'],
         tasks: ['pot']
       },
       sass: {
-        files: 'css/**/*.scss',
+        files: '**/*.scss',
         tasks: ['sass']
       },
       copy: {

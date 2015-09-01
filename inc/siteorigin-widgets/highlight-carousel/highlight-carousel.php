@@ -38,6 +38,26 @@ class Newsroom_Highlight_Carousel_Widget extends SiteOrigin_Widget {
   function get_style_name($instance) {
     return '';
   }
+  function initialize() {
+
+    static $enqueued = false;
+
+    if(!$enqueued) {
+      $this->register_frontend_scripts(
+        array(
+          array( 'newsroom-highlight-carousel', get_stylesheet_directory_uri() . '/inc/siteorigin-widgets/highlight-carousel/highlight-carousel.js', array( 'jquery' ), '0.0.1' )
+        )
+      );
+      $enqueued = true;
+    }
+
+
+    $this->register_frontend_styles(
+      array(
+        array( 'newsroom-highlight-carousel', get_stylesheet_directory_uri() . '/inc/siteorigin-widgets/highlight-carousel/highlight-carousel.css', array(), '0.0.1' )
+      )
+    );
+  }
 }
 
 if(function_exists('siteorigin_widget_register')) {
