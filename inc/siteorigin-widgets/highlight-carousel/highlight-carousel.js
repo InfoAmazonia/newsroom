@@ -7,11 +7,19 @@
       var count = $items.length;
       var $nav = $('<nav class="highlight-carousel-nav" />');
       $container.append($nav);
+      var next;
+      var interval;
       var view = function(i) {
         $items.hide();
+        next = i+1;
+        if(next >= count) next = 0;
         $nav.find('a').removeClass('active');
         $nav.find('a[data-count="' + i + '"]').addClass('active');
         $($items.get(i)).show();
+        clearInterval(interval);
+        interval = setInterval(function() {
+          view(next);
+        }, 8000);
       };
       for(i = 0; i < count; i++) {
         var $li = $('<a href="#" data-count="' + i + '" />');
@@ -22,6 +30,7 @@
         $nav.append($li);
       }
       view(0);
+
     });
   });
 })(jQuery);
