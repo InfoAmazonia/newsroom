@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-01 16:34-0300\n"
+"POT-Creation-Date: 2015-09-01 17:07-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,6 +63,22 @@ msgstr ""
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:35
 msgid "Milisseconds to rotate the carousel"
+msgstr ""
+
+#: inc/siteorigin-widgets/square-posts/square-posts.php:11
+msgid "Newsroom Square Posts"
+msgstr ""
+
+#: inc/siteorigin-widgets/square-posts/square-posts.php:13
+msgid "Display a list of posts in a small square format."
+msgstr ""
+
+#: inc/siteorigin-widgets/square-posts/square-posts.php:21
+msgid "Title for post list."
+msgstr ""
+
+#: inc/siteorigin-widgets/square-posts/square-posts.php:26
+msgid "Build query for posts to be displayed"
 msgstr ""
 
 #: inc/theme-options.php:33

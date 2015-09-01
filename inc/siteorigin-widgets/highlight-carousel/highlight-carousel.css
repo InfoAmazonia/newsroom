@@ -67,13 +67,12 @@ html {
   height: 10px;
   margin-right: 10px;
   background: #fff;
-  box-shadow: 1px 1px 1px #3893cb;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
   border-radius: 100%;
   outline: none;
 }
 .newsroom-highlight-carousel nav a.active {
   background: #3893cb;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=highlight-carousel.css.map */

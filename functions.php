@@ -101,6 +101,7 @@ add_action('after_setup_theme', 'newsroom_setup');
 
 include_once(STYLESHEETPATH . '/inc/widgets/single-map.php');
 include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php');
+include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/square-posts/square-posts.php');
 
 /*
  * Clears JEO default front-end styles and scripts
