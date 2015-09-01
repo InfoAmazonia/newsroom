@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-01 15:47-0300\n"
+"POT-Creation-Date: 2015-09-01 16:34-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,6 +51,18 @@ msgstr ""
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:21
 msgid "Title for the carousel."
+msgstr ""
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:26
+msgid "Build query for highlighted posts"
+msgstr ""
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:30
+msgid "Auto rotate carousel"
+msgstr ""
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:35
+msgid "Milisseconds to rotate the carousel"
 msgstr ""
 
 #: inc/theme-options.php:33

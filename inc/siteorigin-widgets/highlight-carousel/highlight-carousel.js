@@ -9,6 +9,7 @@
       $container.append($nav);
       var next;
       var interval;
+      var delay = $container.data('rotate-delay') || 8000;
       var view = function(i) {
         $items.hide();
         next = i+1;
@@ -16,10 +17,12 @@
         $nav.find('a').removeClass('active');
         $nav.find('a[data-count="' + i + '"]').addClass('active');
         $($items.get(i)).show();
-        clearInterval(interval);
-        interval = setInterval(function() {
-          view(next);
-        }, 8000);
+        if($container.data('rotate') == 1) {
+          clearInterval(interval);
+          interval = setInterval(function() {
+            view(next);
+          }, delay);
+        }
       };
       for(i = 0; i < count; i++) {
         var $li = $('<a href="#" data-count="' + i + '" />');

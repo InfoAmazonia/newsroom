@@ -6,7 +6,7 @@ unset($query_args['additional']);
 $highlight_query = new WP_Query($query_args);
 if($highlight_query->have_posts()) :
   ?>
-  <div class="newsroom-highlight-carousel">
+  <div class="newsroom-highlight-carousel" data-rotate="<?php echo $instance['rotate'] ? 1 : 0; ?>" data-rotate-delay="<?php echo $instance['rotate_delay']; ?>">
     <ul class="highlight-carousel-posts">
     <?php
     while($highlight_query->have_posts()) :

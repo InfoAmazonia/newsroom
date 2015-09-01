@@ -23,7 +23,17 @@ class Newsroom_Highlight_Carousel_Widget extends SiteOrigin_Widget {
         ),
         'posts' => array(
           'type' => 'posts',
-          'label' => 'Build query for highlighted posts'
+          'label' => __('Build query for highlighted posts', 'newsroom')
+        ),
+        'rotate' => array(
+          'type' => 'checkbox',
+          'label' => __('Auto rotate carousel', 'newsroom'),
+          'default' => true
+        ),
+        'rotate_delay' => array(
+          'type' => 'number',
+          'label' => __('Milisseconds to rotate the carousel', 'newsroom'),
+          'default' => 8000
         )
       ),
       plugin_dir_path(STYLESHEETPATH . '/inc/siteorigin-widgets/highlight-carousel')
