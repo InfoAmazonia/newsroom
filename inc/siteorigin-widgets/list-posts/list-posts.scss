@@ -7,8 +7,6 @@
     margin: 0;
     padding: 0;
     li {
-      @include span-columns(3);
-      @include omega(4n);
       margin-bottom: 20px;
       article {
         .list-posts-thumbnail {
@@ -32,6 +30,24 @@
       &.no-thumbnail {
         background: #f4f4f4;
       }
+    }
+  }
+  &.per-row-4 {
+    li {
+      @include span-columns(3);
+      @include omega(4n);
+    }
+  }
+  &.per-row-3 {
+    li {
+      @include span-columns(4);
+      @include omega(3n);
+    }
+  }
+  &.per-row-2 {
+    li {
+      @include span-columns(6);
+      @include omega(2n);
     }
   }
 }

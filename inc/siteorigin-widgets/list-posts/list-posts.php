@@ -29,6 +29,16 @@ class Newsroom_List_Posts_Widget extends SiteOrigin_Widget {
         'posts' => array(
           'type' => 'posts',
           'label' => __('Build query for posts to be displayed', 'newsroom')
+        ),
+        'per_row' => array(
+          'type' => 'select',
+          'label' => __('Posts to display per row', 'newsroom'),
+          'options' => array(
+            '4' => '4',
+            '3' => '3',
+            '2' => '2'
+          ),
+          'default' => 4
         )
       ),
       plugin_dir_path(STYLESHEETPATH . '/inc/siteorigin-widgets/list-posts')

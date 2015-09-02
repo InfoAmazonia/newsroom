@@ -10,7 +10,8 @@ class Newsroom_Square_Posts_Widget extends SiteOrigin_Widget {
       'newsroom-square-posts-widget',
       __('Newsroom Square Posts', 'newsroom'),
       array(
-        'description' => __('Display a list of posts in a small square format.', 'newsroom')
+        'description' => __('Display a list of posts in a small square format.', 'newsroom'),
+        // 'default_style' => 'square-posts'
       ),
       // $control_options array (?)
       array(),
@@ -24,6 +25,16 @@ class Newsroom_Square_Posts_Widget extends SiteOrigin_Widget {
         'posts' => array(
           'type' => 'posts',
           'label' => __('Build query for posts to be displayed', 'newsroom')
+        ),
+        'per_row' => array(
+          'type' => 'select',
+          'label' => __('Posts to display per row', 'newsroom'),
+          'options' => array(
+            '4' => '4',
+            '3' => '3',
+            '2' => '2'
+          ),
+          'default' => 4
         )
       ),
       plugin_dir_path(STYLESHEETPATH . '/inc/siteorigin-widgets/square-posts')
@@ -36,7 +47,12 @@ class Newsroom_Square_Posts_Widget extends SiteOrigin_Widget {
     return '';
   }
   function get_style_name($instance) {
+    // return 'square-posts';
     return '';
+  }
+  function get_less_variables($instance) {
+    // print_r($instance);
+    return array();
   }
   function initialize() {
     $this->register_frontend_styles(

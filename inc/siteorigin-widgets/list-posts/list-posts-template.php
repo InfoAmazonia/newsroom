@@ -5,7 +5,7 @@ unset($query_args['additional']);
 $list_posts_query = new WP_Query($query_args);
 if($list_posts_query->have_posts()) :
   ?>
-  <div class="newsroom-list-posts">
+  <div class="newsroom-list-posts per-row-<?php echo $instance['per_row'] ? $instance['per_row'] : 4; ?>">
     <?php if($instance['title']) : ?>
       <div class="newsroom-section-title">
         <h2>

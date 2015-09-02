@@ -5,14 +5,14 @@ unset($query_args['additional']);
 $square_posts_query = new WP_Query($query_args);
 if($square_posts_query->have_posts()) :
   ?>
-  <div class="newsroom-square-posts">
+  <div class="newsroom-square-posts per-row-<?php echo $instance['per_row'] ? $instance['per_row'] : 4; ?>">
     <ul class="square-posts-posts">
     <?php
     while($square_posts_query->have_posts()) :
       $square_posts_query->the_post();
       ?>
       <li class="square-posts-item <?php if(!has_post_thumbnail()) echo 'no-thumbnail'; ?>">
-        <article id="square-posts-<?php the_ID(); ?>">
+        <article id="<?php echo $instance['panels_info']['id']; ?>-square-posts-<?php the_ID(); ?>">
           <?php if(has_post_thumbnail()) : ?>
             <div class="square-posts-thumbnail">
               <?php the_post_thumbnail('thumbnail'); ?>
