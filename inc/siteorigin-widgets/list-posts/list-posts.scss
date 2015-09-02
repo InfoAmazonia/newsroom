@@ -13,6 +13,10 @@
       article {
         .list-posts-thumbnail {
           margin: 0 0 10px;
+          width: 100%;
+          height: 112px;
+          overflow: hidden;
+          position: relative;
           img {
             width: 100%;
             height: auto;
