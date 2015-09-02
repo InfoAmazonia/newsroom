@@ -27,7 +27,14 @@
         }
         .highlight-carousel-post-content {
           @include span-columns(4);
+          padding-top: 20px;
           padding-right: 20px;
+          h2 {
+            margin: 0;
+          }
+          .date {
+            color: #666;
+          }
         }
       }
     }

@@ -9,6 +9,8 @@
     li {
       @include span-columns(3);
       @include omega(4n);
+      height: 90px;
+      margin-bottom: 20px;
       article {
         padding: 10px;
         .square-posts-thumbnail {
@@ -19,6 +21,18 @@
           img {
             width: 100%;
             height: auto;
+          }
+        }
+        .square-posts-post-content {
+          h2,
+          p {
+            font-size: 1.2em;
+            display: inline;
+            margin: 0;
+          }
+          p {
+            font-size: 1em;
+            color: #666;
           }
         }
       }

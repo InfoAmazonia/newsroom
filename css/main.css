@@ -6,6 +6,73 @@ html {
   box-sizing: inherit;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Minion Pro", "Crimson Text", serif;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 4.0rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 3.5rem;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 3.0rem;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 2.5rem;
+  line-height: 1.35;
+}
+
+h5 {
+  font-size: 2.0rem;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
 #masthead,
 .content-area {
   max-width: 68em;
@@ -90,6 +157,7 @@ html {
   width: 100%;
   position: relative;
   z-index: 3;
+  font-size: 1.2em;
 }
 #masthead #mastnav:last-child {
   margin-right: 0;
@@ -118,10 +186,12 @@ html {
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+#masthead #mastnav ul.menu li.menu-item-has-children:hover:after {
+  content: "\e621";
 }
 #masthead #mastnav ul.menu li:hover ul {
   display: block;
@@ -129,7 +199,7 @@ html {
 #masthead #mastnav ul.menu li ul {
   width: 200px;
   position: absolute;
-  top: 28px;
+  top: 38px;
   left: 0;
   list-style: none;
   margin: -10px;
@@ -143,6 +213,7 @@ html {
   padding: 0;
   display: block;
   float: none;
+  font-size: .9em;
 }
 #masthead #mastnav ul.menu li ul li a {
   padding: 5px 0;

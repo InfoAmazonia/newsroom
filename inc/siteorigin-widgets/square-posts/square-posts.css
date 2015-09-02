@@ -16,6 +16,8 @@ html {
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
+  height: 90px;
+  margin-bottom: 20px;
 }
 .newsroom-square-posts ul li:last-child {
   margin-right: 0;
@@ -38,6 +40,16 @@ html {
 .newsroom-square-posts ul li article .square-posts-thumbnail img {
   width: 100%;
   height: auto;
+}
+.newsroom-square-posts ul li article .square-posts-post-content h2,
+.newsroom-square-posts ul li article .square-posts-post-content p {
+  font-size: 1.2em;
+  display: inline;
+  margin: 0;
+}
+.newsroom-square-posts ul li article .square-posts-post-content p {
+  font-size: 1em;
+  color: #666;
 }
 .newsroom-square-posts ul li.no-thumbnail {
   background: #f4f4f4;

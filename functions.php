@@ -110,7 +110,6 @@ function newsroom_scripts() {
 
 	// deregister jeo styles
 	wp_deregister_style('jeo-main');
-
   // deregister jeo site frontend scripts
   wp_deregister_script('jeo-site');
 
@@ -139,7 +138,9 @@ function newsroom_jeo_scripts() {
   // Enqueue child theme main CSS
 	wp_register_style('newsroom-normalize', get_stylesheet_directory_uri() . '/css/normalize.css');
 	wp_register_style('newsroom-entypo', get_stylesheet_directory_uri() . '/css/entypo.css');
-  wp_enqueue_style('newsroom-styles', get_stylesheet_directory_uri() . '/css/main.css', array('newsroom-normalize', 'newsroom-entypo'));
+	wp_register_style('newsroom-fonts', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,600,600italic,700,700italic,300italic,200|Crimson+Text:400,600,700');
+
+  wp_enqueue_style('newsroom-styles', get_stylesheet_directory_uri() . '/css/main.css', array('newsroom-normalize', 'newsroom-entypo', 'newsroom-fonts'));
 
 }
 add_action('jeo_enqueue_scripts', 'newsroom_jeo_scripts', 20);

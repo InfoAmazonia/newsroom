@@ -50,10 +50,17 @@ html {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
+  padding-top: 20px;
   padding-right: 20px;
 }
 .newsroom-highlight-carousel ul li article .highlight-carousel-post-content:last-child {
   margin-right: 0;
+}
+.newsroom-highlight-carousel ul li article .highlight-carousel-post-content h2 {
+  margin: 0;
+}
+.newsroom-highlight-carousel ul li article .highlight-carousel-post-content .date {
+  color: #666;
 }
 .newsroom-highlight-carousel nav {
   position: absolute;
