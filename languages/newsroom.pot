@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-02 17:37-0300\n"
+"POT-Creation-Date: 2015-09-02 17:54-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,6 +63,35 @@ msgstr ""
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:35
 msgid "Milisseconds to rotate the carousel"
+msgstr ""
+
+#: inc/siteorigin-widgets/list-images/list-images.php:11
+msgid "Newsroom List Images"
+msgstr ""
+
+#: inc/siteorigin-widgets/list-images/list-images.php:13
+msgid "Display a list of images in a regular list format."
+msgstr ""
+
+#: inc/siteorigin-widgets/list-images/list-images.php:21
+msgid "Title for image list."
+msgstr ""
+
+#: inc/siteorigin-widgets/list-images/list-images.php:26
+msgid "Link for the title (optional)"
+msgstr ""
+
+#: inc/siteorigin-widgets/list-images/list-images.php:31
+msgid "Images"
+msgstr ""
+
+#: inc/siteorigin-widgets/list-images/list-images.php:32
+#: inc/siteorigin-widgets/list-images/list-images.php:36
+msgid "Image"
+msgstr ""
+
+#: inc/siteorigin-widgets/list-images/list-images.php:40
+msgid "Link for the image (optional)"
 msgstr ""
 
 #: inc/siteorigin-widgets/list-posts/list-posts.php:11

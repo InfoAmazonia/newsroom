@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.newsroom-list-images ul {
+  list-style: none;
+  display: table;
+  margin: 0 -10px;
+  padding: 0;
+}
+.newsroom-list-images ul li {
+  display: table-cell;
+  vertical-align: middle;
+  width: 1%;
+  padding: 0 10px;
+}
+.newsroom-list-images ul li img {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=list-images.css.map */
