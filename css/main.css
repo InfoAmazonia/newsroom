@@ -195,6 +195,7 @@ h6 {
 }
 #masthead #mastnav ul.menu li.menu-item-has-children:after {
   content: "\e623";
+  color: #334698;
   font-family: 'entypo';
   speak: none;
   font-style: normal;

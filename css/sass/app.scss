@@ -127,6 +127,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
         &.menu-item-has-children {
           &:after {
             content: "\e623";
+            color: #334698;
             font-family: 'entypo';
             speak: none;
             font-style: normal;
