@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.newsroom-list-posts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.newsroom-list-posts ul li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-bottom: 20px;
+}
+.newsroom-list-posts ul li:last-child {
+  margin-right: 0;
+}
+.newsroom-list-posts ul li:nth-child(4n) {
+  margin-right: 0;
+}
+.newsroom-list-posts ul li:nth-child(4n+1) {
+  clear: left;
+}
+.newsroom-list-posts ul li article .list-posts-thumbnail {
+  margin: 0 0 10px;
+}
+.newsroom-list-posts ul li article .list-posts-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+.newsroom-list-posts ul li article .list-posts-post-content p {
+  font-size: 1em;
+  color: #666;
+}
+.newsroom-list-posts ul li.no-thumbnail {
+  background: #f4f4f4;
+}
+
+/*# sourceMappingURL=list-posts.css.map */

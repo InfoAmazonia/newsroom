@@ -1,0 +1,33 @@
+@import "../../../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../../../bower_components/neat/app/assets/stylesheets/neat";
+
+.newsroom-list-posts {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      @include span-columns(3);
+      @include omega(4n);
+      margin-bottom: 20px;
+      article {
+        .list-posts-thumbnail {
+          margin: 0 0 10px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .list-posts-post-content {
+          p {
+            font-size: 1em;
+            color: #666;
+          }
+        }
+      }
+      &.no-thumbnail {
+        background: #f4f4f4;
+      }
+    }
+  }
+}
