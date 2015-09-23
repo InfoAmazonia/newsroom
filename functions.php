@@ -147,38 +147,5 @@ function newsroom_jeo_scripts() {
 }
 add_action('jeo_enqueue_scripts', 'newsroom_jeo_scripts', 20);
 
-// Hook scripts after JEO Marker scripts has been initialized
-function newsroom_markers_scripts() {
-
-  // Register and enqueue scripts here
-  wp_enqueue_script('newsroom-jeo-markers-scripts', get_stylesheet_directory_uri() . '/js/jeo-markers-scripts.js', array('jquery') , '0.0.1');
-
-}
-add_action('jeo_markers_enqueue_scripts', 'newsroom_markers_scripts', 20);
-
-// Filter to change posts GeoJSON data (also changes the GeoJSON API output)
-function newsroom_marker_data($data, $post) {
-
-  // Change $data here
-
-  return $data;
-}
-add_filter('jeo_marker_data', 'newsroom_marker_data', 10, 2);
-
-// Filter to change GeoJSON response
-function newsroom_markers_data($data, $query) {
-
-  // Change $data here
-
-  return $data;
-}
-add_filter('jeo_markers_data', 'newsroom_markers_data', 10, 2);
-
-// Filter to programatically change map data
-function newsroom_map_data($data, $map) {
-
-  // Change $data here
-
-  return $data;
-}
-add_filter('jeo_map_data', 'newsroom_map_data', 10, 2);
+// Single templates
+include_once(STYLESHEETPATH . '/inc/single-templates/single-templates.php');
