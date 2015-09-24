@@ -217,7 +217,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
       color: #333;
       .tax-item {
         float: left;
-        margin: 0 10px 0 0;
+        margin: 0 10px 5px 0;
         p,
         ul,
         ul li {
@@ -251,5 +251,10 @@ h6 { font-size: 1.5rem; line-height: 1; }
     @include row();
     font-size: 22px;
     float: none;
+    .wp-caption-text {
+      font-size: 90%;
+      color: #999;
+      font-style: italic;
+    }
   }
 }
