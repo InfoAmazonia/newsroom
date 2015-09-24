@@ -6,19 +6,29 @@
 
 	<article id="primary" class="content-area" role="main">
 		<header class="page-header">
-			<?php the_category(); ?>
 			<h1><?php the_title(); ?></h1>
+      <?php global $post; if($post->post_excerpt) : ?>
+        <div class="subhead">
+          <?php the_excerpt(); ?>
+        </div>
+      <?php endif; ?>
+      <div class="kicker">
+        <?php the_post_thumbnail(); ?>
+      </div>
 			<div class="post-meta">
-				<p class="author"><span class="lsf">&#xE137;</span> <?php _e('by', 'jeo'); ?> <?php the_author(); ?></p>
-				<p class="date"><span class="lsf">&#xE12b;</span> <?php the_date(); ?></p>
-				<?php the_tags('<p class="tags"><span class="lsf">&#xE128;</span> ', ', ', '</p>'); ?>
+        <div class="byline">
+  				<p><?php the_author(); ?>, <?php the_date(); ?></p>
+        </div>
+        <div class="terms">
+          <?php newsroom_tax_terms(); ?>
+        </div>
 			</div>
 		</header>
 		<section class="content">
 			<?php the_content(); ?>
 			<?php
 			wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'jeo' ) . '</span>',
+				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'newsroom' ) . '</span>',
 				'after'       => '</div>',
 				'link_before' => '<span>',
 				'link_after'  => '</span>',
@@ -26,6 +36,7 @@
 			?>
 			<?php comments_template(); ?>
 		</section>
+    <div class="clear">
 		<aside id="sidebar">
 			<ul class="widgets">
 				<?php dynamic_sidebar('post'); ?>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-02 17:54-0300\n"
+"POT-Creation-Date: 2015-09-24 00:11-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,6 +39,31 @@ msgstr ""
 
 #: header.php:17
 msgid "Page"
+msgstr ""
+
+#: inc/single-templates/single-templates.php:15
+msgid "Story"
+msgstr ""
+
+#: inc/single-templates/single-templates.php:16
+msgid "Sequence"
+msgstr ""
+
+#: inc/single-templates/single-templates.php:42
+msgid "Template"
+msgstr ""
+
+#: inc/single-templates/single-templates.php:56
+msgid "Select the template to display this post"
+msgstr ""
+
+#: inc/single-templates/templates/sequence.php:12
+msgid "by"
+msgstr ""
+
+#: inc/single-templates/templates/sequence.php:21
+#: inc/single-templates/templates/story.php:31 page.php:12
+msgid "Pages:"
 msgstr ""
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:11
@@ -199,12 +224,4 @@ msgstr ""
 
 #: inc/widgets/single-map.php:60
 msgid "Map height"
-msgstr ""
-
-#: page.php:12 single.php:21
-msgid "Pages:"
-msgstr ""
-
-#: single.php:12
-msgid "by"
 msgstr ""

@@ -149,3 +149,37 @@ add_action('jeo_enqueue_scripts', 'newsroom_jeo_scripts', 20);
 
 // Single templates
 include_once(STYLESHEETPATH . '/inc/single-templates/single-templates.php');
+
+function newsroom_tax_terms($post_id = false) {
+	global $post;
+	$post_id = $post_id ? $post_id : $post->ID;
+	$taxonomies = get_taxonomies(array(
+		'public' => true,
+		'show_ui' => true
+	), 'objects');
+	$post_tax_terms = array();
+	foreach($taxonomies as $tax) {
+		$terms = wp_get_post_terms($post_id, $tax->name);
+		if($terms) {
+			$post_tax_terms[$tax->name] = array();
+			$post_tax_terms[$tax->name]['taxonomy'] = $tax;
+			$post_tax_terms[$tax->name]['terms'] = $terms;
+		}
+	}
+	if(!empty($post_tax_terms)) :
+		?>
+		<div class="newsroom-tax-terms">
+			<?php foreach($post_tax_terms as $tax) : ?>
+				<div class="tax-<?php echo $tax['taxonomy']->name; ?> tax-item">
+					<p><?php echo $tax['taxonomy']->labels->name; ?>:</p>
+					<ul>
+						<?php foreach($tax['terms'] as $term) : ?>
+							<li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></li>
+						<?php endforeach; ?>
+					</ul>
+				</div>
+			<?php endforeach; ?>
+		</div>
+		<?php
+	endif;
+}

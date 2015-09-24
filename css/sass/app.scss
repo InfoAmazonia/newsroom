@@ -67,7 +67,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
 }
 
 #masthead {
-  padding: 0.67em 0;
+  padding: 2em 0;
   h1.has-logo {
     a {
       display: block;
@@ -83,7 +83,6 @@ h6 { font-size: 1.5rem; line-height: 1; }
     @include span-columns(6);
   }
   #langnav {
-    margin: 0.67em 0;
     @include span-columns(6);
     #qtranslate-chooser {
       list-style: none;
@@ -107,6 +106,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
   }
   #mastnav {
     @include span-columns(12);
+    @include row();
     position: relative;
     z-index: 3;
     font-size: 1.2em;
@@ -183,4 +183,72 @@ h6 { font-size: 1.5rem; line-height: 1; }
 .map-container {
   width: 100%;
   height: 600px;
+}
+
+#primary {
+  h1 {
+    font-size: 42px;
+  }
+  .subhead {
+    font-size: 24px;
+    @include row();
+  }
+  .kicker {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .post-meta {
+    @include pad(1em 0 1em 0);
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+    .byline {
+      color: #666;
+      font-size: 20px;
+      p {
+        display: inline;
+        margin-right: 10px;
+      }
+    }
+    .terms {
+      @include pad(1em 0 0);
+      color: #333;
+      .tax-item {
+        display: inline;
+        margin: 0 10px 0 0;
+        p,
+        ul,
+        ul li {
+          display: inline;
+        }
+        ul {
+          margin: 0 0 0 5px;
+          padding: 0;
+          li {
+            margin: 0;
+            padding: 0;
+            a {
+              text-decoration: none;
+              background: #43a4d6;
+              color: #fff;
+              padding: 2px 5px;
+              border-radius: 3px;
+              font-size: 90%;
+              &:hover {
+                color: rgba(255,255,255,0.7);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .content {
+    @include span-columns(8);
+    @include shift(2);
+    @include row();
+    font-size: 22px;
+    float: none;
+  }
 }

@@ -112,7 +112,7 @@ h6 {
 }
 
 #masthead {
-  padding: 0.67em 0;
+  padding: 2em 0;
 }
 #masthead h1.has-logo a {
   display: block;
@@ -133,7 +133,6 @@ h6 {
   margin-right: 0;
 }
 #masthead #langnav {
-  margin: 0.67em 0;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -170,12 +169,18 @@ h6 {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
+  display: block;
   position: relative;
   z-index: 3;
   font-size: 1.2em;
 }
 #masthead #mastnav:last-child {
   margin-right: 0;
+}
+#masthead #mastnav::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 #masthead #mastnav ul.menu {
   list-style: none;
@@ -242,6 +247,86 @@ h6 {
 .map-container {
   width: 100%;
   height: 600px;
+}
+
+#primary h1 {
+  font-size: 42px;
+}
+#primary .subhead {
+  font-size: 24px;
+  display: block;
+}
+#primary .subhead::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#primary .kicker img {
+  width: 100%;
+  height: auto;
+}
+#primary .post-meta {
+  padding: 1em 0 1em 0;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+}
+#primary .post-meta .byline {
+  color: #666;
+  font-size: 20px;
+}
+#primary .post-meta .byline p {
+  display: inline;
+  margin-right: 10px;
+}
+#primary .post-meta .terms {
+  padding: 1em 0 0;
+  color: #333;
+}
+#primary .post-meta .terms .tax-item {
+  display: inline;
+  margin: 0 10px 0 0;
+}
+#primary .post-meta .terms .tax-item p,
+#primary .post-meta .terms .tax-item ul,
+#primary .post-meta .terms .tax-item ul li {
+  display: inline;
+}
+#primary .post-meta .terms .tax-item ul {
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+#primary .post-meta .terms .tax-item ul li {
+  margin: 0;
+  padding: 0;
+}
+#primary .post-meta .terms .tax-item ul li a {
+  text-decoration: none;
+  background: #43a4d6;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 90%;
+}
+#primary .post-meta .terms .tax-item ul li a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+#primary .content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  display: block;
+  font-size: 22px;
+  float: none;
+}
+#primary .content:last-child {
+  margin-right: 0;
+}
+#primary .content::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 /*# sourceMappingURL=main.css.map */
