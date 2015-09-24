@@ -212,10 +212,11 @@ h6 { font-size: 1.5rem; line-height: 1; }
       }
     }
     .terms {
+      @include row();
       @include pad(1em 0 0);
       color: #333;
       .tax-item {
-        display: inline;
+        float: left;
         margin: 0 10px 0 0;
         p,
         ul,

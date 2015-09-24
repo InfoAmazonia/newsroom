@@ -279,11 +279,17 @@ h6 {
   margin-right: 10px;
 }
 #primary .post-meta .terms {
+  display: block;
   padding: 1em 0 0;
   color: #333;
 }
+#primary .post-meta .terms::after {
+  clear: both;
+  content: "";
+  display: table;
+}
 #primary .post-meta .terms .tax-item {
-  display: inline;
+  float: left;
   margin: 0 10px 0 0;
 }
 #primary .post-meta .terms .tax-item p,
