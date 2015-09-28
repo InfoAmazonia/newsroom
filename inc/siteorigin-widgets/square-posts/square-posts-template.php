@@ -15,7 +15,7 @@ if($square_posts_query->have_posts()) :
         <article id="<?php echo $instance['panels_info']['id']; ?>-square-posts-<?php the_ID(); ?>">
           <?php if(has_post_thumbnail()) : ?>
             <div class="square-posts-thumbnail">
-              <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+              <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('small-thumb'); ?></a>
             </div>
           <?php endif; ?>
           <div class="square-posts-post-content">

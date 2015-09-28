@@ -13,7 +13,7 @@
         </div>
       <?php endif; ?>
       <div class="kicker">
-        <?php the_post_thumbnail(); ?>
+        <?php the_post_thumbnail('kicker'); ?>
       </div>
 			<div class="post-meta">
         <div class="byline">

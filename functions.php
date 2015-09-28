@@ -61,6 +61,11 @@ function newsroom_logo() {
  */
 function newsroom_setup() {
 
+	add_image_size('highlight-carousel', 672, 380, true);
+	add_image_size('kicker', 1020, 800);
+	add_image_size('small-thumb', 87, 87, true);
+	add_image_size('list-thumb', 237, 112, true);
+
 	add_theme_support('automatic-feed-links');
 	add_theme_support('post-thumbnails');
 

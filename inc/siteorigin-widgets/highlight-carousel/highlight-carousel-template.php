@@ -15,7 +15,7 @@ if($highlight_query->have_posts()) :
       <li class="highlight-carousel-item">
         <article id="highlight-carousel-<?php the_ID(); ?>">
           <div class="highlight-carousel-thumbnail">
-            <?php the_post_thumbnail(); ?>
+            <?php the_post_thumbnail('highlight-carousel'); ?>
           </div>
           <div class="highlight-carousel-post-content">
             <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>

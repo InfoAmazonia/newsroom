@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-24 00:11-0300\n"
+"POT-Creation-Date: 2015-09-28 15:54-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,23 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.php:72
+#: functions.php:77
 msgid "Header menu"
 msgstr ""
 
-#: functions.php:73
+#: functions.php:78
 msgid "Footer menu"
 msgstr ""
 
-#: functions.php:78
+#: functions.php:83
 msgid "Post sidebar"
 msgstr ""
 
-#: functions.php:84
+#: functions.php:89
 msgid "General sidebar"
 msgstr ""
 
-#: functions.php:90
+#: functions.php:95
 msgid "Front page"
 msgstr ""
 
@@ -57,11 +57,7 @@ msgstr ""
 msgid "Select the template to display this post"
 msgstr ""
 
-#: inc/single-templates/templates/sequence.php:12
-msgid "by"
-msgstr ""
-
-#: inc/single-templates/templates/sequence.php:21
+#: inc/single-templates/templates/sequence.php:31
 #: inc/single-templates/templates/story.php:31 page.php:12
 msgid "Pages:"
 msgstr ""
