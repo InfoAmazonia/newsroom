@@ -13,13 +13,15 @@ class Newsroom_Single_Templates {
   function get_templates() {
     return apply_filters('newsroom_single_templates', array(
       'story' => __('Story', 'newsroom'),
-      'sequence' => __('Sequence', 'newsroom')
+      // 'sequence' => __('Sequence', 'newsroom')
     ));
   }
 
   function __construct() {
     add_action('template_redirect', array($this, 'template_redirect'));
-    add_action('admin_init', array($this, 'setup_metabox'));
+    if(count($this->get_templates()) > 1) {
+      add_action('admin_init', array($this, 'setup_metabox'));
+    }
     add_action('save_post', array($this, 'save_post'));
   }
 
