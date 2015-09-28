@@ -188,3 +188,6 @@ function newsroom_tax_terms($post_id = false) {
 		<?php
 	endif;
 }
+
+// Featured media
+include_once(STYLESHEETPATH . '/inc/featured-media/featured-media.php');

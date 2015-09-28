@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-28 17:31-0300\n"
+"POT-Creation-Date: 2015-09-28 18:04-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,6 +39,26 @@ msgstr ""
 
 #: header.php:17
 msgid "Page"
+msgstr ""
+
+#: inc/featured-media/featured-media.php:19
+msgid "Featured media"
+msgstr ""
+
+#: inc/featured-media/featured-media.php:32
+msgid "Select the type of media you'd like to feature for this post"
+msgstr ""
+
+#: inc/featured-media/featured-media.php:35
+msgid "Post featured image"
+msgstr ""
+
+#: inc/featured-media/featured-media.php:39
+msgid "Post image gallery"
+msgstr ""
+
+#: inc/featured-media/featured-media.php:43
+msgid "Video"
 msgstr ""
 
 #: inc/single-templates/single-templates.php:15
