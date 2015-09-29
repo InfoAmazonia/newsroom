@@ -10,7 +10,8 @@ class Newsroom_Featured_Media {
 
     add_action('admin_init', array($this, 'setup_metabox'));
     add_action('save_post', array($this, 'save_post'));
-
+    // add_filter('oembed_result', array($this, 'oembed_result'));
+    add_filter('the_content', array($this, 'the_content'), 20);
   }
 
   function setup_metabox() {
@@ -39,8 +40,8 @@ class Newsroom_Featured_Media {
       <label for="newsroom_featured_media_input_type_gallery"><?php _e('Post image gallery', 'newsroom'); ?></label>
     </p>
     <p>
-      <input id="newsroom_featured_media_input_type_video" type="radio" name="newsroom_featured_media_type" value="video" <?php if($type == 'video') echo 'checked'; ?> />
-      <label for="newsroom_featured_media_input_type_video"><?php _e('Video', 'newsroom'); ?></label>
+      <input id="newsroom_featured_media_input_type_video" type="radio" name="newsroom_featured_media_type" value="post_media" <?php if($type == 'video') echo 'checked'; ?> />
+      <label for="newsroom_featured_media_input_type_video"><?php _e('Post media', 'newsroom'); ?> <small><?php printf(__('(First external media attached to post content. <a href="%s">See available media here</a>)', 'newsroom'), 'https://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F'); ?></small></label>
     </p>
     <?php
   }
@@ -52,6 +53,12 @@ class Newsroom_Featured_Media {
 
     if(isset($_REQUEST['newsroom_featured_media_type'])) {
       update_post_meta($post_id, 'newsroom_featured_media_type', $_REQUEST['newsroom_featured_media_type']);
+    }
+
+    // Update first media data
+    $media = $this->get_post_content_media($post_id);
+    if(count($media) >= 1) {
+      update_post_meta($post_id, '_newsroom_first_media', $media[0]);
     }
 
   }
@@ -71,11 +78,27 @@ class Newsroom_Featured_Media {
       case 'gallery':
         echo 'Gallery goes here';
         break;
-      case 'video':
-        echo 'Video goes here';
+      case 'post_media':
+        echo get_post_meta($post_id, '_newsroom_first_media', true);
         break;
     }
 
+  }
+
+  function get_post_content_media($post_id = false) {
+    global $post;
+    $post_id = $post_id ? $post_id : $post->ID;
+    $p = get_post($post_id);
+    $content = do_shortcode(apply_filters('the_content', $p->post_content));
+    return get_media_embedded_in_content($content);
+  }
+
+  function the_content($content) {
+    global $post;
+    if('post_media' == get_post_meta($post->ID, 'newsroom_featured_media_type', true)) {
+      $content = str_replace(get_post_meta($post->ID, '_newsroom_first_media', true), '', $content);
+    }
+    return $content;
   }
 
 }
@@ -84,4 +107,8 @@ $GLOBALS['newsroom_featured_media'] = new Newsroom_Featured_Media();
 
 function newsroom_featured_media($post_id = false) {
   $GLOBALS['newsroom_featured_media']->featured_media($post_id);
+}
+
+function newsroom_get_media($post_id = false) {
+  return $GLOBALS['newsroom_featured_media']->get_post_content_media($post_id);
 }

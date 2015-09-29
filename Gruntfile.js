@@ -30,6 +30,16 @@ module.exports = function(grunt) {
             expand: true
           }
         ]
+      },
+      fitvids: {
+        files: [
+          {
+            cwd: 'bower_components/fitvids',
+            src: ['jquery.fitvids.js'],
+            dest: 'lib',
+            expand: true
+          }
+        ]
       }
     },
     pot: {

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-28 18:04-0300\n"
+"POT-Creation-Date: 2015-09-29 16:24-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,24 +41,31 @@ msgstr ""
 msgid "Page"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:19
+#: inc/featured-media/featured-media.php:20
 msgid "Featured media"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:32
+#: inc/featured-media/featured-media.php:33
 msgid "Select the type of media you'd like to feature for this post"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:35
+#: inc/featured-media/featured-media.php:36
 msgid "Post featured image"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:39
+#: inc/featured-media/featured-media.php:40
 msgid "Post image gallery"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:43
-msgid "Video"
+#: inc/featured-media/featured-media.php:44
+msgid "Post media"
+msgstr ""
+
+#: inc/featured-media/featured-media.php:44
+#, php-format
+msgid ""
+"(First external media attached to post content. <a href=\"%s\">See available "
+"media here</a>)"
 msgstr ""
 
 #: inc/single-templates/single-templates.php:15
