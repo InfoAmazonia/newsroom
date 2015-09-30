@@ -231,8 +231,8 @@ h6 { font-size: 1.5rem; line-height: 1; }
     }
   }
   .post-meta {
-    @include pad(1em 0 1em 0);
-    margin-bottom: 1em;
+    @include pad(2em 0 1em 0);
+    margin-bottom: 2em;
     border-bottom: 1px solid #ccc;
     .byline {
       color: #666;
@@ -243,6 +243,8 @@ h6 { font-size: 1.5rem; line-height: 1; }
       }
     }
     .terms {
+      margin-top: 1em;
+      border-top: 2px solid #ccc;
       @include row();
       @include pad(1em 0 0);
       color: #333;
@@ -262,13 +264,13 @@ h6 { font-size: 1.5rem; line-height: 1; }
             padding: 0;
             a {
               text-decoration: none;
-              background: #43a4d6;
-              color: #fff;
+              background: #f0f0f0;
+              color: #666;
               padding: 2px 5px;
               border-radius: 3px;
               font-size: 90%;
               &:hover {
-                color: rgba(255,255,255,0.7);
+                color: #333;
               }
             }
           }
