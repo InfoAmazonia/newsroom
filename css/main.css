@@ -112,7 +112,7 @@ h6 {
 }
 
 #masthead {
-  padding: 2em 0;
+  padding: 1.5em 0;
 }
 #masthead h1.has-logo a {
   display: block;
@@ -263,7 +263,6 @@ h6 {
 }
 #primary .kicker img {
   display: block;
-  margin: 0 auto;
   max-width: 100%;
   height: auto;
 }
