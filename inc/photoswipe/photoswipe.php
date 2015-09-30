@@ -33,6 +33,7 @@ class Newsroom_Photoswipe {
     $first = reset($images);
     $first_src = wp_get_attachment_image_src($first->ID, 'kicker');
     ob_start();
+    // print_r($images);
     ?>
     <div class="nr-gallery toggle-gallery" data-galleryid="nr-gallery-<?php echo $this->count; ?>" style="width:<?php echo $first_src[1]; ?>px;height:<?php echo $first_src[2]; ?>px;">
       <img src="<?php echo $first_src[0]; ?>" />
@@ -50,7 +51,6 @@ class Newsroom_Photoswipe {
         $(document).ready(function() {
           $('.toggle-gallery').on('click', function() {
             var id = $(this).attr('data-galleryid');
-            console.log(id);
             initGallery(id, 0);
           });
         });
@@ -63,11 +63,14 @@ class Newsroom_Photoswipe {
 
           <?php foreach($images as $image) :
             $src = wp_get_attachment_image_src($image->ID, 'full');
+            $small_src = wp_get_attachment_image_src($image->ID, 'small');
             ?>
             items.push({
               src: '<?php echo $src[0]; ?>',
+              msrc: '<?php echo $small_src[0]; ?>',
               w: <?php echo $src[1]; ?>,
-              h: <?php echo $src[2]; ?>
+              h: <?php echo $src[2]; ?>,
+              title: '<?php echo $image->post_title . '. ' . $image->post_excerpt; ?>'
             });
           <?php endforeach; ?>
 

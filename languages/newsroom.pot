@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-30 14:03-0300\n"
+"POT-Creation-Date: 2015-09-30 14:14-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgid ""
 "media here</a>)"
 msgstr ""
 
-#: inc/photoswipe/photoswipe.php:41
+#: inc/photoswipe/photoswipe.php:42
 msgid "images"
 msgstr ""
 
