@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-30 16:45-0300\n"
+"POT-Creation-Date: 2015-09-30 16:54-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,11 +57,15 @@ msgstr ""
 msgid "Post image gallery"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:47
+#: inc/featured-media/featured-media.php:47 inc/widgets/single-map.php:48
+msgid "Map"
+msgstr ""
+
+#: inc/featured-media/featured-media.php:51
 msgid "Post media"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:47
+#: inc/featured-media/featured-media.php:51
 #, php-format
 msgid ""
 "(First external media attached to post content. <a href=\"%s\">See available "
@@ -235,10 +239,6 @@ msgstr ""
 
 #: inc/widgets/single-map.php:44
 msgid "Title"
-msgstr ""
-
-#: inc/widgets/single-map.php:48
-msgid "Map"
 msgstr ""
 
 #: inc/widgets/single-map.php:57
