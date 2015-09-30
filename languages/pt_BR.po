@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: newsroom 0.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-30 14:14-0300\n"
+"PO-Revision-Date: 2015-09-30 14:59-0300\n"
+"Last-Translator: Miguel Peixe <miguel@cardume.art.br>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: Português\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: functions.php:77
+msgid "Header menu"
+msgstr "Menu do cabeçalho"
+
+#: functions.php:78
+msgid "Footer menu"
+msgstr "Menu do rodapé"
+
+#: functions.php:83
+msgid "Post sidebar"
+msgstr "Barra lateral do post"
+
+#: functions.php:89
+msgid "General sidebar"
+msgstr "Barra lateral geral"
+
+#: functions.php:95
+msgid "Front page"
+msgstr "Página inicial"
+
+#: header.php:17
+msgid "Page"
+msgstr "Página"
+
+#: inc/featured-media/featured-media.php:21
+msgid "Featured media"
+msgstr "Mídia em destaque"
+
+#: inc/featured-media/featured-media.php:34
+msgid "Select the type of media you'd like to feature for this post"
+msgstr "Selecione o tipo de mídia que gostaria de destacar neste post"
+
+#: inc/featured-media/featured-media.php:37
+msgid "Post featured image"
+msgstr "Imagem destacada do post"
+
+#: inc/featured-media/featured-media.php:42
+msgid "Post image gallery"
+msgstr "Galeria de imagens do post"
+
+#: inc/featured-media/featured-media.php:47
+msgid "Post media"
+msgstr "Mídia do post"
+
+#: inc/featured-media/featured-media.php:47
+#, php-format
+msgid ""
+"(First external media attached to post content. <a href=\"%s\">See available "
+"media here</a>)"
+msgstr ""
+"(Primeira mídia externa anexada ao contéudo do post. <a href=\"%s\">Veja "
+"mídias disponíveis aqui</a>)"
+
+#: inc/photoswipe/photoswipe.php:42
+msgid "images"
+msgstr "Imagens"
+
+#: inc/single-templates/single-templates.php:15
+msgid "Story"
+msgstr "História"
+
+#: inc/single-templates/single-templates.php:44
+msgid "Template"
+msgstr "Template"
+
+#: inc/single-templates/single-templates.php:58
+msgid "Select the template to display this post"
+msgstr "Selecione o template a exibir este post"
+
+#: inc/single-templates/templates/sequence.php:31
+#: inc/single-templates/templates/story.php:31 page.php:12
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:11
+msgid "Newsroom Highlight Carousel"
+msgstr "Carousel de destaque do Newsroom"
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:13
+msgid "Display featured posts with featured image as a interactive carousel"
+msgstr "Exibir posts com imagens destacadas como um carousel interativo"
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:21
+msgid "Title for the carousel."
+msgstr "Título para o carousel."
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:26
+msgid "Build query for highlighted posts"
+msgstr "Construa a query para posts destacados"
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:30
+msgid "Auto rotate carousel"
+msgstr "Rodar carousel automaticamente"
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:35
+msgid "Milisseconds to rotate the carousel"
+msgstr "Milissegundos até rotação"
+
+#: inc/siteorigin-widgets/list-images/list-images.php:11
+msgid "Newsroom List Images"
+msgstr "Lista de Imagens do Newsroom"
+
+#: inc/siteorigin-widgets/list-images/list-images.php:13
+msgid "Display a list of images in a regular list format."
+msgstr "Exibir imagens em um formato de lista regular."
+
+#: inc/siteorigin-widgets/list-images/list-images.php:21
+msgid "Title for image list."
+msgstr "Título para lista de imagens"
+
+#: inc/siteorigin-widgets/list-images/list-images.php:26
+msgid "Link for the title (optional)"
+msgstr "Link para o título (opcional)"
+
+#: inc/siteorigin-widgets/list-images/list-images.php:31
+msgid "Images"
+msgstr "Imagens"
+
+#: inc/siteorigin-widgets/list-images/list-images.php:32
+#: inc/siteorigin-widgets/list-images/list-images.php:36
+msgid "Image"
+msgstr "Imagem"
+
+#: inc/siteorigin-widgets/list-images/list-images.php:40
+msgid "Link for the image (optional)"
+msgstr "Link pra a imagem (opcional)"
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:11
+msgid "Newsroom List Posts"
+msgstr "Lista de posts do Newsroom"
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:13
+msgid "Display a list of posts in a regular list format."
+msgstr "Exiba posts em um formato de lista regular."
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:21
+#: inc/siteorigin-widgets/square-posts/square-posts.php:22
+msgid "Title for post list."
+msgstr "Título para a lista de posts."
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:26
+msgid "Link for the title"
+msgstr "Link para o título"
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:31
+#: inc/siteorigin-widgets/square-posts/square-posts.php:27
+msgid "Build query for posts to be displayed"
+msgstr "Construa a query dos posts a serem exibidos"
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:35
+#: inc/siteorigin-widgets/square-posts/square-posts.php:31
+msgid "Posts to display per row"
+msgstr "Número de posts a exibir por linha"
+
+#: inc/siteorigin-widgets/square-posts/square-posts.php:11
+msgid "Newsroom Square Posts"
+msgstr "Posts quadrados do Newsroom"
+
+#: inc/siteorigin-widgets/square-posts/square-posts.php:13
+msgid "Display a list of posts in a small square format."
+msgstr "Exiba posts em um formato de lista quadrada."
+
+#: inc/theme-options.php:33
+msgid "Newsroom Style"
+msgstr "Estilo do Newsroom"
+
+#: inc/theme-options.php:33
+msgid "Newsroom"
+msgstr "Newsroom"
+
+#: inc/theme-options.php:44
+msgid "Newsroom Theme Options"
+msgstr "Opções do tema Newsroom"
+
+#: inc/theme-options.php:62
+msgid "Style"
+msgstr "Estilo"
+
+#: inc/theme-options.php:69
+msgid "Links"
+msgstr "Links"
+
+#: inc/theme-options.php:76
+msgid "Choose a style"
+msgstr "Escolha um estilo"
+
+#: inc/theme-options.php:84
+msgid "Upload a custom logo"
+msgstr "Envie um logo customizado"
+
+#: inc/theme-options.php:92
+msgid "Facebook url"
+msgstr "URL do Facebook"
+
+#: inc/theme-options.php:100
+msgid "Twitter url"
+msgstr "URL do Twitter"
+
+#: inc/theme-options.php:108
+msgid "Legal disclaimer"
+msgstr "Termos de uso"
+
+#: inc/theme-options.php:132
+msgid "Logo url"
+msgstr "URL do logo"
+
+#: inc/theme-options.php:133
+msgid "Upload"
+msgstr "Enviar"
+
+#: inc/widgets/single-map.php:14
+msgid "JEO Map Widget"
+msgstr "Widget de mapa do JEO"
+
+#: inc/widgets/single-map.php:15
+msgid "Display a map"
+msgstr "Exibir um mapa"
+
+#: inc/widgets/single-map.php:44
+msgid "Title"
+msgstr "Título"
+
+#: inc/widgets/single-map.php:48
+msgid "Map"
+msgstr "Mapa"
+
+#: inc/widgets/single-map.php:57
+msgid "Display map posts"
+msgstr "Exibir posts do mapa"
+
+#: inc/widgets/single-map.php:60
+msgid "Map height"
+msgstr "Altura do mapa"
