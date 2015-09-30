@@ -40,6 +40,16 @@ module.exports = function(grunt) {
             expand: true
           }
         ]
+      },
+      photoswipe: {
+        files: [
+          {
+            cwd: 'bower_components/photoswipe/dist',
+            src: ['**/*'],
+            dest: 'lib/photoswipe',
+            expand: true
+          }
+        ]
       }
     },
     pot: {

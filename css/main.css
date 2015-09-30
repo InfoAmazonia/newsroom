@@ -267,6 +267,33 @@ h6 {
   max-width: 100%;
   height: auto;
 }
+#primary .kicker .nr-gallery {
+  position: relative;
+  cursor: pointer;
+}
+#primary .kicker .nr-gallery .image-count {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 30%;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all .2s linear;
+  line-height: 60px;
+}
+#primary .kicker .nr-gallery .image-count .icon {
+  font-size: 60px;
+  line-height: 60px;
+  margin-right: 20px;
+}
+#primary .kicker .nr-gallery:hover .image-count {
+  background: rgba(0, 0, 0, 0.6);
+}
 #primary .post-meta {
   padding: 1em 0 1em 0;
   margin-bottom: 1em;

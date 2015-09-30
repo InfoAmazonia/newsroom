@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-29 16:24-0300\n"
+"POT-Creation-Date: 2015-09-30 14:03-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,31 +41,35 @@ msgstr ""
 msgid "Page"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:20
+#: inc/featured-media/featured-media.php:21
 msgid "Featured media"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:33
+#: inc/featured-media/featured-media.php:34
 msgid "Select the type of media you'd like to feature for this post"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:36
+#: inc/featured-media/featured-media.php:37
 msgid "Post featured image"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:40
+#: inc/featured-media/featured-media.php:42
 msgid "Post image gallery"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:44
+#: inc/featured-media/featured-media.php:47
 msgid "Post media"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:44
+#: inc/featured-media/featured-media.php:47
 #, php-format
 msgid ""
 "(First external media attached to post content. <a href=\"%s\">See available "
 "media here</a>)"
+msgstr ""
+
+#: inc/photoswipe/photoswipe.php:41
+msgid "images"
 msgstr ""
 
 #: inc/single-templates/single-templates.php:15

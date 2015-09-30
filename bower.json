@@ -18,6 +18,7 @@
     "neat": "~1.7.2",
     "bourbon": "~4.2.3",
     "normalize.css": "~3.0.3",
-    "fitvids": "~1.1.0"
+    "fitvids": "~1.1.0",
+    "photoswipe": "~4.1.0"
   }
 }

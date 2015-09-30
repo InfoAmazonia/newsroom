@@ -140,10 +140,12 @@ function newsroom_jeo_scripts() {
 	// JS libraries
 	wp_register_script('fitvids', get_stylesheet_directory_uri() . '/lib/jquery.fitvids.js', array('jquery'), '1.1');
 
+
 	// CSS Dependencies
 	wp_register_style('newsroom-normalize', get_stylesheet_directory_uri() . '/css/normalize.css');
 	wp_register_style('newsroom-entypo', get_stylesheet_directory_uri() . '/css/entypo.css');
 	wp_register_style('newsroom-fonts', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,600,600italic,700,700italic,300italic,200|Crimson+Text:400,600,700');
+
 
   // Enqueue child theme JEO related scripts
   // wp_enqueue_script('newsroom-jeo-scripts', get_stylesheet_directory_uri() . '/js/jeo-scripts.js', array('jquery') , '0.0.1');
@@ -194,6 +196,9 @@ function newsroom_tax_terms($post_id = false) {
 		<?php
 	endif;
 }
+
+// Photoswipe
+include_once(STYLESHEETPATH . '/inc/photoswipe/photoswipe.php');
 
 // Featured media
 include_once(STYLESHEETPATH . '/inc/featured-media/featured-media.php');

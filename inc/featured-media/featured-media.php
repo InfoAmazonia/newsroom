@@ -12,6 +12,7 @@ class Newsroom_Featured_Media {
     add_action('save_post', array($this, 'save_post'));
     // add_filter('oembed_result', array($this, 'oembed_result'));
     add_filter('the_content', array($this, 'the_content'), 20);
+
   }
 
   function setup_metabox() {
@@ -35,10 +36,12 @@ class Newsroom_Featured_Media {
       <input id="newsroom_featured_media_input_type_image" type="radio" name="newsroom_featured_media_type" value="image" <?php if($type == 'image') echo 'checked'; ?> />
       <label for="newsroom_featured_media_input_type_image"><?php _e('Post featured image', 'newsroom'); ?></label>
     </p>
-    <p>
-      <input id="newsroom_featured_media_input_type_gallery" type="radio" name="newsroom_featured_media_type" value="gallery" <?php if($type == 'gallery') echo 'checked'; ?> />
-      <label for="newsroom_featured_media_input_type_gallery"><?php _e('Post image gallery', 'newsroom'); ?></label>
-    </p>
+    <?php if(class_exists('Newsroom_Photoswipe')) : ?>
+      <p>
+        <input id="newsroom_featured_media_input_type_gallery" type="radio" name="newsroom_featured_media_type" value="gallery" <?php if($type == 'gallery') echo 'checked'; ?> />
+        <label for="newsroom_featured_media_input_type_gallery"><?php _e('Post image gallery', 'newsroom'); ?></label>
+      </p>
+    <?php endif; ?>
     <p>
       <input id="newsroom_featured_media_input_type_video" type="radio" name="newsroom_featured_media_type" value="post_media" <?php if($type == 'video') echo 'checked'; ?> />
       <label for="newsroom_featured_media_input_type_video"><?php _e('Post media', 'newsroom'); ?> <small><?php printf(__('(First external media attached to post content. <a href="%s">See available media here</a>)', 'newsroom'), 'https://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F'); ?></small></label>
@@ -76,7 +79,7 @@ class Newsroom_Featured_Media {
         the_post_thumbnail('kicker');
         break;
       case 'gallery':
-        echo 'Gallery goes here';
+        echo do_shortcode('[photoswipe]');
         break;
       case 'post_media':
         echo get_post_meta($post_id, '_newsroom_first_media', true);

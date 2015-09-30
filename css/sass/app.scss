@@ -200,6 +200,35 @@ h6 { font-size: 1.5rem; line-height: 1; }
       max-width: 100%;
       height: auto;
     }
+    .nr-gallery {
+      position: relative;
+      cursor: pointer;
+      .image-count {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-top: 30%;
+        background: rgba(0,0,0,0.4);
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 0 10px rgba(0,0,0,0.5);
+        transition: all .2s linear;
+        line-height: 60px;
+        .icon {
+          font-size: 60px;
+          line-height: 60px;
+          margin-right: 20px;
+        }
+      }
+      &:hover {
+        .image-count {
+          background: rgba(0,0,0,0.6);
+        }
+      }
+    }
   }
   .post-meta {
     @include pad(1em 0 1em 0);
