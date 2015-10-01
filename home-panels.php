@@ -4,8 +4,8 @@
  *
  * Template Name: Page Builder Special
  *
- * @package vantage
- * @since vantage 1.0
+ * @package Newsroom
+ * @since Newsroom 1.0
  * @see http://siteorigin.com/page-builder/
  * @license GPL 3.0
  */

@@ -8,8 +8,8 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package vantage
- * @since vantage 1.0
+ * @package Newsroom
+ * @since Newsroom 1.0
  * @license GPL 3.0
  */
 
