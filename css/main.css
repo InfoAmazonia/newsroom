@@ -381,6 +381,10 @@ h6 {
   font-style: italic;
 }
 
+.widget-map {
+  margin: 0 0 20px;
+}
+
 .archive-sidebar {
   float: left;
   display: block;

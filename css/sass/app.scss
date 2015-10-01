@@ -302,6 +302,10 @@ h6 { font-size: 1.5rem; line-height: 1; }
   }
 }
 
+.widget-map {
+  margin: 0 0 20px;
+}
+
 .archive-sidebar {
   @include span-columns(4);
   list-style: none;
