@@ -13,6 +13,13 @@ body {
   color: #222;
 }
 
+p,
+dl,
+ul,
+pre {
+  margin: 0 0 1em;
+}
+
 h1,
 h2,
 h3,
@@ -287,6 +294,58 @@ h6 { font-size: 1.5rem; line-height: 1; }
       font-size: 90%;
       color: #999;
       font-style: italic;
+    }
+  }
+}
+
+
+.newsroom-list-posts {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-bottom: 20px;
+      article {
+        .list-posts-thumbnail {
+          margin: 0 0 10px;
+          width: 100%;
+          height: 112px;
+          overflow: hidden;
+          position: relative;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .list-posts-post-content {
+          p {
+            font-size: 1em;
+            color: #666;
+          }
+        }
+      }
+      &.no-thumbnail {
+        background: #f4f4f4;
+      }
+    }
+  }
+  &.per-row-4 {
+    li {
+      @include span-columns(3);
+      @include omega(4n);
+    }
+  }
+  &.per-row-3 {
+    li {
+      @include span-columns(4);
+      @include omega(3n);
+    }
+  }
+  &.per-row-2 {
+    li {
+      @include span-columns(6);
+      @include omega(2n);
     }
   }
 }
