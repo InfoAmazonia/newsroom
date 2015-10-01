@@ -385,7 +385,8 @@ h6 {
   margin: 0 0 20px;
 }
 
-.archive-sidebar {
+.archive-sidebar,
+.search-sidebar {
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -393,14 +394,17 @@ h6 {
   list-style: none;
   padding: 0;
 }
-.archive-sidebar:last-child {
+.archive-sidebar:last-child,
+.search-sidebar:last-child {
   margin-right: 0;
 }
-.archive-sidebar > .widget {
+.archive-sidebar > .widget,
+.search-sidebar > .widget {
   margin: 0 0 20px;
   padding: 0;
 }
-.archive-sidebar > .widget h2 {
+.archive-sidebar > .widget h2,
+.search-sidebar > .widget h2 {
   font-size: 2.8rem;
 }
 

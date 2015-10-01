@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-01 18:51-0300\n"
+"POT-Creation-Date: 2015-10-01 18:54-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,6 +67,10 @@ msgstr ""
 
 #: functions.php:97
 msgid "Archive sidebar"
+msgstr ""
+
+#: functions.php:103
+msgid "Search results sidebar"
 msgstr ""
 
 #: header.php:17
@@ -279,4 +283,8 @@ msgstr ""
 
 #: inc/widgets/single-map.php:60
 msgid "Map height"
+msgstr ""
+
+#: search.php:22
+msgid "Search results for:"
 msgstr ""

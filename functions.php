@@ -99,6 +99,12 @@ function newsroom_setup() {
 		'before_title' => '<h2 class="widget-title">',
 		'after_title' => '</h2>'
 	));
+	register_sidebar(array(
+		'name' => __('Search results sidebar', 'newsroom'),
+		'id' => 'search',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>'
+	));
 }
 add_action('after_setup_theme', 'newsroom_setup', 100);
 
