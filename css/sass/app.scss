@@ -307,8 +307,11 @@ h6 { font-size: 1.5rem; line-height: 1; }
   list-style: none;
   padding: 0;
   > .widget {
-    margin: 0;
+    margin: 0 0 20px;
     padding: 0;
+    h2 {
+      font-size: 2.8rem;
+    }
   }
 }
 
