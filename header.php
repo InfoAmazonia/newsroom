@@ -25,7 +25,7 @@
 </head>
 <body <?php body_class(get_bloginfo('language')); ?>>
 	<header id="masthead">
-		<div class="row">
+		<div>
 			<div class="site-meta">
 				<?php newsroom_logo(); ?>
 			</div>
@@ -38,7 +38,7 @@
 				<?php // wp_nav_menu(array('theme_location' => 'header_menu')); ?>
 			</nav>
 		</div>
-		<div class="row">
+		<div>
 			<nav id="mastnav">
 				<?php wp_nav_menu(array('theme_location' => 'header_menu')); ?>
 	      <?php get_search_form(); ?>
