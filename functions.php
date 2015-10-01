@@ -78,27 +78,29 @@ function newsroom_setup() {
 		'footer_menu' => __('Footer menu', 'newsroom')
 	));
 
+	unregister_sidebar('front_page');
+
 	//sidebars
 	register_sidebar(array(
-		'name' => __('Post sidebar', 'jeo'),
+		'name' => __('Post sidebar', 'newsroom'),
 		'id' => 'post',
 		'before_title' => '<h2 class="widget-title">',
 		'after_title' => '</h2>'
 	));
 	register_sidebar(array(
-		'name' => __('General sidebar', 'jeo'),
+		'name' => __('General sidebar', 'newsroom'),
 		'id' => 'general',
 		'before_title' => '<h2 class="widget-title">',
 		'after_title' => '</h2>'
 	));
 	register_sidebar(array(
-		'name' => __('Front page', 'jeo'),
-		'id' => 'front_page',
+		'name' => __('Archive sidebar', 'newsroom'),
+		'id' => 'archive',
 		'before_title' => '<h2 class="widget-title">',
 		'after_title' => '</h2>'
 	));
 }
-add_action('after_setup_theme', 'newsroom_setup');
+add_action('after_setup_theme', 'newsroom_setup', 100);
 
 /*
  * Newsroom widgets

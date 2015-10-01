@@ -33,6 +33,12 @@ get_header(); ?>
 				endif;
 			?></h1>
 
+    <div class="row">
+      <?php jeo_map(); ?>
+    </div>
+    <ul class="archive-sidebar">
+      <?php dynamic_sidebar('archive'); ?>
+    </ul>
 		<?php get_template_part( 'loop' ); ?>
 
 	</div><!-- #content .site-content -->

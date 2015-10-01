@@ -381,76 +381,67 @@ h6 {
   font-style: italic;
 }
 
-.newsroom-list-posts ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.newsroom-list-posts ul li {
-  margin-bottom: 20px;
-}
-.newsroom-list-posts ul li article .list-posts-thumbnail {
-  margin: 0 0 10px;
-  width: 100%;
-  height: 112px;
-  overflow: hidden;
-  position: relative;
-}
-.newsroom-list-posts ul li article .list-posts-thumbnail img {
-  width: 100%;
-  height: auto;
-}
-.newsroom-list-posts ul li article .list-posts-post-content p {
-  font-size: 1em;
-  color: #666;
-}
-.newsroom-list-posts ul li.no-thumbnail {
-  background: #f4f4f4;
-}
-.newsroom-list-posts.per-row-4 li {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%;
-}
-.newsroom-list-posts.per-row-4 li:last-child {
-  margin-right: 0;
-}
-.newsroom-list-posts.per-row-4 li:nth-child(4n) {
-  margin-right: 0;
-}
-.newsroom-list-posts.per-row-4 li:nth-child(4n+1) {
-  clear: left;
-}
-.newsroom-list-posts.per-row-3 li {
+.archive-sidebar {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
+  list-style: none;
+  padding: 0;
 }
-.newsroom-list-posts.per-row-3 li:last-child {
+.archive-sidebar:last-child {
   margin-right: 0;
 }
-.newsroom-list-posts.per-row-3 li:nth-child(3n) {
-  margin-right: 0;
+.archive-sidebar > .widget {
+  margin: 0;
+  padding: 0;
 }
-.newsroom-list-posts.per-row-3 li:nth-child(3n+1) {
-  clear: left;
-}
-.newsroom-list-posts.per-row-2 li {
+
+.post-list {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
+  width: 65.88078%;
 }
-.newsroom-list-posts.per-row-2 li:last-child {
+.post-list:last-child {
   margin-right: 0;
 }
-.newsroom-list-posts.per-row-2 li:nth-child(2n) {
-  margin-right: 0;
+.post-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.newsroom-list-posts.per-row-2 li:nth-child(2n+1) {
-  clear: left;
+.post-list ul li {
+  margin-bottom: 20px;
+}
+.post-list ul li article {
+  display: block;
+}
+.post-list ul li article::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.post-list ul li article .post-list-thumbnail {
+  margin: 0 20px 20px 0;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.post-list ul li article .post-list-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+.post-list ul li article .post-list-post-content p.date {
+  font-size: 1em;
+  color: #666;
+}
+.post-list ul li article .post-list-post-content .excerpt {
+  font-size: 20px;
+}
+.post-list ul li.no-thumbnail {
+  background: #f4f4f4;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

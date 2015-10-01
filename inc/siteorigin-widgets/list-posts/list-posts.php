@@ -36,7 +36,8 @@ class Newsroom_List_Posts_Widget extends SiteOrigin_Widget {
           'options' => array(
             '4' => '4',
             '3' => '3',
-            '2' => '2'
+            '2' => '2',
+            '1' => '1'
           ),
           'default' => 4
         )
