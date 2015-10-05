@@ -425,6 +425,17 @@ h6 {
 .search-sidebar > .widget h2 {
   font-size: 2.8rem;
 }
+.archive-sidebar > .widget .post-list,
+.search-sidebar > .widget .post-list {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+.archive-sidebar > .widget .post-list:last-child,
+.search-sidebar > .widget .post-list:last-child {
+  margin-right: 0;
+}
 
 .post-list {
   float: left;

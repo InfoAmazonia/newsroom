@@ -330,6 +330,9 @@ h6 { font-size: 1.5rem; line-height: 1; }
     h2 {
       font-size: 2.8rem;
     }
+    .post-list {
+      @include span-columns(12);
+    }
   }
 }
 
