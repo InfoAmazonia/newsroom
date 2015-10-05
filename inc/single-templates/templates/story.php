@@ -36,7 +36,6 @@
 			?>
 			<?php comments_template(); ?>
 		</section>
-    <div class="clear">
 		<aside id="sidebar">
 			<ul class="widgets">
 				<?php dynamic_sidebar('post'); ?>

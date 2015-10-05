@@ -29,6 +29,9 @@
       }
       &.no-thumbnail {
         background: #f4f4f4;
+        article {
+          padding: 10px;
+        }
       }
     }
   }
