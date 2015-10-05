@@ -1,8 +1,6 @@
 <?php
 $query_args = newsroom_pb_parse_query($instance['posts']);
 $query_args['without_map_query'] = 1;
-// unset($query_args['additional']);
-print_r($query_args);
 $square_posts_query = new WP_Query($query_args);
 if($square_posts_query->have_posts()) :
   ?>
