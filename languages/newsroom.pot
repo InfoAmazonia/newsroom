@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-01 18:54-0300\n"
+"POT-Creation-Date: 2015-10-05 13:37-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,35 +17,35 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: archive.php:24
+#: archive.php:42
 #, php-format
 msgid "%s"
 msgstr ""
 
-#: archive.php:26
+#: archive.php:44
 #, php-format
 msgid "Daily Archives: %s"
 msgstr ""
 
-#: archive.php:28
+#: archive.php:46
 #, php-format
 msgid "Monthly Archives: %s"
 msgstr ""
 
-#: archive.php:28
+#: archive.php:46
 msgid "F Y"
 msgstr ""
 
-#: archive.php:30
+#: archive.php:48
 #, php-format
 msgid "Yearly Archives: %s"
 msgstr ""
 
-#: archive.php:30
+#: archive.php:48
 msgid "Y"
 msgstr ""
 
-#: archive.php:32
+#: archive.php:50
 msgid "Archives"
 msgstr ""
 
