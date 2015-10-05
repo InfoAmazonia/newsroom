@@ -493,4 +493,38 @@ h6 {
   padding: 20px;
 }
 
+#colophon {
+  padding: 2em 0;
+  background: #405ca6;
+  color: #fff;
+}
+#colophon #footer-nav {
+  padding: 0 0 2em;
+}
+#colophon #footer-nav ul {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#colophon #footer-nav ul li {
+  display: inline;
+  margin: 0 2em 0 0;
+  padding: 0;
+}
+#colophon a {
+  color: #fff;
+}
+#colophon .footer-content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+#colophon .footer-content::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 /*# sourceMappingURL=main.css.map */

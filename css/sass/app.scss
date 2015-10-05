@@ -384,3 +384,30 @@ h6 { font-size: 1.5rem; line-height: 1; }
     }
   }
 }
+
+#colophon {
+  @include pad(2em 0);
+  background: #405ca6;
+  color: #fff;
+  #footer-nav {
+    @include pad(0 0 2em);
+    ul {
+      list-style: none;
+      display: block;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      li {
+        display: inline;
+        margin: 0 2em 0 0;
+        padding: 0;
+      }
+    }
+  }
+  a {
+    color: #fff;
+  }
+  .footer-content {
+    @include outer-container;
+  }
+}
