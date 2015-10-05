@@ -168,6 +168,23 @@ function newsroom_jeo_scripts() {
 }
 add_action('jeo_enqueue_scripts', 'newsroom_jeo_scripts', 20);
 
+function newsroom_pb_parse_query($pb_query) {
+	$query = wp_parse_args($pb_query);
+	if($query['tax_query']) {
+		$tax_args = explode(',', $query['tax_query']);
+		$query['tax_query'] = array();
+		foreach($tax_args as $tax_arg) {
+			$tax_arg = explode(':', $tax_arg);
+			$query['tax_query'][] = array(
+				'taxonomy' => $tax_arg[0],
+				'field' => 'slug',
+				'terms' => $tax_arg[1]
+			);
+		}
+	}
+	return $query;
+}
+
 // Single templates
 include_once(STYLESHEETPATH . '/inc/single-templates/single-templates.php');
 

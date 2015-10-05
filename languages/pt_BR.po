@@ -7,19 +7,51 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-30 14:14-0300\n"
-"PO-Revision-Date: 2015-09-30 14:59-0300\n"
+"POT-Creation-Date: 2015-10-05 15:36-0300\n"
+"PO-Revision-Date: 2015-10-05 15:37-0300\n"
 "Last-Translator: Miguel Peixe <miguel@cardume.art.br>\n"
 "Language-Team: \n"
+"Language: Português\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"Language: Português\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
+
+#: archive.php:42
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: archive.php:44
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Arquivos do dia: %s"
+
+#: archive.php:46
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Arquivos do mês: %s"
+
+#: archive.php:46
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:48
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Arquivos do ano: %s"
+
+#: archive.php:48
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:50
+msgid "Archives"
+msgstr "Arquivos"
 
 #: functions.php:77
 msgid "Header menu"
@@ -29,17 +61,21 @@ msgstr "Menu do cabeçalho"
 msgid "Footer menu"
 msgstr "Menu do rodapé"
 
-#: functions.php:83
+#: functions.php:85
 msgid "Post sidebar"
 msgstr "Barra lateral do post"
 
-#: functions.php:89
+#: functions.php:91
 msgid "General sidebar"
 msgstr "Barra lateral geral"
 
-#: functions.php:95
-msgid "Front page"
-msgstr "Página inicial"
+#: functions.php:97
+msgid "Archive sidebar"
+msgstr "Barra lateral dos arquivos"
+
+#: functions.php:103
+msgid "Search results sidebar"
+msgstr "Barra lateral dos resultados de busca"
 
 #: header.php:17
 msgid "Page"
@@ -61,11 +97,15 @@ msgstr "Imagem destacada do post"
 msgid "Post image gallery"
 msgstr "Galeria de imagens do post"
 
-#: inc/featured-media/featured-media.php:47
+#: inc/featured-media/featured-media.php:47 inc/widgets/single-map.php:48
+msgid "Map"
+msgstr "Mapa"
+
+#: inc/featured-media/featured-media.php:51
 msgid "Post media"
 msgstr "Mídia do post"
 
-#: inc/featured-media/featured-media.php:47
+#: inc/featured-media/featured-media.php:51
 #, php-format
 msgid ""
 "(First external media attached to post content. <a href=\"%s\">See available "
@@ -243,10 +283,6 @@ msgstr "Exibir um mapa"
 msgid "Title"
 msgstr "Título"
 
-#: inc/widgets/single-map.php:48
-msgid "Map"
-msgstr "Mapa"
-
 #: inc/widgets/single-map.php:57
 msgid "Display map posts"
 msgstr "Exibir posts do mapa"
@@ -254,3 +290,10 @@ msgstr "Exibir posts do mapa"
 #: inc/widgets/single-map.php:60
 msgid "Map height"
 msgstr "Altura do mapa"
+
+#: search.php:22
+msgid "Search results for:"
+msgstr "Resultados da busca por:"
+
+#~ msgid "Front page"
+#~ msgstr "Página inicial"
