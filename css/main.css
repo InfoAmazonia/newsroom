@@ -221,6 +221,10 @@ h6 {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 85%;
+  float: right;
+  margin-top: 2px;
+  margin-left: 5px;
 }
 #masthead #mastnav ul.menu li.menu-item-has-children:hover:after {
   content: "\e621";
