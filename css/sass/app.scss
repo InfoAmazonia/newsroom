@@ -294,6 +294,11 @@ h6 { font-size: 1.5rem; line-height: 1; }
     @include row();
     font-size: 22px;
     float: none;
+    h2,
+    h3,
+    h4 {
+      margin: 1em 0 2em;
+    }
     .wp-caption-text {
       font-size: 90%;
       color: #999;
