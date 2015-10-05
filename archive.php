@@ -51,6 +51,12 @@ get_header(); ?>
 					endif;
 				?>
 			</h1>
+
+			<?php if(is_tag() || is_category() || is_tax()) : ?>
+				<div class="term-description">
+					<?php echo term_description(); ?>
+				</div>
+			<?php endif; ?>
 		</header>
 
     <div class="row">

@@ -399,6 +399,9 @@ h6 {
   margin: 0;
   text-transform: uppercase;
 }
+.archive-header .term-description {
+  font-size: 20px;
+}
 
 .archive-sidebar,
 .search-sidebar {
