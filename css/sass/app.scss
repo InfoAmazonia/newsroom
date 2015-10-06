@@ -53,6 +53,17 @@ h4 { font-size: 2.4rem; line-height: 1; }
 h5 { font-size: 2.0rem; line-height: 1; }
 h6 { font-size: 1.5rem; line-height: 1; }
 
+
+#masthead,
+.content-area {
+  @include outer-container;
+}
+
+.row {
+  @include fill-parent();
+  @include row();
+}
+
 @include media($mobile) {
   body {
     font-size: .9em;
@@ -68,16 +79,9 @@ h6 { font-size: 1.5rem; line-height: 1; }
   img {
     max-width: 100%;
   }
-}
-
-#masthead,
-.content-area {
-  @include outer-container;
-}
-
-.row {
-  @include fill-parent();
-  @include row();
+  .content-area {
+    @include pad(0 5px);
+  }
 }
 
 .newsroom-section-title {
@@ -359,6 +363,12 @@ h6 { font-size: 1.5rem; line-height: 1; }
       font-size: 90%;
       color: #999;
       font-style: italic;
+    }
+  }
+  @include media($mobile) {
+    .content {
+      @include span-columns(12 of 12);
+      @include shift(0);
     }
   }
 }
