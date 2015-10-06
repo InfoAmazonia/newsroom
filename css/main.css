@@ -121,6 +121,12 @@ h6 {
   content: '\00bb';
   color: #848484;
 }
+@media screen and (max-width: 480px) {
+  .newsroom-section-title h2,
+  .newsroom-section-title h3 {
+    padding: 0 5px;
+  }
+}
 
 #masthead {
   padding: 1.5em 0;

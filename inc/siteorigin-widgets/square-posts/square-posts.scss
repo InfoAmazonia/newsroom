@@ -1,6 +1,8 @@
 @import "../../../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../../../bower_components/neat/app/assets/stylesheets/neat";
 
+$mobile: new-breakpoint(max-width 480px 4);
+
 .newsroom-square-posts {
   ul {
     list-style: none;
@@ -58,6 +60,20 @@
     li {
       @include span-columns(6);
       @include omega(2n);
+    }
+  }
+  @include media($mobile) {
+    &,
+    &.per-row-4,
+    &.per-row-3,
+    &.per-row-2 {
+      li {
+        @include span-columns(12 of 12);
+        @include row();
+        article {
+          margin: 0 5px;
+        }
+      }
     }
   }
 }

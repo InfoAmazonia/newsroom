@@ -91,5 +91,25 @@ html {
 .newsroom-square-posts.per-row-2 li:nth-child(2n+1) {
   clear: left;
 }
+@media screen and (max-width: 480px) {
+  .newsroom-square-posts li, .newsroom-square-posts.per-row-4 li, .newsroom-square-posts.per-row-3 li, .newsroom-square-posts.per-row-2 li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    display: block;
+  }
+  .newsroom-square-posts li:last-child, .newsroom-square-posts.per-row-4 li:last-child, .newsroom-square-posts.per-row-3 li:last-child, .newsroom-square-posts.per-row-2 li:last-child {
+    margin-right: 0;
+  }
+  .newsroom-square-posts li::after, .newsroom-square-posts.per-row-4 li::after, .newsroom-square-posts.per-row-3 li::after, .newsroom-square-posts.per-row-2 li::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .newsroom-square-posts li article, .newsroom-square-posts.per-row-4 li article, .newsroom-square-posts.per-row-3 li article, .newsroom-square-posts.per-row-2 li article {
+    margin: 0 5px;
+  }
+}
 
 /*# sourceMappingURL=square-posts.css.map */

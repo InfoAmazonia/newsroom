@@ -1,6 +1,8 @@
 @import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../../bower_components/neat/app/assets/stylesheets/neat";
 
+$mobile: new-breakpoint(max-width 480px 4);
+
 html {
   font-size: 62.5%;
 }
@@ -73,6 +75,12 @@ h6 { font-size: 1.5rem; line-height: 1; }
         content: '\00bb';
         color: #848484;
       }
+    }
+  }
+  @include media($mobile) {
+    h2,
+    h3 {
+      @include pad(0 5px);
     }
   }
 }
