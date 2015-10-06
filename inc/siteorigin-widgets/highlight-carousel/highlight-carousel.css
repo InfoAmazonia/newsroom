@@ -11,6 +11,11 @@ html {
   height: 380px;
   overflow: hidden;
 }
+@media screen and (max-width: 480px) {
+  .newsroom-highlight-carousel {
+    height: 540px;
+  }
+}
 .newsroom-highlight-carousel ul {
   list-style: none;
   margin: 0;
@@ -61,6 +66,22 @@ html {
 }
 .newsroom-highlight-carousel ul li article .highlight-carousel-post-content .date {
   color: #666;
+}
+@media screen and (max-width: 480px) {
+  .newsroom-highlight-carousel ul li article .highlight-carousel-thumbnail,
+  .newsroom-highlight-carousel ul li article .highlight-carousel-post-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .newsroom-highlight-carousel ul li article .highlight-carousel-thumbnail:last-child,
+  .newsroom-highlight-carousel ul li article .highlight-carousel-post-content:last-child {
+    margin-right: 0;
+  }
+  .newsroom-highlight-carousel ul li article .highlight-carousel-post-content {
+    padding: 5px;
+  }
 }
 .newsroom-highlight-carousel nav {
   position: absolute;
