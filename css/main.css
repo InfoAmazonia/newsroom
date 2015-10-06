@@ -6,6 +6,10 @@ html {
   box-sizing: inherit;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
   font-size: 1.5em;

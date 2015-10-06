@@ -147,6 +147,7 @@ function newsroom_jeo_scripts() {
 
 	// JS libraries
 	wp_register_script('fitvids', get_stylesheet_directory_uri() . '/lib/jquery.fitvids.js', array('jquery'), '1.1');
+	wp_register_script('hammer.js', get_stylesheet_directory_uri() . '/lib/hammerjs/hammer.min.js');
 
 
 	// CSS Dependencies
