@@ -84,6 +84,41 @@ h6 {
   line-height: 1;
 }
 
+@media screen and (max-width: 480px) {
+  body {
+    font-size: .9em;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    line-height: 1;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+
+  h5 {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  h6 {
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
 #masthead,
 .content-area {
   max-width: 68em;
