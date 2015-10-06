@@ -113,27 +113,27 @@ h6 {
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 2.7rem;
+    font-size: 3.0rem;
     line-height: 1;
   }
 
   h2 {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     line-height: 1;
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     line-height: 1;
   }
 
   h4 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     line-height: 1;
   }
 
   h5 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1;
   }
 
@@ -465,6 +465,7 @@ h6 {
   color: #999;
   font-style: italic;
 }
+#primary .content .wp-caption,
 #primary .content img {
   max-width: 100%;
   height: auto;
