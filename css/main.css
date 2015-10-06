@@ -6,16 +6,16 @@ html {
   box-sizing: inherit;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
   color: #222;
+}
+
+body.newsroom-mobile {
+  margin-top: 50px !important;
 }
 
 p,
@@ -263,6 +263,31 @@ h6 {
 }
 #masthead #mastnav form {
   float: right;
+}
+
+.mobile-header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  padding: 5px;
+}
+.mobile-header .logo {
+  width: 65%;
+  display: block;
+}
+.mobile-header .logo.with-image a {
+  display: block;
+  text-indent: -9999px;
+  line-height: 0;
+  font-size: 1px;
+}
+.mobile-header .logo.with-image a img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .map-container {

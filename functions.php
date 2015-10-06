@@ -34,24 +34,24 @@ add_action('tgmpa_register', 'newsroom_register_required_plugins');
 
 require_once(STYLESHEETPATH . '/inc/theme-options.php');
 
-function newsroom_logo() {
+function newsroom_logo($mobile = false) {
 	$logo = newsroom_get_logo();
 	if($logo) {
 		?>
-		<h1 class="has-logo">
+		<?php echo $mobile ? '<span class="logo with-image">' : '<h1 class="has-logo">'; ?>
 			<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>">
 				<?php bloginfo('name'); ?>
 				<?php echo $logo; ?>
 			</a>
-		</h1>
+		<?php echo $mobile ? '</span>' : '</h1>'; ?>
 		<?php
 	} else {
 		?>
-		<h1>
+		<?php echo $mobile ? '<span class="logo">' : '<h1>'; ?>
 			<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>">
 				<?php bloginfo('name'); ?>
 			</a>
-		</h1>
+		<?php echo $mobile ? '</span>' : '</h1>'; ?>
 		<?php
 	}
 }

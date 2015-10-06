@@ -46,3 +46,6 @@
 			</nav>
 		</div>
 	</header>
+	<div class="mobile-header" style="display:none;">
+		<?php newsroom_logo(true); ?>
+	</div>

@@ -3,16 +3,16 @@
 
 $mobile: new-breakpoint(max-width 480px 4);
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
   color: #222;
+}
+
+body.newsroom-mobile {
+  margin-top: 50px !important;
 }
 
 p,
@@ -199,6 +199,33 @@ h6 { font-size: 1.5rem; line-height: 1; }
     }
     form {
       float: right;
+    }
+  }
+}
+
+.mobile-header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  padding: 5px;
+  .logo {
+    width: 65%;
+    display: block;
+    &.with-image {
+      a {
+        display: block;
+        text-indent: -9999px;
+        line-height: 0;
+        font-size: 1px;
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
     }
   }
 }
