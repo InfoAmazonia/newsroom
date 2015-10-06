@@ -63,6 +63,11 @@ h6 { font-size: 1.5rem; line-height: 1; }
   h4 { font-size: 1.4rem; line-height: 1; }
   h5 { font-size: 1rem; line-height: 1; }
   h6 { font-size: 1rem; line-height: 1; }
+  input,
+  textarea,
+  img {
+    max-width: 100%;
+  }
 }
 
 #masthead,
