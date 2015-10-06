@@ -112,10 +112,6 @@ h6 {
 }
 
 @media screen and (max-width: 480px) {
-  body {
-    font-size: .9em;
-  }
-
   h1 {
     font-size: 2.7rem;
     line-height: 1;
@@ -468,6 +464,10 @@ h6 {
   font-size: 90%;
   color: #999;
   font-style: italic;
+}
+#primary .content img {
+  max-width: 100%;
+  height: auto;
 }
 @media screen and (max-width: 480px) {
   #primary .content {
