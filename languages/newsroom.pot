@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-07 16:33-0300\n"
+"POT-Creation-Date: 2015-10-07 16:38-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,6 +135,10 @@ msgstr ""
 #: inc/single-templates/templates/sequence.php:31
 #: inc/single-templates/templates/story.php:32 page.php:12
 msgid "Pages:"
+msgstr ""
+
+#: inc/single-templates/templates/story.php:41
+msgid "Share this story"
 msgstr ""
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:11

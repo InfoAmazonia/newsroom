@@ -38,7 +38,7 @@
 				<?php comments_template(); ?>
 			</section>
 			<aside id="share">
-				<p>Share this story</p>
+				<p><?php _e('Share this story', 'newsroom'); ?></p>
 				<ul>
 					<li>
 						<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="box_count" data-show-faces="false" data-send="false"></div>
