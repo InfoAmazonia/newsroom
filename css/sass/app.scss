@@ -355,12 +355,15 @@ h6 { font-size: 1.5rem; line-height: 1; }
       }
     }
   }
-  .content {
-    @include span-columns(8);
-    @include shift(2);
+  .content-container {
+    @include span-columns(12);
     @include row();
-    font-size: 22px;
     float: none;
+  }
+  .content {
+    @include span-columns(8 of 12);
+    @include shift(2 of 12);
+    font-size: 22px;
     h2,
     h3,
     h4 {
@@ -380,10 +383,32 @@ h6 { font-size: 1.5rem; line-height: 1; }
       height: auto;
     }
   }
+  #share {
+    @include span-columns(2 of 12);
+    p {
+      font-weight: 600;
+      text-align: right;
+      font-style: italic;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin: 0 0 20px 30px;
+        padding: 0;
+        float: right;
+        @include clearfix;
+      }
+    }
+  }
   @include media($mobile) {
     .content {
       @include span-columns(12 of 12);
       @include shift(0);
+    }
+    #share {
+      display: none;
     }
   }
 }
@@ -466,6 +491,9 @@ h6 { font-size: 1.5rem; line-height: 1; }
   @include pad(2em 0);
   background: #415ba8;
   color: #fff;
+  p {
+    color: #fff;
+  }
   #footer-nav {
     @include pad(0 0 2em);
     ul {

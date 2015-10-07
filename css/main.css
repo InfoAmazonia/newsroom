@@ -443,23 +443,32 @@ h6 {
 #primary .post-meta .terms .tax-item ul li a:hover {
   color: #333;
 }
+#primary .content-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  display: block;
+  float: none;
+}
+#primary .content-container:last-child {
+  margin-right: 0;
+}
+#primary .content-container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
 #primary .content {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%;
   margin-left: 17.05961%;
-  display: block;
   font-size: 22px;
-  float: none;
 }
 #primary .content:last-child {
   margin-right: 0;
-}
-#primary .content::after {
-  clear: both;
-  content: "";
-  display: table;
 }
 #primary .content h2,
 #primary .content h3,
@@ -479,6 +488,35 @@ h6 {
   max-width: 100%;
   height: auto;
 }
+#primary #share {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+}
+#primary #share:last-child {
+  margin-right: 0;
+}
+#primary #share p {
+  font-weight: 600;
+  text-align: right;
+  font-style: italic;
+}
+#primary #share ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#primary #share ul li {
+  margin: 0 0 20px 30px;
+  padding: 0;
+  float: right;
+}
+#primary #share ul li::after {
+  clear: both;
+  content: "";
+  display: table;
+}
 @media screen and (max-width: 480px) {
   #primary .content {
     float: left;
@@ -489,6 +527,9 @@ h6 {
   }
   #primary .content:last-child {
     margin-right: 0;
+  }
+  #primary #share {
+    display: none;
   }
 }
 
@@ -598,6 +639,9 @@ h6 {
 #colophon {
   padding: 2em 0;
   background: #415ba8;
+  color: #fff;
+}
+#colophon p {
   color: #fff;
 }
 #colophon #footer-nav {

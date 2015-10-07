@@ -71,6 +71,13 @@ class Newsroom_Options {
 			'newsroom_options'
 		);
 
+		add_settings_section(
+			'newsroom_social_apis_section',
+			__('Social APIs', 'newsroom'),
+			'',
+			'newsroom_options'
+		);
+
 		add_settings_field(
 			'newsroom_style',
 			__('Choose a style', 'newsroom'),
@@ -109,6 +116,14 @@ class Newsroom_Options {
 			array($this, 'legal_disclaimer_field'),
 			'newsroom_options',
 			'newsroom_links_section'
+		);
+
+		add_settings_field(
+			'newsroom_facebook_client_id',
+			__('Facebook App ID', 'newsroom'),
+			array($this, 'facebook_api_field'),
+			'newsroom_options',
+			'newsroom_social_apis_section'
 		);
 
 		register_setting('newsroom_options_group', 'newsroom_options');
@@ -161,6 +176,13 @@ class Newsroom_Options {
 		<?php
 	}
 
+	function facebook_api_field() {
+		$app_id = $this->options['facebook_client_id'];
+		?>
+		<input type="text" size="80" id="newsroom_facebook_client_id" name="newsroom_options[facebook_client_id]" value="<?php echo $app_id; ?>" />
+		<?php
+	}
+
 }
 
 if(is_admin())
@@ -207,4 +229,13 @@ function newsroom_get_legal_disclaimer() {
 		return false;
 	}
 
+}
+
+function newsroom_get_fb_client_id() {
+	$options = get_option('newsroom_options');
+	if($options['facebook_client_id']) {
+		return $options['facebook_client_id'];
+	}	 else {
+		return false;
+	}
 }

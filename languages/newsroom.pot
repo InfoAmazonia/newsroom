@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-07 15:06-0300\n"
+"POT-Creation-Date: 2015-10-07 16:33-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,7 +133,7 @@ msgid "Select the template to display this post"
 msgstr ""
 
 #: inc/single-templates/templates/sequence.php:31
-#: inc/single-templates/templates/story.php:31 page.php:12
+#: inc/single-templates/templates/story.php:32 page.php:12
 msgid "Pages:"
 msgstr ""
 
@@ -246,30 +246,38 @@ msgid "Links"
 msgstr ""
 
 #: inc/theme-options.php:76
+msgid "Social APIs"
+msgstr ""
+
+#: inc/theme-options.php:83
 msgid "Choose a style"
 msgstr ""
 
-#: inc/theme-options.php:84
+#: inc/theme-options.php:91
 msgid "Upload a custom logo"
 msgstr ""
 
-#: inc/theme-options.php:92
+#: inc/theme-options.php:99
 msgid "Facebook url"
 msgstr ""
 
-#: inc/theme-options.php:100
+#: inc/theme-options.php:107
 msgid "Twitter url"
 msgstr ""
 
-#: inc/theme-options.php:108
+#: inc/theme-options.php:115
 msgid "Legal disclaimer"
 msgstr ""
 
-#: inc/theme-options.php:132
+#: inc/theme-options.php:123
+msgid "Facebook App ID"
+msgstr ""
+
+#: inc/theme-options.php:147
 msgid "Logo url"
 msgstr ""
 
-#: inc/theme-options.php:133
+#: inc/theme-options.php:148
 msgid "Upload"
 msgstr ""
 
