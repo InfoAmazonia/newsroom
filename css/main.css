@@ -27,10 +27,15 @@ dl,
 ul,
 pre {
   margin: 0 0 1em;
+  color: #222;
 }
 
 .row {
   margin: 0 0 2em;
+}
+
+a {
+  color: #0fa4d4;
 }
 
 h1,
@@ -390,10 +395,11 @@ h6 {
   border-bottom: 1px solid #ccc;
 }
 #primary .post-meta .byline {
-  color: #666;
   font-size: 20px;
+  font-style: italic;
 }
 #primary .post-meta .byline p {
+  color: #666;
   display: inline;
   margin-right: 10px;
 }
@@ -459,6 +465,9 @@ h6 {
 #primary .content h3,
 #primary .content h4 {
   margin: 2em 0 1em;
+}
+#primary .content a {
+  font-style: italic;
 }
 #primary .content .wp-caption-text {
   font-size: 90%;
@@ -588,7 +597,7 @@ h6 {
 
 #colophon {
   padding: 2em 0;
-  background: #405ca6;
+  background: #415ba8;
   color: #fff;
 }
 #colophon #footer-nav {

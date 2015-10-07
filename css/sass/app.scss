@@ -24,10 +24,15 @@ dl,
 ul,
 pre {
   margin: 0 0 1em;
+  color: #222;
 }
 
 .row {
   margin: 0 0 2em;
+}
+
+a {
+  color: #0fa4d4;
 }
 
 h1,
@@ -306,9 +311,10 @@ h6 { font-size: 1.5rem; line-height: 1; }
     margin-bottom: 2em;
     border-bottom: 1px solid #ccc;
     .byline {
-      color: #666;
       font-size: 20px;
+      font-style: italic;
       p {
+        color: #666;
         display: inline;
         margin-right: 10px;
       }
@@ -359,6 +365,9 @@ h6 { font-size: 1.5rem; line-height: 1; }
     h3,
     h4 {
       margin: 2em 0 1em;
+    }
+    a {
+      font-style: italic;
     }
     .wp-caption-text {
       font-size: 90%;
@@ -455,7 +464,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
 
 #colophon {
   @include pad(2em 0);
-  background: #405ca6;
+  background: #415ba8;
   color: #fff;
   #footer-nav {
     @include pad(0 0 2em);
