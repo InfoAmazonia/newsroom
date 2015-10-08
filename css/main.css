@@ -554,12 +554,12 @@ h6 {
   height: auto;
 }
 #primary .content .newsroom-square-posts ul li article .square-posts-post-content {
-  line-height: 1.3;
+  line-height: 1;
   overflow: hidden;
 }
 #primary .content .newsroom-square-posts ul li article .square-posts-post-content h2,
 #primary .content .newsroom-square-posts ul li article .square-posts-post-content p {
-  font-size: .8em;
+  font-size: .75em;
   display: inline;
   margin: 0;
 }
