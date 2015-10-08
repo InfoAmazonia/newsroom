@@ -491,6 +491,27 @@ h6 {
   max-width: 100%;
   height: auto;
 }
+#primary .content #bottom-share {
+  display: block;
+}
+#primary .content #bottom-share::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#primary .content #bottom-share p {
+  font-weight: 600;
+  font-style: italic;
+}
+#primary .content #bottom-share ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#primary .content #bottom-share ul li {
+  float: left;
+  margin: 0 20px 0 0;
+}
 #primary #share {
   float: left;
   display: block;
