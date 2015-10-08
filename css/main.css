@@ -262,7 +262,7 @@ h6 {
   position: relative;
 }
 #masthead #mastnav ul.menu li a {
-  color: inherit;
+  color: #0fa4d4;
   text-decoration: none;
 }
 #masthead #mastnav ul.menu li.menu-item-has-children:after {
