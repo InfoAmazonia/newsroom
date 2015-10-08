@@ -63,6 +63,11 @@
 							</li>
 						</ul>
 					</aside>
+					<?php
+					if(function_exists('yarpp_related')) {
+						yarpp_related();
+					}
+					?>
 				<?php comments_template(); ?>
 			</section>
 		</div>

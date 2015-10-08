@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-08 17:04-0300\n"
+"POT-Creation-Date: 2015-10-08 18:01-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -308,4 +308,8 @@ msgstr ""
 
 #: search.php:22
 msgid "Search results for:"
+msgstr ""
+
+#: yarpp-template-newsroom.php:4
+msgid "You might also like"
 msgstr ""
