@@ -478,9 +478,6 @@ h6 {
 #primary .content h4 {
   margin: 2em 0 1em;
 }
-#primary .content a {
-  font-style: italic;
-}
 #primary .content .wp-caption-text {
   font-size: 90%;
   color: #999;
