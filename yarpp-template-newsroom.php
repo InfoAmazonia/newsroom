@@ -9,7 +9,7 @@ if(have_posts()) :
       the_post();
       ?>
       <li class="square-posts-item <?php if(!has_post_thumbnail()) echo 'no-thumbnail'; ?>">
-        <article id="<?php echo $instance['panels_info']['id']; ?>-square-posts-<?php the_ID(); ?>">
+        <article id="related-post-<?php the_ID(); ?>">
           <?php if(has_post_thumbnail()) : ?>
             <div class="square-posts-thumbnail">
             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('small-thumb'); ?></a>
