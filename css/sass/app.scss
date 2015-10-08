@@ -366,7 +366,6 @@ h6 { font-size: 1.5rem; line-height: 1; }
   }
   .content {
     @include span-columns(8 of 12);
-    @include shift(2 of 12);
     font-size: 22px;
     h2,
     h3,
@@ -391,7 +390,6 @@ h6 { font-size: 1.5rem; line-height: 1; }
     @include span-columns(2 of 12);
     p {
       font-weight: 600;
-      text-align: right;
       font-style: italic;
     }
     ul {
@@ -399,9 +397,8 @@ h6 { font-size: 1.5rem; line-height: 1; }
       margin: 0;
       padding: 0;
       li {
-        margin: 0 0 20px 30px;
+        margin: 0 0 20px;
         padding: 0;
-        float: right;
         @include clearfix;
       }
     }

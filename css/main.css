@@ -468,7 +468,6 @@ h6 {
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%;
-  margin-left: 17.05961%;
   font-size: 22px;
 }
 #primary .content:last-child {
@@ -503,7 +502,6 @@ h6 {
 }
 #primary #share p {
   font-weight: 600;
-  text-align: right;
   font-style: italic;
 }
 #primary #share ul {
@@ -512,9 +510,8 @@ h6 {
   padding: 0;
 }
 #primary #share ul li {
-  margin: 0 0 20px 30px;
+  margin: 0 0 20px;
   padding: 0;
-  float: right;
 }
 #primary #share ul li::after {
   clear: both;

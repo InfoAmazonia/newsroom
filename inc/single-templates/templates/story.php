@@ -25,18 +25,6 @@
 			</div>
 		</header>
 		<div class="content-container">
-			<section class="content">
-				<?php the_content(); ?>
-				<?php
-				wp_link_pages( array(
-					'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'newsroom' ) . '</span>',
-					'after'       => '</div>',
-					'link_before' => '<span>',
-					'link_after'  => '</span>',
-					) );
-					?>
-				<?php comments_template(); ?>
-			</section>
 			<aside id="share">
 				<p><?php _e('Share this story', 'newsroom'); ?></p>
 				<ul>
@@ -51,6 +39,18 @@
 					</li>
 				</ul>
 			</aside>
+			<section class="content">
+				<?php the_content(); ?>
+				<?php
+				wp_link_pages( array(
+					'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'newsroom' ) . '</span>',
+					'after'       => '</div>',
+					'link_before' => '<span>',
+					'link_after'  => '</span>',
+					) );
+					?>
+				<?php comments_template(); ?>
+			</section>
 		</div>
 		<aside id="sidebar">
 			<ul class="widgets">
