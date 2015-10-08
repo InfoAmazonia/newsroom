@@ -269,6 +269,9 @@ h6 { font-size: 1.5rem; line-height: 1; }
   .subhead {
     font-size: 24px;
     @include row();
+    p {
+      color: #415BA8;
+    }
   }
   .kicker {
     img {

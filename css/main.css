@@ -357,6 +357,9 @@ h6 {
   content: "";
   display: table;
 }
+#primary .subhead p {
+  color: #415BA8;
+}
 #primary .kicker img {
   display: block;
   max-width: 100%;
