@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
 <?php
-$page_title = __('Share a map', 'jeo');
+$page_title = __('Share a map', 'newsroom');
 $map = false;
 if($_GET['map_id']) {
 	$map = get_post($_GET['map_id']);
 	if($map && get_post_type($map->ID) == 'map')
-		$page_title = __('Share', 'jeo') . ' ' . get_the_title($map->ID);
+		$page_title = __('Share', 'newsroom') . ' ' . get_the_title($map->ID);
 	else
 		$map = false;
 }
@@ -17,7 +17,7 @@ $maps = get_posts(array('post_type' => 'map', 'posts_per_page' => -1));
 // Single map
 if(!$map && count($maps) <= 1) {
 	$map = array_shift($maps);
-	$page_title = __('Share the map', 'jeo');
+	$page_title = __('Share the map', 'newsroom');
 }
 
 // check for layer count
@@ -57,7 +57,7 @@ if($post_id) {
 			</div>
 		</div>
 	</header>
-	<div id="jeo-share-widget">
+	<div id="newsroom-share-widget">
 		<div id="configuration">
 			<div class="container row">
 				<?php
@@ -68,42 +68,42 @@ if($post_id) {
 						<div class='inner'>
 							<?php if(!$map) : ?>
 								<h4>
-									<?php _e('Choose a map', 'jeo'); ?>
+									<?php _e('Choose a map', 'newsroom'); ?>
 									<a class='tip' href='#'>
 										?
 										<span class="popup arrow-left">
-											<?php _e('Choose any map from the list', 'jeo'); ?>
+											<?php _e('Choose any map from the list', 'newsroom'); ?>
 										</span>
 									</a>
 								</h4>
 								<div id='maps'>
-									<select id="map-select" data-placeholder="<?php _e('Select a map', 'jeo'); ?>" class="chzn-select">
+									<select id="map-select" data-placeholder="<?php _e('Select a map', 'newsroom'); ?>" class="chzn-select">
 										<?php foreach($maps as $map) : ?>
 											<option value="<?php echo $map->ID; ?>"><?php echo get_the_title($map->ID); ?></option>
 										<?php endforeach; ?>
 									</select>
 									<?php if($allow_layers) : ?>
-										<a href="#" class="select-map-layers" style="display:block;margin-top:5px;"><?php _e('Select layers from this map', 'jeo'); ?></a>
+										<a href="#" class="select-map-layers" style="display:block;margin-top:5px;"><?php _e('Select layers from this map', 'newsroom'); ?></a>
 									<?php endif; ?>
 								</div>
 							<?php elseif($map && $layers) : ?>
 								<?php $map_id = $map->ID; ?>
 								<h4>
 									<?php if(!isset($_GET['layers'])) : ?>
-										<?php echo __('Select layers', 'jeo'); ?>
+										<?php echo __('Select layers', 'newsroom'); ?>
 									<?php else : ?>
-										<?php _e('Select layers', 'jeo'); ?>
+										<?php _e('Select layers', 'newsroom'); ?>
 									<?php endif; ?>
 									<a class="tip" href="#">
 										?
 										<span class="popup arrow-left">
-											<?php _e('Choose any layers from the list', 'jeo'); ?>
+											<?php _e('Choose any layers from the list', 'newsroom'); ?>
 										</span>
 									</a>
 								</h4>
 								<div id="maps">
 									<?php if($layers) : ?>
-										<select id="layers-select" data-placeholder="<?php _e('Select layers', 'jeo'); ?>" data-mapid="<?php echo $map_id; ?>" class="chzn-select" multiple>
+										<select id="layers-select" data-placeholder="<?php _e('Select layers', 'newsroom'); ?>" data-mapid="<?php echo $map_id; ?>" class="chzn-select" multiple>
 											<?php foreach($layers as $layer) : ?>
 												<?php
 												if(!is_array($layer)) :
@@ -115,15 +115,15 @@ if($post_id) {
 												<?php endforeach; ?>
 											</select>
 									<?php endif; ?>
-										<a class="clear-layers" href="#"><?php _e('Back to default layer configuration', 'jeo'); ?></a>
+										<a class="clear-layers" href="#"><?php _e('Back to default layer configuration', 'newsroom'); ?></a>
 										<?php if(count($maps) > 1) : ?>
-											<p><a class="button" href="<?php echo $share_url; ?>"><?php _e('View all maps', 'jeo'); ?></a></p>
+											<p><a class="button" href="<?php echo $share_url; ?>"><?php _e('View all maps', 'newsroom'); ?></a></p>
 										<?php endif; ?>
 									</div>
 								<?php else : ?>
 									<h4>&nbsp;</h4>
 									<input type="hidden" id="map_id" name="map_id" value="<?php echo $map->ID; ?>" />
-									<p><a class="button" href="<?php echo $share_url; ?>"><?php _e('View all maps', 'jeo'); ?></a></p>
+									<p><a class="button" href="<?php echo $share_url; ?>"><?php _e('View all maps', 'newsroom'); ?></a></p>
 								<?php endif; ?>
 							</div>
 						</div>
@@ -136,28 +136,28 @@ if($post_id) {
 					<div class="section two columns">
 						<div class="inner">
 							<h4>
-								<?php _e('Filter content', 'jeo'); ?>
+								<?php _e('Filter content', 'newsroom'); ?>
 								<a class="tip" href="#">
 									?
 									<span class="popup arrow-left">
-										<?php _e('Filter the content displayed on the map through our options', 'jeo'); ?>
+										<?php _e('Filter the content displayed on the map through our options', 'newsroom'); ?>
 									</span>
 								</a>
 							</h4>
 							<div id="map-content">
-								<select id="content-select" data-placeholder="<?php _e('Select content', 'jeo'); ?>" class="chzn-select">
+								<select id="content-select" data-placeholder="<?php _e('Select content', 'newsroom'); ?>" class="chzn-select">
 									<?php
 									if(isset($_GET['p'])) :
 										$post = get_post($_GET['p']);
 										if($post) : ?>
-										<optgroup label="<?php _e('Selected content', 'jeo'); ?>">
+										<optgroup label="<?php _e('Selected content', 'newsroom'); ?>">
 											<option value="post&<?php echo $post->ID; ?>" selected><?php echo get_the_title($post->ID); ?></option>
 										</optgroup>
 									<?php endif; ?>
 								<?php endif; ?>
-								<optgroup label="<?php _e('General content', 'jeo'); ?>">
-									<option value="latest"><?php if(!isset($_GET['map_id'])) _e('Content from the map', 'jeo'); else _e('Latest content', 'jeo'); ?></option>
-									<option value="map-only"><?php _e('No content (map only)', 'jeo'); ?></option>
+								<optgroup label="<?php _e('General content', 'newsroom'); ?>">
+									<option value="latest"><?php if(!isset($_GET['map_id'])) _e('Content from the map', 'newsroom'); else _e('Latest content', 'newsroom'); ?></option>
+									<option value="map-only"><?php _e('No content (map only)', 'newsroom'); ?></option>
 								</optgroup>
 								<?php foreach($taxonomies as $taxonomy) :
 									$taxonomy = get_taxonomy($taxonomy);
@@ -165,7 +165,7 @@ if($post_id) {
 										$terms = get_terms($taxonomy->name);
 										if($terms) :
 											?>
-											<optgroup label="<?php echo __('By', 'jeo') . ' ' . strtolower($taxonomy->labels->name); ?>">
+											<optgroup label="<?php echo __('By', 'newsroom') . ' ' . strtolower($taxonomy->labels->name); ?>">
 												<?php foreach($terms as $term) : ?>
 													<option value="tax_<?php echo $taxonomy->name; ?>&<?php echo $term->slug; ?>"><?php echo $term->name; ?></option>
 												<?php endforeach; ?>
@@ -182,18 +182,18 @@ if($post_id) {
 				<div class='section size three columns'>
 					<div class='inner'>
 						<h4>
-							<?php _e('Width & Height', 'jeo'); ?>
+							<?php _e('Width & Height', 'newsroom'); ?>
 							<a class='tip' href='#'>
 								?
 								<span class="popup arrow-left">
-									<?php _e('Select the width and height proportions you would like to embed to be.', 'jeo'); ?>
+									<?php _e('Select the width and height proportions you would like to embed to be.', 'newsroom'); ?>
 								</span>
 							</a>
 						</h4>
 						<ul id='sizes' class='sizes clearfix'>
-							<li><a href='#' data-size='small' data-width='480' data-height='300'><?php _e('Small', 'jeo'); ?></a></li>
-							<li><a href='#' data-size='medium' data-width='600' data-height='400'><?php _e('Medium', 'jeo'); ?></a></li>
-							<li><a href='#' data-size='large' data-width='960' data-height='480' class='active'><?php _e('Large', 'jeo'); ?></a></li>
+							<li><a href='#' data-size='small' data-width='480' data-height='300'><?php _e('Small', 'newsroom'); ?></a></li>
+							<li><a href='#' data-size='medium' data-width='600' data-height='400'><?php _e('Medium', 'newsroom'); ?></a></li>
+							<li><a href='#' data-size='large' data-width='960' data-height='480' class='active'><?php _e('Large', 'newsroom'); ?></a></li>
 						</ul>
 					</div>
 				</div>
@@ -203,11 +203,11 @@ if($post_id) {
 						<h4>
 							<div class='popup arrow-right'>
 							</div>
-							<?php _e('HTML Output', 'jeo'); ?>
+							<?php _e('HTML Output', 'newsroom'); ?>
 							<a class='tip' href='#'>
 								?
 								<span class="popup arrow-left">
-									<?php _e('Copy and paste this code into an HTML page to embed with it\'s current settings and location', 'jeo'); ?>
+									<?php _e('Copy and paste this code into an HTML page to embed with it\'s current settings and location', 'newsroom'); ?>
 								</span>
 							</a>
 						</h4>
@@ -216,11 +216,11 @@ if($post_id) {
 							<h5>
 								<div class='popup arrow-right'>
 								</div>
-								<?php _e('URL', 'jeo'); ?>
+								<?php _e('URL', 'newsroom'); ?>
 								<a class='tip' href='#'>
 									?
 									<span class="popup arrow-left">
-										<?php _e('Get the original to use as a link or a custom embed.', 'jeo'); ?>
+										<?php _e('Get the original to use as a link or a custom embed.', 'newsroom'); ?>
 									</span>
 								</a>
 							</h5>
@@ -234,16 +234,16 @@ if($post_id) {
 						<h4>
 							<div class="popup arrow-right">
 							</div>
-							<?php _e('Share', 'jeo'); ?>
+							<?php _e('Share', 'newsroom'); ?>
 							<a class="tip" href="#">
 								?
 								<span class="popup arrow-left">
-									<?php _e('Share this map, with it\'s current settings and location, on your social network', 'jeo'); ?>
+									<?php _e('Share this map, with it\'s current settings and location, on your social network', 'newsroom'); ?>
 								</span>
 							</a>
 						</h4>
 					</div>
-					<p id="jeo-share-social" class="links">
+					<p id="newsroom-share-social" class="links">
 						<a href="#" class="facebook"><span class="icon-facebook"></span></a>
 						<a href="#" class="twitter"><span class="icon-twitter"></span></a>
 					</p>
@@ -254,7 +254,7 @@ if($post_id) {
 
 		<div class="container">
 			<div class="twelve columns">
-				<h2 class="preview-title"><?php _e('Map preview', 'jeo'); ?></h2>
+				<h2 class="preview-title"><?php _e('Map preview', 'newsroom'); ?></h2>
 			</div>
 		</div>
 		<div id="embed-container">
