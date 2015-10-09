@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-08 18:07-0300\n"
+"POT-Creation-Date: 2015-10-09 17:15-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,6 +47,134 @@ msgstr ""
 
 #: archive.php:50
 msgid "Archives"
+msgstr ""
+
+#: content-share.php:4
+msgid "Share a map"
+msgstr ""
+
+#: content-share.php:9 content-share.php:237
+msgid "Share"
+msgstr ""
+
+#: content-share.php:20
+msgid "Share the map"
+msgstr ""
+
+#: content-share.php:71
+msgid "Choose a map"
+msgstr ""
+
+#: content-share.php:75
+msgid "Choose any map from the list"
+msgstr ""
+
+#: content-share.php:80
+msgid "Select a map"
+msgstr ""
+
+#: content-share.php:86
+msgid "Select layers from this map"
+msgstr ""
+
+#: content-share.php:93 content-share.php:95 content-share.php:106
+msgid "Select layers"
+msgstr ""
+
+#: content-share.php:100
+msgid "Choose any layers from the list"
+msgstr ""
+
+#: content-share.php:118
+msgid "Back to default layer configuration"
+msgstr ""
+
+#: content-share.php:120 content-share.php:126
+msgid "View all maps"
+msgstr ""
+
+#: content-share.php:139
+msgid "Filter content"
+msgstr ""
+
+#: content-share.php:143
+msgid "Filter the content displayed on the map through our options"
+msgstr ""
+
+#: content-share.php:148
+msgid "Select content"
+msgstr ""
+
+#: content-share.php:153
+msgid "Selected content"
+msgstr ""
+
+#: content-share.php:158
+msgid "General content"
+msgstr ""
+
+#: content-share.php:159
+msgid "Content from the map"
+msgstr ""
+
+#: content-share.php:159
+msgid "Latest content"
+msgstr ""
+
+#: content-share.php:160
+msgid "No content (map only)"
+msgstr ""
+
+#: content-share.php:168
+msgid "By"
+msgstr ""
+
+#: content-share.php:185
+msgid "Width & Height"
+msgstr ""
+
+#: content-share.php:189
+msgid "Select the width and height proportions you would like to embed to be."
+msgstr ""
+
+#: content-share.php:194
+msgid "Small"
+msgstr ""
+
+#: content-share.php:195
+msgid "Medium"
+msgstr ""
+
+#: content-share.php:196
+msgid "Large"
+msgstr ""
+
+#: content-share.php:206
+msgid "HTML Output"
+msgstr ""
+
+#: content-share.php:210
+msgid ""
+"Copy and paste this code into an HTML page to embed with it's current "
+"settings and location"
+msgstr ""
+
+#: content-share.php:219
+msgid "URL"
+msgstr ""
+
+#: content-share.php:223
+msgid "Get the original to use as a link or a custom embed."
+msgstr ""
+
+#: content-share.php:241
+msgid ""
+"Share this map, with it's current settings and location, on your social "
+"network"
+msgstr ""
+
+#: content-share.php:257
+msgid "Map preview"
 msgstr ""
 
 #: footer.php:7

@@ -5,6 +5,7 @@ $mobile: new-breakpoint(max-width 480px 4);
 
 html {
   font-size: 62.5%;
+  background: #fff;
 }
 
 body {
@@ -477,6 +478,35 @@ h6 { font-size: 1.5rem; line-height: 1; }
     }
     #share {
       display: none;
+    }
+  }
+}
+
+.share-page {
+  @include outer-container();
+  #jeo-share-widget {
+    margin: 0 0 1em;
+    #configuration {
+      background: transparent;
+      box-shadow: 0 0 0;
+      @include row();
+      margin: 0 0 1em;
+      .section {
+        &.two {
+          @include span-columns(2 of 12);
+        }
+        &.three {
+          @include span-columns(3 of 12);
+        }
+      }
+      ul#sizes {
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0;
+          padding: 0;
+        }
+      }
     }
   }
 }

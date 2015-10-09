@@ -8,6 +8,7 @@ html {
 
 html {
   font-size: 62.5%;
+  background: #fff;
 }
 
 body {
@@ -631,6 +632,57 @@ h6 {
   #primary #share {
     display: none;
   }
+}
+
+.share-page {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.share-page::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.share-page #jeo-share-widget {
+  margin: 0 0 1em;
+}
+.share-page #jeo-share-widget #configuration {
+  background: transparent;
+  box-shadow: 0 0 0;
+  display: block;
+  margin: 0 0 1em;
+}
+.share-page #jeo-share-widget #configuration::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.share-page #jeo-share-widget #configuration .section.two {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+}
+.share-page #jeo-share-widget #configuration .section.two:last-child {
+  margin-right: 0;
+}
+.share-page #jeo-share-widget #configuration .section.three {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+.share-page #jeo-share-widget #configuration .section.three:last-child {
+  margin-right: 0;
+}
+.share-page #jeo-share-widget #configuration ul#sizes {
+  margin: 0;
+  padding: 0;
+}
+.share-page #jeo-share-widget #configuration ul#sizes li {
+  margin: 0;
+  padding: 0;
 }
 
 .widget-map {
