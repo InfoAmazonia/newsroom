@@ -281,6 +281,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
     }
   }
   .kicker {
+    @include row();
     img {
       display: block;
       margin: 0 auto;
@@ -289,6 +290,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
     }
     .image-caption {
       max-width: 50%;
+      float: right;
       p {
         margin: .5em 0;
         color: #666;
