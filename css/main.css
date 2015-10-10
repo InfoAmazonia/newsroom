@@ -814,8 +814,8 @@ h6 {
   text-align: center;
 }
 #colophon #footer-nav ul li {
-  display: inline;
-  margin: 0 .5em 1em 0;
+  display: inline-block;
+  margin: 0 .5em .5em 0;
   padding: 0;
 }
 #colophon #footer-nav ul li a {

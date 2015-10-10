@@ -611,8 +611,8 @@ h6 { font-size: 1.5rem; line-height: 1; }
       padding: 0;
       text-align: center;
       li {
-        display: inline;
-        margin: 0 .5em 1em 0;
+        display: inline-block;
+        margin: 0 .5em .5em 0;
         padding: 0;
         a {
           background: lighten($dark-blue, 5%);
