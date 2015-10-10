@@ -60,6 +60,10 @@ h6 a {
   text-decoration: none;
 }
 
+h1 {
+  color: #415ba8;
+}
+
 p {
   margin-top: 0;
 }
@@ -228,7 +232,7 @@ h6 {
   text-decoration: none;
   font-size: 12px;
   padding: 4px 6px;
-  background: #43a4d6;
+  background: #0fa4d4;
   color: #fff;
   border-radius: 3px;
 }
@@ -263,7 +267,7 @@ h6 {
   position: relative;
 }
 #masthead #mastnav ul.menu li a {
-  color: #0fa4d4;
+  color: #415ba8;
   text-decoration: none;
 }
 #masthead #mastnav ul.menu li.menu-item-has-children:after {
@@ -359,7 +363,7 @@ h6 {
   display: table;
 }
 #primary .subhead p {
-  color: #415BA8;
+  color: #222;
 }
 #primary .kicker img {
   display: block;
@@ -397,23 +401,23 @@ h6 {
 #primary .post-meta {
   padding: 2em 0 1em 0;
   margin-bottom: 2em;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #0fa4d4;
 }
 #primary .post-meta .byline {
   font-size: 20px;
   font-style: italic;
 }
 #primary .post-meta .byline p {
-  color: #666;
+  color: #0fa4d4;
   display: inline;
   margin-right: 10px;
 }
 #primary .post-meta .terms {
   margin-top: 1em;
-  border-top: 2px solid #ccc;
+  border-top: 2px solid #0fa4d4;
   display: block;
   padding: 1em 0 0;
-  color: #333;
+  color: #0fa4d4;
 }
 #primary .post-meta .terms::after {
   clear: both;
@@ -429,6 +433,9 @@ h6 {
 #primary .post-meta .terms .tax-item ul li {
   display: inline;
 }
+#primary .post-meta .terms .tax-item p {
+  color: #0fa4d4;
+}
 #primary .post-meta .terms .tax-item ul {
   margin: 0 0 0 5px;
   padding: 0;
@@ -439,14 +446,14 @@ h6 {
 }
 #primary .post-meta .terms .tax-item ul li a {
   text-decoration: none;
-  background: #f0f0f0;
-  color: #666;
+  background: #0fa4d4;
+  color: #f0f0f0;
   padding: 2px 5px;
   border-radius: 3px;
   font-size: 90%;
 }
 #primary .post-meta .terms .tax-item ul li a:hover {
-  color: #333;
+  color: #fff;
 }
 #primary .content-container {
   float: left;

@@ -2,6 +2,8 @@
 @import "../../bower_components/neat/app/assets/stylesheets/neat";
 
 $mobile: new-breakpoint(max-width 480px 4);
+$dark-blue: #415ba8;
+$light-blue: #0fa4d4;
 
 html {
   font-size: 62.5%;
@@ -33,7 +35,7 @@ pre {
 }
 
 a {
-  color: #0fa4d4;
+  color: $light-blue;
 }
 
 h1,
@@ -50,6 +52,10 @@ h6 {
     color: inherit;
     text-decoration: none;
   }
+}
+
+h1 {
+  color: $dark-blue;
 }
 
 p {
@@ -144,7 +150,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
           text-decoration: none;
           font-size: 12px;
           padding: 4px 6px;
-          background: #43a4d6;
+          background: $light-blue;
           color: #fff;
           border-radius: 3px;
         }
@@ -168,7 +174,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
         color: #333;
         position: relative;
         a {
-          color: #0fa4d4;
+          color: $dark-blue;
           text-decoration: none;
         }
         &.menu-item-has-children {
@@ -271,7 +277,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
     font-size: 24px;
     @include row();
     p {
-      color: #415BA8;
+      color: #222;
     }
   }
   .kicker {
@@ -314,22 +320,22 @@ h6 { font-size: 1.5rem; line-height: 1; }
   .post-meta {
     @include pad(2em 0 1em 0);
     margin-bottom: 2em;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $light-blue;
     .byline {
       font-size: 20px;
       font-style: italic;
       p {
-        color: #666;
+        color: $light-blue;
         display: inline;
         margin-right: 10px;
       }
     }
     .terms {
       margin-top: 1em;
-      border-top: 2px solid #ccc;
+      border-top: 2px solid $light-blue;
       @include row();
       @include pad(1em 0 0);
-      color: #333;
+      color: $light-blue;
       .tax-item {
         float: left;
         margin: 0 10px 5px 0;
@@ -337,6 +343,9 @@ h6 { font-size: 1.5rem; line-height: 1; }
         ul,
         ul li {
           display: inline;
+        }
+        p {
+          color: $light-blue;
         }
         ul {
           margin: 0 0 0 5px;
@@ -346,13 +355,13 @@ h6 { font-size: 1.5rem; line-height: 1; }
             padding: 0;
             a {
               text-decoration: none;
-              background: #f0f0f0;
-              color: #666;
+              background: $light-blue;
+              color: #f0f0f0;
               padding: 2px 5px;
               border-radius: 3px;
               font-size: 90%;
               &:hover {
-                color: #333;
+                color: #fff;
               }
             }
           }
