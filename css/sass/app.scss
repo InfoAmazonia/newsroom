@@ -287,6 +287,15 @@ h6 { font-size: 1.5rem; line-height: 1; }
       max-width: 100%;
       height: auto;
     }
+    .image-caption {
+      max-width: 50%;
+      p {
+        margin: .5em 0;
+        color: #666;
+        font-style: italic;
+        text-align: right;
+      }
+    }
     .nr-gallery {
       position: relative;
       cursor: pointer;
@@ -318,7 +327,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
     }
   }
   .post-meta {
-    @include pad(2em 0 1em 0);
+    @include pad(1em 0);
     margin-bottom: 2em;
     border-bottom: 1px solid $light-blue;
     .byline {

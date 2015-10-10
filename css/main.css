@@ -371,6 +371,15 @@ h6 {
   max-width: 100%;
   height: auto;
 }
+#primary .kicker .image-caption {
+  max-width: 50%;
+}
+#primary .kicker .image-caption p {
+  margin: .5em 0;
+  color: #666;
+  font-style: italic;
+  text-align: right;
+}
 #primary .kicker .nr-gallery {
   position: relative;
   cursor: pointer;
@@ -399,7 +408,7 @@ h6 {
   background: rgba(0, 0, 0, 0.6);
 }
 #primary .post-meta {
-  padding: 2em 0 1em 0;
+  padding: 1em 0;
   margin-bottom: 2em;
   border-bottom: 1px solid #0fa4d4;
 }

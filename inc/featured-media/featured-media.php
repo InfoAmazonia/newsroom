@@ -10,7 +10,6 @@ class Newsroom_Featured_Media {
 
     add_action('admin_init', array($this, 'setup_metabox'));
     add_action('save_post', array($this, 'save_post'));
-    // add_filter('oembed_result', array($this, 'oembed_result'));
     add_filter('the_content', array($this, 'the_content'), 20);
 
   }
@@ -81,6 +80,7 @@ class Newsroom_Featured_Media {
     switch($type) {
       case 'image':
         the_post_thumbnail('kicker');
+        echo '<div class="image-caption">' . apply_filters('the_content', get_post(get_post_thumbnail_id())->post_excerpt) . '</div>';
         break;
       case 'gallery':
         echo do_shortcode('[photoswipe]');

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-10 13:17-0300\n"
+"POT-Creation-Date: 2015-10-10 14:15-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,31 +213,31 @@ msgstr ""
 msgid "Page"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:21
+#: inc/featured-media/featured-media.php:20
 msgid "Featured media"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:34
+#: inc/featured-media/featured-media.php:33
 msgid "Select the type of media you'd like to feature for this post"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:37
+#: inc/featured-media/featured-media.php:36
 msgid "Post featured image"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:42
+#: inc/featured-media/featured-media.php:41
 msgid "Post image gallery"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:47 inc/widgets/single-map.php:48
+#: inc/featured-media/featured-media.php:46 inc/widgets/single-map.php:48
 msgid "Map"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:51
+#: inc/featured-media/featured-media.php:50
 msgid "Post media"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:51
+#: inc/featured-media/featured-media.php:50
 #, php-format
 msgid ""
 "(First external media attached to post content. <a href=\"%s\">See available "
