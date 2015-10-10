@@ -1,8 +1,7 @@
 <?php
-parse_str($instance['posts'], $query_args);
+$query_args = newsroom_pb_parse_query($instance['posts']);
 $query_args['posts_per_page'] = 4;
 $query_args['without_map_query'] = 1;
-unset($query_args['additional']);
 $highlight_query = new WP_Query($query_args);
 if($highlight_query->have_posts()) :
   ?>

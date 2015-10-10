@@ -50,6 +50,16 @@ module.exports = function(grunt) {
             expand: true
           }
         ]
+      },
+      hammerjs: {
+        files: [
+          {
+            cwd: 'bower_components/hammer.js',
+            src: ['**/*'],
+            dest: 'lib/hammerjs',
+            expand: true
+          }
+        ]
       }
     },
     pot: {

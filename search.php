@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * The search template file.
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -19,6 +19,14 @@ get_header(); ?>
 
 	<div id="content" class="site-content" role="main">
 
+		<h1 class="search-title"><?php _e('Search results for:', 'jeo'); ?> <?php echo $_GET['s']; ?></h1>
+
+    <div class="row">
+      <?php jeo_featured(); ?>
+    </div>
+    <ul class="search-sidebar">
+      <?php dynamic_sidebar('search'); ?>
+    </ul>
 		<?php get_template_part( 'loop' ); ?>
 
 	</div><!-- #content .site-content -->

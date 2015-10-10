@@ -43,8 +43,12 @@ class Newsroom_Featured_Media {
       </p>
     <?php endif; ?>
     <p>
-      <input id="newsroom_featured_media_input_type_video" type="radio" name="newsroom_featured_media_type" value="post_media" <?php if($type == 'video') echo 'checked'; ?> />
-      <label for="newsroom_featured_media_input_type_video"><?php _e('Post media', 'newsroom'); ?> <small><?php printf(__('(First external media attached to post content. <a href="%s">See available media here</a>)', 'newsroom'), 'https://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F'); ?></small></label>
+      <input id="newsroom_featured_media_input_type_map" type="radio" name="newsroom_featured_media_type" value="map" <?php if($type == 'map') echo 'checked'; ?> />
+      <label for="newsroom_featured_media_input_type_map"><?php _e('Map', 'newsroom'); ?></label>
+    </p>
+    <p>
+      <input id="newsroom_featured_media_input_type_post_media" type="radio" name="newsroom_featured_media_type" value="post_media" <?php if($type == 'post_media') echo 'checked'; ?> />
+      <label for="newsroom_featured_media_input_type_post_media"><?php _e('Post media', 'newsroom'); ?> <small><?php printf(__('(First external media attached to post content. <a href="%s">See available media here</a>)', 'newsroom'), 'https://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F'); ?></small></label>
     </p>
     <?php
   }
@@ -80,6 +84,9 @@ class Newsroom_Featured_Media {
         break;
       case 'gallery':
         echo do_shortcode('[photoswipe]');
+        break;
+      case 'map':
+        jeo_map();
         break;
       case 'post_media':
         echo get_post_meta($post_id, '_newsroom_first_media', true);

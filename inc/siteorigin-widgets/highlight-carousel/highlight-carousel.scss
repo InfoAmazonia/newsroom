@@ -1,10 +1,15 @@
 @import "../../../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../../../bower_components/neat/app/assets/stylesheets/neat";
 
+$mobile: new-breakpoint(max-width 480px 4);
+
 .newsroom-highlight-carousel {
   position: relative;
   height: 380px;
   overflow: hidden;
+  @include media($mobile) {
+    height: 540px;
+  }
   ul {
     list-style: none;
     margin: 0;
@@ -34,6 +39,15 @@
           }
           .date {
             color: #666;
+          }
+        }
+        @include media($mobile) {
+          .highlight-carousel-thumbnail,
+          .highlight-carousel-post-content {
+            @include span-columns(12 of 12);
+          }
+          .highlight-carousel-post-content {
+            padding: 5px;
           }
         }
       }

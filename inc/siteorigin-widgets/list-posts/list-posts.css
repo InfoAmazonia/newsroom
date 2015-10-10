@@ -32,6 +32,9 @@ html {
 .newsroom-list-posts ul li.no-thumbnail {
   background: #f4f4f4;
 }
+.newsroom-list-posts ul li.no-thumbnail article {
+  padding: 10px;
+}
 .newsroom-list-posts.per-row-4 li {
   float: left;
   display: block;
@@ -76,6 +79,29 @@ html {
 }
 .newsroom-list-posts.per-row-2 li:nth-child(2n+1) {
   clear: left;
+}
+@media screen and (max-width: 480px) {
+  .newsroom-list-posts li, .newsroom-list-posts.per-row-4 li, .newsroom-list-posts.per-row-3 li, .newsroom-list-posts.per-row-2 li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    display: block;
+  }
+  .newsroom-list-posts li:last-child, .newsroom-list-posts.per-row-4 li:last-child, .newsroom-list-posts.per-row-3 li:last-child, .newsroom-list-posts.per-row-2 li:last-child {
+    margin-right: 0;
+  }
+  .newsroom-list-posts li::after, .newsroom-list-posts.per-row-4 li::after, .newsroom-list-posts.per-row-3 li::after, .newsroom-list-posts.per-row-2 li::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .newsroom-list-posts li article, .newsroom-list-posts.per-row-4 li article, .newsroom-list-posts.per-row-3 li article, .newsroom-list-posts.per-row-2 li article {
+    padding: 0 5px;
+  }
+  .newsroom-list-posts li .list-posts-thumbnail, .newsroom-list-posts.per-row-4 li .list-posts-thumbnail, .newsroom-list-posts.per-row-3 li .list-posts-thumbnail, .newsroom-list-posts.per-row-2 li .list-posts-thumbnail {
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=list-posts.css.map */

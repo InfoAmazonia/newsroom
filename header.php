@@ -21,11 +21,13 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(get_bloginfo('language')); ?>>
 	<header id="masthead">
-		<div class="row">
+		<div>
 			<div class="site-meta">
 				<?php newsroom_logo(); ?>
 			</div>
@@ -35,13 +37,15 @@
 					echo qtranxf_generateLanguageSelectCode('text');
 				}
 				?>
-				<?php // wp_nav_menu(array('theme_location' => 'header_menu')); ?>
 			</nav>
 		</div>
-		<div class="row">
+		<div>
 			<nav id="mastnav">
 				<?php wp_nav_menu(array('theme_location' => 'header_menu')); ?>
 	      <?php get_search_form(); ?>
 			</nav>
 		</div>
 	</header>
+	<div class="mobile-header" style="display:none;">
+		<?php newsroom_logo(true); ?>
+	</div>

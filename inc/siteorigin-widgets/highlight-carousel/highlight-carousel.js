@@ -1,7 +1,8 @@
-(function($) {
+(function($, Hammer) {
   $(document).ready(function() {
     var $container = $('.newsroom-highlight-carousel');
     $container.each(function() {
+      var hammertime = new Hammer($(this)[0]);
       var $container = $(this);
       var $items = $container.find('.highlight-carousel-item');
       var count = $items.length;
@@ -33,7 +34,14 @@
         $nav.append($li);
       }
       view(0);
-
+      hammertime.on('swipeleft', function() {
+        view(next);
+      });
+      hammertime.on('swiperight', function() {
+        var prev = next-2;
+        if(prev >= 0)
+          view(prev);
+      });
     });
   });
-})(jQuery);
+})(jQuery, Hammer);

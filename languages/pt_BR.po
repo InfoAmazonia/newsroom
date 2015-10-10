@@ -3,239 +3,107 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-09 17:29-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2015-10-05 15:36-0300\n"
+"PO-Revision-Date: 2015-10-05 15:37-0300\n"
+"Last-Translator: Miguel Peixe <miguel@cardume.art.br>\n"
+"Language-Team: \n"
+"Language: Português\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
 
 #: archive.php:42
 #, php-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: archive.php:44
 #, php-format
 msgid "Daily Archives: %s"
-msgstr ""
+msgstr "Arquivos do dia: %s"
 
 #: archive.php:46
 #, php-format
 msgid "Monthly Archives: %s"
-msgstr ""
+msgstr "Arquivos do mês: %s"
 
 #: archive.php:46
 msgid "F Y"
-msgstr ""
+msgstr "F Y"
 
 #: archive.php:48
 #, php-format
 msgid "Yearly Archives: %s"
-msgstr ""
+msgstr "Arquivos do ano: %s"
 
 #: archive.php:48
 msgid "Y"
-msgstr ""
+msgstr "Y"
 
 #: archive.php:50
 msgid "Archives"
-msgstr ""
-
-#: content-share.php:4
-msgid "Share a map"
-msgstr ""
-
-#: content-share.php:9 content-share.php:237
-msgid "Share"
-msgstr ""
-
-#: content-share.php:20
-msgid "Share the map"
-msgstr ""
-
-#: content-share.php:71
-msgid "Choose a map"
-msgstr ""
-
-#: content-share.php:75
-msgid "Choose any map from the list"
-msgstr ""
-
-#: content-share.php:80
-msgid "Select a map"
-msgstr ""
-
-#: content-share.php:86
-msgid "Select layers from this map"
-msgstr ""
-
-#: content-share.php:93 content-share.php:95 content-share.php:106
-msgid "Select layers"
-msgstr ""
-
-#: content-share.php:100
-msgid "Choose any layers from the list"
-msgstr ""
-
-#: content-share.php:118
-msgid "Back to default layer configuration"
-msgstr ""
-
-#: content-share.php:120 content-share.php:126
-msgid "View all maps"
-msgstr ""
-
-#: content-share.php:139
-msgid "Filter content"
-msgstr ""
-
-#: content-share.php:143
-msgid "Filter the content displayed on the map through our options"
-msgstr ""
-
-#: content-share.php:148
-msgid "Select content"
-msgstr ""
-
-#: content-share.php:153
-msgid "Selected content"
-msgstr ""
-
-#: content-share.php:158
-msgid "General content"
-msgstr ""
-
-#: content-share.php:159
-msgid "Content from the map"
-msgstr ""
-
-#: content-share.php:159
-msgid "Latest content"
-msgstr ""
-
-#: content-share.php:160
-msgid "No content (map only)"
-msgstr ""
-
-#: content-share.php:168
-msgid "By"
-msgstr ""
-
-#: content-share.php:185
-msgid "Width & Height"
-msgstr ""
-
-#: content-share.php:189
-msgid "Select the width and height proportions you would like to embed to be."
-msgstr ""
-
-#: content-share.php:194
-msgid "Small"
-msgstr ""
-
-#: content-share.php:195
-msgid "Medium"
-msgstr ""
-
-#: content-share.php:196
-msgid "Large"
-msgstr ""
-
-#: content-share.php:206
-msgid "HTML Output"
-msgstr ""
-
-#: content-share.php:210
-msgid ""
-"Copy and paste this code into an HTML page to embed with it's current "
-"settings and location"
-msgstr ""
-
-#: content-share.php:219
-msgid "URL"
-msgstr ""
-
-#: content-share.php:223
-msgid "Get the original to use as a link or a custom embed."
-msgstr ""
-
-#: content-share.php:241
-msgid ""
-"Share this map, with it's current settings and location, on your social "
-"network"
-msgstr ""
-
-#: content-share.php:257
-msgid "Map preview"
-msgstr ""
-
-#: footer.php:7
-#, php-format
-msgid ""
-"This website is built on <a href=\"%s\" target=\"_blank\" rel=\"external"
-"\">WordPress</a> using the <a href=\"%s\" target=\"_blank\" rel=\"external"
-"\">JEO Newsroom</a> theme"
-msgstr ""
+msgstr "Arquivos"
 
 #: functions.php:77
 msgid "Header menu"
-msgstr ""
+msgstr "Menu do cabeçalho"
 
 #: functions.php:78
 msgid "Footer menu"
-msgstr ""
+msgstr "Menu do rodapé"
 
 #: functions.php:85
 msgid "Post sidebar"
-msgstr ""
+msgstr "Barra lateral do post"
 
 #: functions.php:91
 msgid "General sidebar"
-msgstr ""
+msgstr "Barra lateral geral"
 
 #: functions.php:97
 msgid "Archive sidebar"
-msgstr ""
+msgstr "Barra lateral dos arquivos"
 
 #: functions.php:103
 msgid "Search results sidebar"
-msgstr ""
+msgstr "Barra lateral dos resultados de busca"
 
 #: header.php:17
 msgid "Page"
-msgstr ""
+msgstr "Página"
 
 #: inc/featured-media/featured-media.php:21
 msgid "Featured media"
-msgstr ""
+msgstr "Mídia em destaque"
 
 #: inc/featured-media/featured-media.php:34
 msgid "Select the type of media you'd like to feature for this post"
-msgstr ""
+msgstr "Selecione o tipo de mídia que gostaria de destacar neste post"
 
 #: inc/featured-media/featured-media.php:37
 msgid "Post featured image"
-msgstr ""
+msgstr "Imagem destacada do post"
 
 #: inc/featured-media/featured-media.php:42
 msgid "Post image gallery"
-msgstr ""
+msgstr "Galeria de imagens do post"
 
 #: inc/featured-media/featured-media.php:47 inc/widgets/single-map.php:48
 msgid "Map"
-msgstr ""
+msgstr "Mapa"
 
 #: inc/featured-media/featured-media.php:51
 msgid "Post media"
-msgstr ""
+msgstr "Mídia do post"
 
 #: inc/featured-media/featured-media.php:51
 #, php-format
@@ -243,201 +111,189 @@ msgid ""
 "(First external media attached to post content. <a href=\"%s\">See available "
 "media here</a>)"
 msgstr ""
+"(Primeira mídia externa anexada ao contéudo do post. <a href=\"%s\">Veja "
+"mídias disponíveis aqui</a>)"
 
 #: inc/photoswipe/photoswipe.php:42
 msgid "images"
-msgstr ""
+msgstr "Imagens"
 
 #: inc/single-templates/single-templates.php:15
 msgid "Story"
-msgstr ""
+msgstr "História"
 
 #: inc/single-templates/single-templates.php:44
 msgid "Template"
-msgstr ""
+msgstr "Template"
 
 #: inc/single-templates/single-templates.php:58
 msgid "Select the template to display this post"
-msgstr ""
+msgstr "Selecione o template a exibir este post"
 
 #: inc/single-templates/templates/sequence.php:31
-#: inc/single-templates/templates/story.php:46 page.php:12
+#: inc/single-templates/templates/story.php:31 page.php:12
 msgid "Pages:"
-msgstr ""
-
-#: inc/single-templates/templates/story.php:29
-#: inc/single-templates/templates/story.php:53
-msgid "Share this story"
-msgstr ""
+msgstr "Páginas:"
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:11
 msgid "Newsroom Highlight Carousel"
-msgstr ""
+msgstr "Carousel de destaque do Newsroom"
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:13
 msgid "Display featured posts with featured image as a interactive carousel"
-msgstr ""
+msgstr "Exibir posts com imagens destacadas como um carousel interativo"
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:21
 msgid "Title for the carousel."
-msgstr ""
+msgstr "Título para o carousel."
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:26
 msgid "Build query for highlighted posts"
-msgstr ""
+msgstr "Construa a query para posts destacados"
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:30
 msgid "Auto rotate carousel"
-msgstr ""
+msgstr "Rodar carousel automaticamente"
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:35
 msgid "Milisseconds to rotate the carousel"
-msgstr ""
+msgstr "Milissegundos até rotação"
 
 #: inc/siteorigin-widgets/list-images/list-images.php:11
 msgid "Newsroom List Images"
-msgstr ""
+msgstr "Lista de Imagens do Newsroom"
 
 #: inc/siteorigin-widgets/list-images/list-images.php:13
 msgid "Display a list of images in a regular list format."
-msgstr ""
+msgstr "Exibir imagens em um formato de lista regular."
 
 #: inc/siteorigin-widgets/list-images/list-images.php:21
 msgid "Title for image list."
-msgstr ""
+msgstr "Título para lista de imagens"
 
 #: inc/siteorigin-widgets/list-images/list-images.php:26
 msgid "Link for the title (optional)"
-msgstr ""
+msgstr "Link para o título (opcional)"
 
 #: inc/siteorigin-widgets/list-images/list-images.php:31
 msgid "Images"
-msgstr ""
+msgstr "Imagens"
 
 #: inc/siteorigin-widgets/list-images/list-images.php:32
 #: inc/siteorigin-widgets/list-images/list-images.php:36
 msgid "Image"
-msgstr ""
+msgstr "Imagem"
 
 #: inc/siteorigin-widgets/list-images/list-images.php:40
 msgid "Link for the image (optional)"
-msgstr ""
+msgstr "Link pra a imagem (opcional)"
 
 #: inc/siteorigin-widgets/list-posts/list-posts.php:11
 msgid "Newsroom List Posts"
-msgstr ""
+msgstr "Lista de posts do Newsroom"
 
 #: inc/siteorigin-widgets/list-posts/list-posts.php:13
 msgid "Display a list of posts in a regular list format."
-msgstr ""
+msgstr "Exiba posts em um formato de lista regular."
 
 #: inc/siteorigin-widgets/list-posts/list-posts.php:21
 #: inc/siteorigin-widgets/square-posts/square-posts.php:22
 msgid "Title for post list."
-msgstr ""
+msgstr "Título para a lista de posts."
 
 #: inc/siteorigin-widgets/list-posts/list-posts.php:26
 msgid "Link for the title"
-msgstr ""
+msgstr "Link para o título"
 
 #: inc/siteorigin-widgets/list-posts/list-posts.php:31
 #: inc/siteorigin-widgets/square-posts/square-posts.php:27
 msgid "Build query for posts to be displayed"
-msgstr ""
+msgstr "Construa a query dos posts a serem exibidos"
 
 #: inc/siteorigin-widgets/list-posts/list-posts.php:35
 #: inc/siteorigin-widgets/square-posts/square-posts.php:31
 msgid "Posts to display per row"
-msgstr ""
+msgstr "Número de posts a exibir por linha"
 
 #: inc/siteorigin-widgets/square-posts/square-posts.php:11
 msgid "Newsroom Square Posts"
-msgstr ""
+msgstr "Posts quadrados do Newsroom"
 
 #: inc/siteorigin-widgets/square-posts/square-posts.php:13
 msgid "Display a list of posts in a small square format."
-msgstr ""
+msgstr "Exiba posts em um formato de lista quadrada."
 
 #: inc/theme-options.php:33
 msgid "Newsroom Style"
-msgstr ""
+msgstr "Estilo do Newsroom"
 
 #: inc/theme-options.php:33
 msgid "Newsroom"
-msgstr ""
+msgstr "Newsroom"
 
 #: inc/theme-options.php:44
 msgid "Newsroom Theme Options"
-msgstr ""
+msgstr "Opções do tema Newsroom"
 
 #: inc/theme-options.php:62
 msgid "Style"
-msgstr ""
+msgstr "Estilo"
 
 #: inc/theme-options.php:69
 msgid "Links"
-msgstr ""
+msgstr "Links"
 
 #: inc/theme-options.php:76
-msgid "Social APIs"
-msgstr ""
-
-#: inc/theme-options.php:83
 msgid "Choose a style"
-msgstr ""
+msgstr "Escolha um estilo"
 
-#: inc/theme-options.php:91
+#: inc/theme-options.php:84
 msgid "Upload a custom logo"
-msgstr ""
+msgstr "Envie um logo customizado"
 
-#: inc/theme-options.php:99
+#: inc/theme-options.php:92
 msgid "Facebook url"
-msgstr ""
+msgstr "URL do Facebook"
 
-#: inc/theme-options.php:107
+#: inc/theme-options.php:100
 msgid "Twitter url"
-msgstr ""
+msgstr "URL do Twitter"
 
-#: inc/theme-options.php:115
+#: inc/theme-options.php:108
 msgid "Legal disclaimer"
-msgstr ""
+msgstr "Termos de uso"
 
-#: inc/theme-options.php:123
-msgid "Facebook App ID"
-msgstr ""
-
-#: inc/theme-options.php:147
+#: inc/theme-options.php:132
 msgid "Logo url"
-msgstr ""
+msgstr "URL do logo"
 
-#: inc/theme-options.php:148
+#: inc/theme-options.php:133
 msgid "Upload"
-msgstr ""
+msgstr "Enviar"
 
 #: inc/widgets/single-map.php:14
 msgid "JEO Map Widget"
-msgstr ""
+msgstr "Widget de mapa do JEO"
 
 #: inc/widgets/single-map.php:15
 msgid "Display a map"
-msgstr ""
+msgstr "Exibir um mapa"
 
 #: inc/widgets/single-map.php:44
 msgid "Title"
-msgstr ""
+msgstr "Título"
 
 #: inc/widgets/single-map.php:57
 msgid "Display map posts"
-msgstr ""
+msgstr "Exibir posts do mapa"
 
 #: inc/widgets/single-map.php:60
 msgid "Map height"
-msgstr ""
+msgstr "Altura do mapa"
 
 #: search.php:22
 msgid "Search results for:"
-msgstr ""
+msgstr "Resultados da busca por:"
 
-#: yarpp-template-newsroom.php:4
-msgid "You might also like"
-msgstr ""
+#~ msgid "Front page"
+#~ msgstr "Página inicial"

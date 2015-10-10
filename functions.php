@@ -34,24 +34,24 @@ add_action('tgmpa_register', 'newsroom_register_required_plugins');
 
 require_once(STYLESHEETPATH . '/inc/theme-options.php');
 
-function newsroom_logo() {
+function newsroom_logo($mobile = false) {
 	$logo = newsroom_get_logo();
 	if($logo) {
 		?>
-		<h1 class="has-logo">
+		<?php echo $mobile ? '<span class="logo with-image">' : '<h1 class="has-logo">'; ?>
 			<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>">
 				<?php bloginfo('name'); ?>
 				<?php echo $logo; ?>
 			</a>
-		</h1>
+		<?php echo $mobile ? '</span>' : '</h1>'; ?>
 		<?php
 	} else {
 		?>
-		<h1>
+		<?php echo $mobile ? '<span class="logo">' : '<h1>'; ?>
 			<a href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>">
 				<?php bloginfo('name'); ?>
 			</a>
-		</h1>
+		<?php echo $mobile ? '</span>' : '</h1>'; ?>
 		<?php
 	}
 }
@@ -78,27 +78,35 @@ function newsroom_setup() {
 		'footer_menu' => __('Footer menu', 'newsroom')
 	));
 
+	unregister_sidebar('front_page');
+
 	//sidebars
 	register_sidebar(array(
-		'name' => __('Post sidebar', 'jeo'),
+		'name' => __('Post sidebar', 'newsroom'),
 		'id' => 'post',
 		'before_title' => '<h2 class="widget-title">',
 		'after_title' => '</h2>'
 	));
 	register_sidebar(array(
-		'name' => __('General sidebar', 'jeo'),
+		'name' => __('General sidebar', 'newsroom'),
 		'id' => 'general',
 		'before_title' => '<h2 class="widget-title">',
 		'after_title' => '</h2>'
 	));
 	register_sidebar(array(
-		'name' => __('Front page', 'jeo'),
-		'id' => 'front_page',
+		'name' => __('Archive sidebar', 'newsroom'),
+		'id' => 'archive',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>'
+	));
+	register_sidebar(array(
+		'name' => __('Search results sidebar', 'newsroom'),
+		'id' => 'search',
 		'before_title' => '<h2 class="widget-title">',
 		'after_title' => '</h2>'
 	));
 }
-add_action('after_setup_theme', 'newsroom_setup');
+add_action('after_setup_theme', 'newsroom_setup', 100);
 
 /*
  * Newsroom widgets
@@ -139,6 +147,7 @@ function newsroom_jeo_scripts() {
 
 	// JS libraries
 	wp_register_script('fitvids', get_stylesheet_directory_uri() . '/lib/jquery.fitvids.js', array('jquery'), '1.1');
+	wp_register_script('hammer.js', get_stylesheet_directory_uri() . '/lib/hammerjs/hammer.min.js');
 
 
 	// CSS Dependencies
@@ -159,6 +168,23 @@ function newsroom_jeo_scripts() {
 
 }
 add_action('jeo_enqueue_scripts', 'newsroom_jeo_scripts', 20);
+
+function newsroom_pb_parse_query($pb_query) {
+	$query = wp_parse_args($pb_query);
+	if($query['tax_query']) {
+		$tax_args = explode(',', $query['tax_query']);
+		$query['tax_query'] = array();
+		foreach($tax_args as $tax_arg) {
+			$tax_arg = explode(':', $tax_arg);
+			$query['tax_query'][] = array(
+				'taxonomy' => $tax_arg[0],
+				'field' => 'slug',
+				'terms' => $tax_arg[1]
+			);
+		}
+	}
+	return $query;
+}
 
 // Single templates
 include_once(STYLESHEETPATH . '/inc/single-templates/single-templates.php');
@@ -202,3 +228,42 @@ include_once(STYLESHEETPATH . '/inc/photoswipe/photoswipe.php');
 
 // Featured media
 include_once(STYLESHEETPATH . '/inc/featured-media/featured-media.php');
+
+
+/*
+ * Social APIs
+ */
+function newsroom_social_apis() {
+
+	// Facebook
+	$fb_api = newsroom_get_fb_client_id();
+	if($fb_api) :
+		?>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=<?php echo $fb_api; ?>";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<?php
+	endif;
+
+	// Twitter
+	?>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<?php
+
+	// Google Plus
+	?>
+	<script type="text/javascript">
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+	<?php
+}
+add_action('wp_footer', 'newsroom_social_apis');

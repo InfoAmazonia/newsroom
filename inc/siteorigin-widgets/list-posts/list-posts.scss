@@ -1,6 +1,8 @@
 @import "../../../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../../../bower_components/neat/app/assets/stylesheets/neat";
 
+$mobile: new-breakpoint(max-width 480px 4);
+
 .newsroom-list-posts {
   ul {
     list-style: none;
@@ -29,6 +31,9 @@
       }
       &.no-thumbnail {
         background: #f4f4f4;
+        article {
+          padding: 10px;
+        }
       }
     }
   }
@@ -48,6 +53,23 @@
     li {
       @include span-columns(6);
       @include omega(2n);
+    }
+  }
+  @include media($mobile) {
+    &,
+    &.per-row-4,
+    &.per-row-3,
+    &.per-row-2 {
+      li {
+        @include span-columns(12 of 12);
+        @include row();
+        article {
+          @include pad(0 5px);
+        }
+        .list-posts-thumbnail {
+          height: auto;
+        }
+      }
     }
   }
 }
