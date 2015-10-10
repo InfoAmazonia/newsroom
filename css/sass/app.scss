@@ -597,7 +597,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
 
 #colophon {
   @include pad(2em 0);
-  background: #415ba8;
+  background: $dark-blue;
   color: #fff;
   p {
     color: #fff;
@@ -612,8 +612,14 @@ h6 { font-size: 1.5rem; line-height: 1; }
       text-align: center;
       li {
         display: inline;
-        margin: 0 2em 0 0;
+        margin: 0 .5em .5em 0;
         padding: 0;
+        a {
+          background: lighten($dark-blue, 5%);
+          border-radius: 3px;
+          padding: 3px 5px;
+          text-decoration: none;
+        }
       }
     }
   }
