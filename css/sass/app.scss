@@ -288,8 +288,12 @@ h6 { font-size: 1.5rem; line-height: 1; }
       max-width: 100%;
       height: auto;
     }
+    .kicker-image-container {
+      margin: 0 auto;
+    }
     .image-caption {
       max-width: 50%;
+      min-width: 300px;
       float: right;
       p {
         margin: .5em 0;

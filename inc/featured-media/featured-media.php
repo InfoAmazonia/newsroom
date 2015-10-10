@@ -79,8 +79,11 @@ class Newsroom_Featured_Media {
 
     switch($type) {
       case 'image':
+        $src = wp_get_attachment_image_src(get_post_thumbnail_id(), 'kicker');
+        echo '<div class="kicker-image-container" style="width:' . $src[1] . 'px;">';
         the_post_thumbnail('kicker');
         echo '<div class="image-caption">' . apply_filters('the_content', get_post(get_post_thumbnail_id())->post_excerpt) . '</div>';
+        echo '</div>';
         break;
       case 'gallery':
         echo do_shortcode('[photoswipe]');

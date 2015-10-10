@@ -379,8 +379,12 @@ h6 {
   max-width: 100%;
   height: auto;
 }
+#primary .kicker .kicker-image-container {
+  margin: 0 auto;
+}
 #primary .kicker .image-caption {
   max-width: 50%;
+  min-width: 300px;
   float: right;
 }
 #primary .kicker .image-caption p {
