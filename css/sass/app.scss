@@ -678,10 +678,31 @@ h6 { font-size: 1.5rem; line-height: 1; }
       }
     }
   }
+  @include media($mobile) {
+    & {
+      display: none;
+    }
+  }
 }
 
 .post-list {
   @include span-columns(8);
+  @include media($mobile) {
+    & {
+      @include span-columns(12 of 12);
+      ul {
+        li {
+          article {
+            .post-list-thumbnail {
+              float: none;
+              width: 100%;
+              margin: 0 0 .5em;
+            }
+          }
+        }
+      }
+    }
+  }
   ul {
     list-style: none;
     margin: 0;

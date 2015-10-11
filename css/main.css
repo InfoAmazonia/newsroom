@@ -885,6 +885,12 @@ h6 {
   width: 100%;
   margin: 0;
 }
+@media screen and (max-width: 480px) {
+  .archive-sidebar,
+  .search-sidebar {
+    display: none;
+  }
+}
 
 .post-list {
   float: left;
@@ -894,6 +900,22 @@ h6 {
 }
 .post-list:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  .post-list {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .post-list:last-child {
+    margin-right: 0;
+  }
+  .post-list ul li article .post-list-thumbnail {
+    float: none;
+    width: 100%;
+    margin: 0 0 .5em;
+  }
 }
 .post-list ul {
   list-style: none;
