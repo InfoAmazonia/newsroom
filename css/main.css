@@ -918,6 +918,7 @@ h6 {
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%;
+  margin: 0 0 2em;
 }
 .post-list:last-child {
   margin-right: 0;
@@ -974,6 +975,14 @@ h6 {
 .post-list ul li.no-thumbnail {
   background: #f4f4f4;
   padding: 20px;
+}
+.post-list .pagination {
+  text-align: center;
+}
+.post-list .pagination a {
+  text-decoration: none;
+  font-size: 1.4em;
+  text-align: center;
 }
 
 .comment-list {

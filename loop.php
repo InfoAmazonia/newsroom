@@ -26,7 +26,9 @@ if(have_posts()) :
     endwhile;
     ?>
     </ul>
-    <?php posts_nav_link(); ?>
+    <div class="pagination">
+      <?php posts_nav_link(); ?>
+    </div>
   </div>
   <?php
 endif;

@@ -708,6 +708,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
 
 .post-list {
   @include span-columns(8);
+  margin: 0 0 2em;
   @include media($mobile) {
     & {
       @include span-columns(12 of 12);
@@ -758,6 +759,14 @@ h6 { font-size: 1.5rem; line-height: 1; }
         background: #f4f4f4;
         padding: 20px;
       }
+    }
+  }
+  .pagination {
+    text-align: center;
+    a {
+      text-decoration: none;
+      font-size: 1.4em;
+      text-align: center;
     }
   }
 }
