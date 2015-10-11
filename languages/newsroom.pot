@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-10 14:57-0300\n"
+"POT-Creation-Date: 2015-10-10 22:58-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -211,6 +211,42 @@ msgstr ""
 
 #: header.php:17
 msgid "Page"
+msgstr ""
+
+#: inc/advanced-nav.php:148
+msgid "Select"
+msgstr ""
+
+#: inc/advanced-nav.php:166
+msgid "Text search"
+msgstr ""
+
+#: inc/advanced-nav.php:167
+msgid "Type your search here"
+msgstr ""
+
+#: inc/advanced-nav.php:187
+msgid "Date range"
+msgstr ""
+
+#: inc/advanced-nav.php:190
+msgid "From"
+msgstr ""
+
+#: inc/advanced-nav.php:194
+msgid "To"
+msgstr ""
+
+#: inc/advanced-nav.php:199
+msgid "Filter"
+msgstr ""
+
+#: inc/advanced-nav.php:209 inc/advanced-nav.php:220
+msgid "Cancel filters"
+msgstr ""
+
+#: inc/advanced-nav.php:217
+msgid "More filters"
 msgstr ""
 
 #: inc/featured-media/featured-media.php:20
@@ -434,8 +470,12 @@ msgstr ""
 msgid "Map height"
 msgstr ""
 
-#: search.php:22
+#: search.php:23
 msgid "Search results for:"
+msgstr ""
+
+#: search.php:32
+msgid "Advanced navigation"
 msgstr ""
 
 #: yarpp-template-newsroom.php:4
