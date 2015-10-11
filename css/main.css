@@ -229,18 +229,23 @@ h6 {
 #masthead .site-meta:last-child {
   margin-right: 0;
 }
-#masthead #langnav {
+#masthead .top-nav {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
 }
-#masthead #langnav:last-child {
+#masthead .top-nav:last-child {
   margin-right: 0;
+}
+#masthead #langnav {
+  float: right;
 }
 #masthead #langnav #qtranslate-chooser {
   list-style: none;
   float: right;
+  margin: 0;
+  padding: 0;
 }
 #masthead #langnav #qtranslate-chooser::after {
   clear: both;
@@ -251,6 +256,7 @@ h6 {
   float: left;
   margin-left: 5px;
   display: block;
+  padding-top: 12px;
 }
 #masthead #langnav #qtranslate-chooser li a {
   display: block;
@@ -260,6 +266,21 @@ h6 {
   background: #0fa4d4;
   color: #fff;
   border-radius: 3px;
+}
+#masthead #socialnav {
+  float: right;
+  line-height: 60px;
+  text-align: right;
+}
+#masthead #socialnav a {
+  text-align: right;
+  text-decoration: none;
+  color: #666;
+  font-size: 1.2em;
+  margin-right: .5em;
+}
+#masthead #socialnav a:hover {
+  color: #222;
 }
 #masthead #mastnav {
   float: left;

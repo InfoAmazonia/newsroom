@@ -157,16 +157,22 @@ h6 { font-size: 1.5rem; line-height: 1; }
   .site-meta {
     @include span-columns(6);
   }
-  #langnav {
+  .top-nav {
     @include span-columns(6);
+  }
+  #langnav {
+    float: right;
     #qtranslate-chooser {
       list-style: none;
       float: right;
+      margin: 0;
+      padding: 0;
       @include clearfix;
       li {
         float: left;
         margin-left: 5px;
         display: block;
+        padding-top: 12px;
         a {
           display: block;
           text-decoration: none;
@@ -176,6 +182,21 @@ h6 { font-size: 1.5rem; line-height: 1; }
           color: #fff;
           border-radius: 3px;
         }
+      }
+    }
+  }
+  #socialnav {
+    float: right;
+    line-height: 60px;
+    text-align: right;
+    a {
+      text-align: right;
+      text-decoration: none;
+      color: #666;
+      font-size: 1.2em;
+      margin-right: .5em;
+      &:hover {
+        color: #222;
       }
     }
   }
