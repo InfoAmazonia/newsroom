@@ -79,6 +79,7 @@ function newsroom_setup() {
 	));
 
 	unregister_sidebar('front_page');
+	unregister_sidebar('general');
 
 	//sidebars
 	register_sidebar(array(
@@ -88,8 +89,8 @@ function newsroom_setup() {
 		'after_title' => '</h2>'
 	));
 	register_sidebar(array(
-		'name' => __('General sidebar', 'newsroom'),
-		'id' => 'general',
+		'name' => __('Footer content', 'newsroom'),
+		'id' => 'footer',
 		'before_title' => '<h2 class="widget-title">',
 		'after_title' => '</h2>'
 	));

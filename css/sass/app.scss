@@ -836,11 +836,16 @@ h6 { font-size: 1.5rem; line-height: 1; }
   @include pad(2em 0);
   background: $dark-blue;
   color: #fff;
+  h2,
+  h3,
   p {
     color: #fff;
   }
   #footer-nav {
     @include pad(0 0 2em);
+    margin: 0 0 2em;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    font-size: 1.2em;
     ul {
       list-style: none;
       display: block;
@@ -865,5 +870,50 @@ h6 { font-size: 1.5rem; line-height: 1; }
   }
   .footer-content {
     @include outer-container;
+  }
+  #footer-sidebar {
+    margin: 0 0 1em;
+    padding: 0;
+    list-style: none;
+    @include row();
+    .widget {
+      width: calc(33.3333% - 1em);
+      display: block;
+      float: left;
+      padding: 0 1em 0 0;
+      margin: 0 1em 1em 0;
+      box-sizing: border-box;
+      border-right: 1px solid rgba(255,255,255,0.2);
+      &:nth-of-type(3n) {
+        border-right: 0;
+      }
+      ul,
+      ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0;
+          padding: .5em 0;
+          border-bottom: 1px solid rgba(255,255,255,0.1);
+          &:last-child {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+    @include media($mobile) {
+      .widget {
+        width: 100%;
+        float: none;
+        border-right: 0;
+        padding: 0;
+        padding: 0 5px 1em;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+      }
+    }
+    .credits {
+      text-align: center;
+    }
   }
 }

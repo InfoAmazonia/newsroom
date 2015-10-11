@@ -1049,11 +1049,16 @@ h6 {
   background: #415ba8;
   color: #fff;
 }
+#colophon h2,
+#colophon h3,
 #colophon p {
   color: #fff;
 }
 #colophon #footer-nav {
   padding: 0 0 2em;
+  margin: 0 0 2em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.2em;
 }
 #colophon #footer-nav ul {
   list-style: none;
@@ -1085,6 +1090,58 @@ h6 {
   clear: both;
   content: "";
   display: table;
+}
+#colophon #footer-sidebar {
+  margin: 0 0 1em;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+#colophon #footer-sidebar::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#colophon #footer-sidebar .widget {
+  width: calc(33.3333% - 1em);
+  display: block;
+  float: left;
+  padding: 0 1em 0 0;
+  margin: 0 1em 1em 0;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+#colophon #footer-sidebar .widget:nth-of-type(3n) {
+  border-right: 0;
+}
+#colophon #footer-sidebar .widget ul,
+#colophon #footer-sidebar .widget ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#colophon #footer-sidebar .widget ul li,
+#colophon #footer-sidebar .widget ol li {
+  margin: 0;
+  padding: .5em 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+#colophon #footer-sidebar .widget ul li:last-child,
+#colophon #footer-sidebar .widget ol li:last-child {
+  border-bottom: 0;
+}
+@media screen and (max-width: 480px) {
+  #colophon #footer-sidebar .widget {
+    width: 100%;
+    float: none;
+    border-right: 0;
+    padding: 0;
+    padding: 0 5px 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+#colophon #footer-sidebar .credits {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

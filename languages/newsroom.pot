@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-11 19:50-0300\n"
+"POT-Creation-Date: 2015-10-11 20:15-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -177,7 +177,7 @@ msgstr ""
 msgid "Map preview"
 msgstr ""
 
-#: footer.php:7
+#: footer.php:10
 #, php-format
 msgid ""
 "This website is built on <a href=\"%s\" target=\"_blank\" rel=\"external"
@@ -193,19 +193,19 @@ msgstr ""
 msgid "Footer menu"
 msgstr ""
 
-#: functions.php:85
+#: functions.php:86
 msgid "Post sidebar"
 msgstr ""
 
-#: functions.php:91
-msgid "General sidebar"
+#: functions.php:92
+msgid "Footer content"
 msgstr ""
 
-#: functions.php:97
+#: functions.php:98
 msgid "Archive sidebar"
 msgstr ""
 
-#: functions.php:103
+#: functions.php:104
 msgid "Search results sidebar"
 msgstr ""
 
