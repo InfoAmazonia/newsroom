@@ -418,6 +418,20 @@ h6 {
   font-style: italic;
   text-align: right;
 }
+@media screen and (max-width: 480px) {
+  #primary .kicker .kicker-image-container {
+    width: 100% !important;
+  }
+  #primary .kicker .kicker-image-container img {
+    width: 100% !important;
+    height: auto;
+  }
+  #primary .kicker .image-caption {
+    max-width: 100%;
+    min-width: 0;
+    text-align: right;
+  }
+}
 #primary .kicker .nr-gallery {
   position: relative;
   cursor: pointer;

@@ -324,6 +324,20 @@ h6 { font-size: 1.5rem; line-height: 1; }
         text-align: right;
       }
     }
+    @include media($mobile) {
+      .kicker-image-container {
+        width: 100% !important;
+        img {
+          width: 100% !important;
+          height: auto;
+        }
+      }
+      .image-caption {
+        max-width: 100%;
+        min-width: 0;
+        text-align: right;
+      }
+    }
     .nr-gallery {
       position: relative;
       cursor: pointer;
