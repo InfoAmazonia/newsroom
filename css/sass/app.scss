@@ -654,6 +654,57 @@ h6 { font-size: 1.5rem; line-height: 1; }
   }
 }
 
+.comment-list {
+  margin: 0 0 1em;
+  padding: 0;
+  border-top: 1px solid #ccc;
+  .comment {
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    article {
+      background: #f7f7f7;
+      padding: .5em;
+      border-left: 1px solid #ccc;
+    }
+    .comment-header {
+      float: left;
+      margin: 0 1em 0 0;
+    }
+    .comment-meta {
+      font-size: .6em;
+      padding: 1em 0 1.8em;
+      .comment-author {
+        font-size: 1.6em;
+        margin-right: .5em;
+      }
+    }
+    .comment-content-area {
+      @include row();
+      padding: 1em;
+      .reply {
+        float: right;
+        font-size: .6em;
+      }
+    }
+    .children {
+      margin: 0 0 -1em;
+      padding: 0;
+      .comment {
+        border-left: 1px solid #ccc;
+        padding: 1em 1em 1em 2em;
+        border-bottom: 0;
+        margin: 0;
+        article {
+          background: transparent;
+          padding: 0;
+          border: 0;
+        }
+      }
+    }
+  }
+}
+
 #commentform {
   label {
     display: block;
