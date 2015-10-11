@@ -873,6 +873,11 @@ h6 {
   padding: 20px;
 }
 
+#commentform label {
+  display: block;
+  margin: 0 0 .5em;
+}
+
 #colophon {
   padding: 2em 0;
   background: #415ba8;

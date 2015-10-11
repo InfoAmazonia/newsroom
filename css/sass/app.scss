@@ -654,6 +654,13 @@ h6 { font-size: 1.5rem; line-height: 1; }
   }
 }
 
+#commentform {
+  label {
+    display: block;
+    margin: 0 0 .5em;
+  }
+}
+
 
 #colophon {
   @include pad(2em 0);
