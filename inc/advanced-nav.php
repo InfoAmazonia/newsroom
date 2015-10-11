@@ -166,7 +166,6 @@ class Newsroom_AdvancedNav {
 					<p class="label"><label for="<?php echo $this->prefix; ?>s"><?php _e('Text search', 'newsroom'); ?></label></p>
 					<input type="text" id="<?php echo $this->prefix; ?>s" name="<?php echo $this->prefix; ?>s" placeholder="<?php _e('Type your search here', 'newsroom'); ?>" value="<?php echo (isset($_GET[$this->prefix . 's'])) ? $_GET[$this->prefix . 's'] : ''; ?>" />
 				</div>
-				<?php // HERE GOES TAX STUFF ?>
 				<?php
 				$taxonomies = get_taxonomies(array(
 					'public' => true,

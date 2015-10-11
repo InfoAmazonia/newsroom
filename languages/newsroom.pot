@@ -225,27 +225,27 @@ msgstr ""
 msgid "Type your search here"
 msgstr ""
 
-#: inc/advanced-nav.php:187
+#: inc/advanced-nav.php:186
 msgid "Date range"
 msgstr ""
 
-#: inc/advanced-nav.php:190
+#: inc/advanced-nav.php:189
 msgid "From"
 msgstr ""
 
-#: inc/advanced-nav.php:194
+#: inc/advanced-nav.php:193
 msgid "To"
 msgstr ""
 
-#: inc/advanced-nav.php:199
+#: inc/advanced-nav.php:198
 msgid "Filter"
 msgstr ""
 
-#: inc/advanced-nav.php:209 inc/advanced-nav.php:220
+#: inc/advanced-nav.php:208 inc/advanced-nav.php:219
 msgid "Cancel filters"
 msgstr ""
 
-#: inc/advanced-nav.php:217
+#: inc/advanced-nav.php:216
 msgid "More filters"
 msgstr ""
 
