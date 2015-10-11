@@ -876,17 +876,17 @@ h6 {
 .comment-list {
   margin: 0 0 1em;
   padding: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ddd;
 }
 .comment-list .comment {
   padding: 0;
   margin: 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
 }
 .comment-list .comment article {
   background: #f7f7f7;
-  padding: .5em;
-  border-left: 1px solid #ccc;
+  padding: .7em;
+  border-left: 1px solid #ddd;
 }
 .comment-list .comment .comment-header {
   float: left;
@@ -895,10 +895,23 @@ h6 {
 .comment-list .comment .comment-meta {
   font-size: .6em;
   padding: 1em 0 1.8em;
+  color: #999;
+}
+.comment-list .comment .comment-meta a {
+  color: #999;
+  text-decoration: none;
 }
 .comment-list .comment .comment-meta .comment-author {
   font-size: 1.6em;
   margin-right: .5em;
+  color: #333;
+  font-weight: 600;
+}
+.comment-list .comment .comment-meta .comment-author a {
+  color: #0fa4d4;
+}
+.comment-list .comment .comment-meta .comment-author a:hover {
+  color: #415ba8;
 }
 .comment-list .comment .comment-content-area {
   display: block;
@@ -918,15 +931,30 @@ h6 {
   padding: 0;
 }
 .comment-list .comment .children .comment {
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #ddd;
   padding: 1em 1em 1em 2em;
   border-bottom: 0;
   margin: 0;
+  font-size: 90%;
 }
 .comment-list .comment .children .comment article {
   background: transparent;
   padding: 0;
   border: 0;
+}
+.comment-list .comment .children .comment .comment-content-area {
+  padding: .7em;
+}
+.comment-list .comment .children .children .comment {
+  padding: .5em .5em .5em 1em;
+  font-size: 90%;
+}
+.comment-list .comment .children .children .comment .comment-header img {
+  width: 40px;
+  height: 40px;
+}
+.comment-list .comment .children .children .comment .comment-content-area {
+  padding: .5em;
 }
 
 #commentform label {

@@ -657,15 +657,15 @@ h6 { font-size: 1.5rem; line-height: 1; }
 .comment-list {
   margin: 0 0 1em;
   padding: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ddd;
   .comment {
     padding: 0;
     margin: 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
     article {
       background: #f7f7f7;
-      padding: .5em;
-      border-left: 1px solid #ccc;
+      padding: .7em;
+      border-left: 1px solid #ddd;
     }
     .comment-header {
       float: left;
@@ -674,9 +674,22 @@ h6 { font-size: 1.5rem; line-height: 1; }
     .comment-meta {
       font-size: .6em;
       padding: 1em 0 1.8em;
+      color: #999;
+      a {
+        color: #999;
+        text-decoration: none;
+      }
       .comment-author {
         font-size: 1.6em;
         margin-right: .5em;
+        color: #333;
+        font-weight: 600;
+        a {
+          color: $light-blue;
+          &:hover {
+            color: $dark-blue;
+          }
+        }
       }
     }
     .comment-content-area {
@@ -691,14 +704,33 @@ h6 { font-size: 1.5rem; line-height: 1; }
       margin: 0 0 -1em;
       padding: 0;
       .comment {
-        border-left: 1px solid #ccc;
+        border-left: 1px solid #ddd;
         padding: 1em 1em 1em 2em;
         border-bottom: 0;
         margin: 0;
+        font-size: 90%;
         article {
           background: transparent;
           padding: 0;
           border: 0;
+        }
+        .comment-content-area {
+          padding: .7em;
+        }
+      }
+      .children {
+        .comment {
+          padding: .5em .5em .5em 1em;
+          font-size: 90%;
+          .comment-header {
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+          .comment-content-area {
+            padding: .5em;
+          }
         }
       }
     }
