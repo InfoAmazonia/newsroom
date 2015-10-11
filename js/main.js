@@ -21,6 +21,15 @@
       }
     });
     $(window).resize();
+    $('#mobile-nav .toggle-nav').click(function() {
+      if($('#mobile-nav').hasClass('active')) {
+        $('#mobile-nav').removeClass('active');
+        $('#mobile-nav .toggle-nav').removeClass('icon-cross').addClass('icon-menu');
+      } else {
+        $('#mobile-nav').addClass('active');
+        $('#mobile-nav .toggle-nav').removeClass('icon-menu').addClass('icon-cross');
+      }
+    });
   });
 
 })(jQuery);

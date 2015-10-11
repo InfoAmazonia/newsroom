@@ -270,6 +270,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
   .logo {
     width: 65%;
     display: block;
+    float: left;
     &.with-image {
       a {
         display: block;
@@ -281,6 +282,57 @@ h6 { font-size: 1.5rem; line-height: 1; }
           height: auto;
           display: block;
         }
+      }
+    }
+  }
+  #mobile-nav {
+    a.toggle-nav {
+      float: right;
+      font-size: 2em;
+      text-decoration: none;
+    }
+    &.active {
+      .mobile-nav-content {
+        display: block;
+      }
+    }
+    .mobile-nav-content {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-bottom: 2px solid #ccc;
+      display: none;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          a {
+            border-bottom: 1px solid #ddd;
+            display: block;
+            padding: .5em;
+            text-decoration: none;
+          }
+        }
+        ul {
+          border-left: 1px solid #ddd;
+          margin: 0 0 0 1em;
+        }
+      }
+      p.label {
+        padding: .5em;
+        margin: 0;
+        color: #999;
+        font-style: italic;
+        font-weight: 600;
+      }
+      input[type=text] {
+        width: 100%;
+        padding: .8em .5em;
+        background: #fff;
+        border: 0;
       }
     }
   }

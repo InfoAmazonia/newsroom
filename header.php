@@ -48,4 +48,19 @@
 	</header>
 	<div class="mobile-header" style="display:none;">
 		<?php newsroom_logo(true); ?>
+		<nav id="mobile-nav">
+			<a href="javascript:void(0);" class="icon toggle-nav icon-menu"></a>
+			<div class="mobile-nav-content">
+				<?php wp_nav_menu(array('theme_location' => 'header_menu')); ?>
+				<?php
+				if(function_exists('qtranxf_generateLanguageSelectCode')) :
+					?>
+					<p class="label"><?php _e('Select your language', 'newsroom'); ?></p>
+					<?php echo qtranxf_generateLanguageSelectCode('text'); ?>
+					<?php
+				endif;
+				?>
+	      <?php get_search_form(); ?>
+			</div>
+		</nav>
 	</div>

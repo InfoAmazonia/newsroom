@@ -357,6 +357,7 @@ h6 {
 .mobile-header .logo {
   width: 65%;
   display: block;
+  float: left;
 }
 .mobile-header .logo.with-image a {
   display: block;
@@ -368,6 +369,51 @@ h6 {
   width: 100%;
   height: auto;
   display: block;
+}
+.mobile-header #mobile-nav a.toggle-nav {
+  float: right;
+  font-size: 2em;
+  text-decoration: none;
+}
+.mobile-header #mobile-nav.active .mobile-nav-content {
+  display: block;
+}
+.mobile-header #mobile-nav .mobile-nav-content {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+  display: none;
+}
+.mobile-header #mobile-nav .mobile-nav-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mobile-header #mobile-nav .mobile-nav-content ul li a {
+  border-bottom: 1px solid #ddd;
+  display: block;
+  padding: .5em;
+  text-decoration: none;
+}
+.mobile-header #mobile-nav .mobile-nav-content ul ul {
+  border-left: 1px solid #ddd;
+  margin: 0 0 0 1em;
+}
+.mobile-header #mobile-nav .mobile-nav-content p.label {
+  padding: .5em;
+  margin: 0;
+  color: #999;
+  font-style: italic;
+  font-weight: 600;
+}
+.mobile-header #mobile-nav .mobile-nav-content input[type=text] {
+  width: 100%;
+  padding: .8em .5em;
+  background: #fff;
+  border: 0;
 }
 
 .map-container {
