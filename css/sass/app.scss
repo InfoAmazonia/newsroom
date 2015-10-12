@@ -340,7 +340,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
     .mobile-nav-content {
       position: absolute;
       top: 43px;
-      bottom: 10%;
+      max-height: 400px;
       overflow: auto;
       left: 0;
       right: 0;
