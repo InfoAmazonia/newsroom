@@ -329,7 +329,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
   #mobile-nav {
     a.toggle-nav {
       float: right;
-      font-size: 2em;
+      font-size: 2.2em;
       text-decoration: none;
     }
     &.active {
@@ -339,7 +339,7 @@ h6 { font-size: 1.5rem; line-height: 1; }
     }
     .mobile-nav-content {
       position: absolute;
-      top: 50px;
+      top: 43px;
       left: 0;
       right: 0;
       background: #fff;
@@ -358,8 +358,26 @@ h6 { font-size: 1.5rem; line-height: 1; }
           }
         }
         ul {
-          border-left: 1px solid #ddd;
+          border-left: 1px solid #eee;
+          border-bottom: 1px solid #eee;
           margin: 0 0 0 1em;
+          padding: 1em;
+          li {
+            border: 0;
+            padding: 0;
+            display: inline-block;
+            a {
+              display: inline-block;
+              border-bottom: 0;
+              padding: 0;
+            }
+            &:after {
+              content: '\a0\b7\a0';
+            }
+            &:last-child:after {
+              content: '';
+            }
+          }
         }
       }
       p.label {

@@ -415,7 +415,7 @@ h6 {
 }
 .mobile-header #mobile-nav a.toggle-nav {
   float: right;
-  font-size: 2em;
+  font-size: 2.2em;
   text-decoration: none;
 }
 .mobile-header #mobile-nav.active .mobile-nav-content {
@@ -423,7 +423,7 @@ h6 {
 }
 .mobile-header #mobile-nav .mobile-nav-content {
   position: absolute;
-  top: 50px;
+  top: 43px;
   left: 0;
   right: 0;
   background: #fff;
@@ -442,8 +442,26 @@ h6 {
   text-decoration: none;
 }
 .mobile-header #mobile-nav .mobile-nav-content ul ul {
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   margin: 0 0 0 1em;
+  padding: 1em;
+}
+.mobile-header #mobile-nav .mobile-nav-content ul ul li {
+  border: 0;
+  padding: 0;
+  display: inline-block;
+}
+.mobile-header #mobile-nav .mobile-nav-content ul ul li a {
+  display: inline-block;
+  border-bottom: 0;
+  padding: 0;
+}
+.mobile-header #mobile-nav .mobile-nav-content ul ul li:after {
+  content: '\a0\b7\a0';
+}
+.mobile-header #mobile-nav .mobile-nav-content ul ul li:last-child:after {
+  content: '';
 }
 .mobile-header #mobile-nav .mobile-nav-content p.label {
   padding: .5em;
