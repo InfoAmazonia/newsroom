@@ -120,9 +120,25 @@ h6 { font-size: 1.5rem; line-height: 1; }
 }
 
 .siteorigin-panels .entry-content h3,
-.siteorigin-panels .entry-content h2,
+.siteorigin-panels .entry-content h2 {
+  color: #585858;
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  border-bottom: 2px solid #ddd;
+  a {
+    &:after {
+      content: '\00bb';
+      color: #848484;
+    }
+  }
+  @include media($mobile) {
+    & {
+      @include pad(0 5px);
+    }
+  }
+}
+
 .newsroom-section-title {
-  border-bottom: 2px solid #dddddd;
+  border-bottom: 2px solid #ddd;
   margin-bottom: 20px;
   h2,
   h3 {
