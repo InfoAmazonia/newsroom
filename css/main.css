@@ -424,6 +424,8 @@ h6 {
 .mobile-header #mobile-nav .mobile-nav-content {
   position: absolute;
   top: 43px;
+  bottom: 10%;
+  overflow: auto;
   left: 0;
   right: 0;
   background: #fff;
