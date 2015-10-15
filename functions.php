@@ -114,10 +114,13 @@ add_action('after_setup_theme', 'newsroom_setup', 100);
  */
 
 include_once(STYLESHEETPATH . '/inc/widgets/single-map.php');
-include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php');
-include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/square-posts/square-posts.php');
-include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/list-posts/list-posts.php');
-include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/list-images/list-images.php');
+
+if(class_exists('SiteOrigin_Widget')) {
+	include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php');
+	include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/square-posts/square-posts.php');
+	include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/list-posts/list-posts.php');
+	include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/list-images/list-images.php');
+}
 
 /*
  * Clears JEO default front-end styles and scripts
