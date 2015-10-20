@@ -280,3 +280,13 @@ function newsroom_social_apis() {
 	<?php
 }
 add_action('wp_footer', 'newsroom_social_apis');
+
+
+function newsroom_the_author($display_name) {
+	global $post;
+	if(function_exists('get_field') && get_field('author')) {
+		return get_field('author');
+	}
+	return $display_name;
+}
+add_filter('the_author', 'newsroom_the_author');
