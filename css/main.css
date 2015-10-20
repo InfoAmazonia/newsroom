@@ -424,7 +424,7 @@ h6 {
 .mobile-header #mobile-nav .mobile-nav-content {
   position: absolute;
   top: 43px;
-  height: 400px;
+  max-height: 400px;
   overflow: auto;
   left: 0;
   right: 0;
@@ -1120,6 +1120,11 @@ h6 {
   padding: 2em 0;
   background: #415ba8;
   color: #fff;
+}
+#colophon input {
+  background: #fff;
+  border: 0;
+  color: #333;
 }
 #colophon h2,
 #colophon h3,

@@ -906,6 +906,11 @@ h6 { font-size: 1.5rem; line-height: 1; }
   @include pad(2em 0);
   background: $dark-blue;
   color: #fff;
+  input {
+    background: #fff;
+    border: 0;
+    color: #333;
+  }
   h2,
   h3,
   p {
