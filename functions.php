@@ -290,22 +290,3 @@ function newsroom_the_author($display_name) {
 	return $display_name;
 }
 add_filter('the_author', 'newsroom_the_author');
-
-
-function newsroom_api_marker_data($properties) {
-	global $wp_query;
-	if(isset($wp_query->query['geojson'])) {
-		$properties['date'] = get_the_date('c');
-		$properties['excerpt'] = get_the_excerpt();
-		$thumb = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
-		$full = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
-		$properties['thumbnail'] = array(
-			'width' => $thumb[1],
-			'height' => $thumb[2],
-			'url' => $thumb[0],
-			'full' => $full[0]
-		);
-	}
-	return $properties;
-}
-add_filter('jeo_marker_data', 'newsroom_api_marker_data');
