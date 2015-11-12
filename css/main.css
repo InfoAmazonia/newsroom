@@ -719,13 +719,13 @@ h6 {
   clear: left;
 }
 #primary .content .newsroom-square-posts ul li article {
-  padding: 5px;
+  padding: 0;
 }
 #primary .content .newsroom-square-posts ul li article .square-posts-thumbnail {
   width: 40%;
   float: left;
-  margin: -5px 5px -5px -5px;
-  margin-right: 5px;
+  margin: 0 5px 0 0;
+  margin-right: 10px;
 }
 #primary .content .newsroom-square-posts ul li article .square-posts-thumbnail img {
   width: 100%;
@@ -738,6 +738,7 @@ h6 {
 #primary .content .newsroom-square-posts ul li article .square-posts-post-content h2,
 #primary .content .newsroom-square-posts ul li article .square-posts-post-content p {
   font-size: .75em;
+  line-height: 1;
   display: inline;
   margin: 0;
 }
