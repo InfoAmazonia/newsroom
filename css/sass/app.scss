@@ -585,12 +585,12 @@ h6 { font-size: 1.5rem; line-height: 1; }
           @include span-columns(4 of 8);
           @include omega(2n);
           article {
-            padding: 10px;
+            padding: 5px;
             .square-posts-thumbnail {
               width: 40%;
               float: left;
-              margin: -10px 10px -10px -10px;
-              margin-right: 10px;
+              margin: -5px 5px -5px -5px;
+              margin-right: 5px;
               img {
                 width: 100%;
                 height: auto;

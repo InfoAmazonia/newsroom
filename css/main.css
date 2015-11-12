@@ -719,13 +719,13 @@ h6 {
   clear: left;
 }
 #primary .content .newsroom-square-posts ul li article {
-  padding: 10px;
+  padding: 5px;
 }
 #primary .content .newsroom-square-posts ul li article .square-posts-thumbnail {
   width: 40%;
   float: left;
-  margin: -10px 10px -10px -10px;
-  margin-right: 10px;
+  margin: -5px 5px -5px -5px;
+  margin-right: 5px;
 }
 #primary .content .newsroom-square-posts ul li article .square-posts-thumbnail img {
   width: 100%;
