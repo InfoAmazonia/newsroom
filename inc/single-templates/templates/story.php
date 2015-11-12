@@ -37,6 +37,10 @@
 					<li>
 						<div class="g-plusone" data-size="tall" data-href="<?php the_permalink(); ?>"></div>
 					</li>
+					<li>
+						<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+						<script type="IN/Share" data-counter="top"></script>
+					</li>
 				</ul>
 			</aside>
 			<section class="content">
@@ -60,6 +64,10 @@
 							</li>
 							<li>
 								<div class="g-plusone" data-size="tall" data-href="<?php the_permalink(); ?>"></div>
+							</li>
+							<li>
+								<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+								<script type="IN/Share" data-counter="top"></script>
 							</li>
 						</ul>
 					</aside>
