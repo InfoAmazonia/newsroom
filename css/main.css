@@ -732,13 +732,13 @@ h6 {
   height: auto;
 }
 #primary .content .newsroom-square-posts ul li article .square-posts-post-content {
-  line-height: 1;
+  line-height: .7;
   overflow: hidden;
 }
 #primary .content .newsroom-square-posts ul li article .square-posts-post-content h2,
 #primary .content .newsroom-square-posts ul li article .square-posts-post-content p {
-  font-size: .75em;
-  line-height: 1;
+  font-size: .5em;
+  line-height: .1;
   display: inline;
   margin: 0;
 }
