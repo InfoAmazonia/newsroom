@@ -719,12 +719,12 @@ h6 {
   clear: left;
 }
 #primary .content .newsroom-square-posts ul li article {
-  padding: 0;
+  padding: 10px;
 }
 #primary .content .newsroom-square-posts ul li article .square-posts-thumbnail {
   width: 40%;
   float: left;
-  margin: 0 5px 0 0;
+  margin: -10px 10px -10px -10px;
   margin-right: 10px;
 }
 #primary .content .newsroom-square-posts ul li article .square-posts-thumbnail img {
@@ -732,13 +732,12 @@ h6 {
   height: auto;
 }
 #primary .content .newsroom-square-posts ul li article .square-posts-post-content {
-  line-height: .7;
+  line-height: 1;
   overflow: hidden;
 }
 #primary .content .newsroom-square-posts ul li article .square-posts-post-content h2,
 #primary .content .newsroom-square-posts ul li article .square-posts-post-content p {
-  font-size: .5em;
-  line-height: .1;
+  font-size: .75em;
   display: inline;
   margin: 0;
 }
@@ -747,26 +746,24 @@ h6 {
   font-size: .8;
 }
 #primary .content .newsroom-square-posts ul li.no-thumbnail {
+  padding: 5px;
   background: #f4f4f4;
 }
 @media screen and (max-width: 480px) {
-  #primary .content .newsroom-square-posts li {
+  #primary .content .newsroom-square-posts ul li {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
     display: block;
   }
-  #primary .content .newsroom-square-posts li:last-child {
+  #primary .content .newsroom-square-posts ul li:last-child {
     margin-right: 0;
   }
-  #primary .content .newsroom-square-posts li::after {
+  #primary .content .newsroom-square-posts ul li::after {
     clear: both;
     content: "";
     display: table;
-  }
-  #primary .content .newsroom-square-posts li article {
-    margin: 0 5px;
   }
 }
 #primary #share {

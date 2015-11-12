@@ -585,11 +585,11 @@ h6 { font-size: 1.5rem; line-height: 1; }
           @include span-columns(4 of 8);
           @include omega(2n);
           article {
-            padding: 0;
+            padding: 10px;
             .square-posts-thumbnail {
               width: 40%;
               float: left;
-              margin: 0 5px 0 0;
+              margin: -10px 10px -10px -10px;
               margin-right: 10px;
               img {
                 width: 100%;
@@ -597,12 +597,11 @@ h6 { font-size: 1.5rem; line-height: 1; }
               }
             }
             .square-posts-post-content {
-              line-height: .7;
+              line-height: 1;
               overflow: hidden;
               h2,
               p {
-                font-size: .5em;
-                line-height: .1;
+                font-size: .75em;
                 display: inline;
                 margin: 0;
               }
@@ -613,16 +612,31 @@ h6 { font-size: 1.5rem; line-height: 1; }
             }
           }
           &.no-thumbnail {
+            padding: 5px;
             background: #f4f4f4;
           }
         }
       }
       @include media($mobile) {
-        li {
-          @include span-columns(12 of 12);
-          @include row();
-          article {
-            margin: 0 5px;
+        ul {
+          li {
+            @include span-columns(12 of 12);
+            @include row();
+            // article {
+            //   margin: 0 5px;
+            //   padding: 0;
+            //   .square-posts-thumbnail {
+            //     margin: 0 5px 0 0;
+            //   }
+            //   .square-posts-post-content {
+            //     line-height: 1;
+            //     h2,
+            //     p {
+            //       font-size: .7em;
+            //       line-height: .1;
+            //     }
+            //   }
+            // }
           }
         }
       }
