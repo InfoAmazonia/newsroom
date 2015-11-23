@@ -3,19 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# Ramesh Bhushal <toramesh25@gmail.com>, 2015
+# Joydeep Gupta <joydeep.gupta@thethirdpole.net>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Newsroom\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-12 15:14-0200\n"
-"PO-Revision-Date: 2015-11-23 14:19-0300\n"
+"PO-Revision-Date: 2015-11-23 14:18-0300\n"
 "Last-Translator: Miguel Peixe <miguel@cardume.art.br>\n"
-"Language-Team: Nepali (http://www.transifex.com/jeo/newsroom/language/ne/)\n"
+"Language-Team: Hindi (http://www.transifex.com/jeo/newsroom/language/hi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ne\n"
+"Language: hi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.5.4\n"
 
@@ -27,12 +27,12 @@ msgstr "%s"
 #: archive.php:44
 #, php-format
 msgid "Daily Archives: %s"
-msgstr "दैनिक अभिलेख: %s"
+msgstr "दिन की खबर: %s"
 
 #: archive.php:46
 #, php-format
 msgid "Monthly Archives: %s"
-msgstr "मासिक अभिलेख: %s"
+msgstr "महीने की खबर: %s"
 
 #: archive.php:46
 msgid "F Y"
@@ -41,7 +41,7 @@ msgstr "F Y"
 #: archive.php:48
 #, php-format
 msgid "Yearly Archives: %s"
-msgstr "वार्षिक अभिलेख: %s"
+msgstr "साल की खबर: %s"
 
 #: archive.php:48
 msgid "Y"
@@ -49,99 +49,99 @@ msgstr "Y"
 
 #: archive.php:50
 msgid "Archives"
-msgstr "अभिलेखालय"
+msgstr "पुरानी ख़बर"
 
 #: content-share.php:4
 msgid "Share a map"
-msgstr "नक्शा सेयर गर्नुहोस्"
+msgstr "मानचित्र शेयर करें"
 
 #: content-share.php:9 content-share.php:237
 msgid "Share"
-msgstr "शेयर"
+msgstr "शेयर करें"
 
 #: content-share.php:20
 msgid "Share the map"
-msgstr "नक्शा सेयर गर्नुहोस्"
+msgstr "यह मानचित्र शेयर करें"
 
 #: content-share.php:71
 msgid "Choose a map"
-msgstr "नक्शा छान्नुहोस्"
+msgstr "मानचित्र चयन करें"
 
 #: content-share.php:75
 msgid "Choose any map from the list"
-msgstr "सुचीबाट कुनै पनि नक्शा छान्नुहोस्"
+msgstr "सूची से किसी भी मानचित्र चयन करें"
 
 #: content-share.php:80
 msgid "Select a map"
-msgstr "नक्शा छान्नुहोस्"
+msgstr "मानचित्र चयन करें"
 
 #: content-share.php:86
 msgid "Select layers from this map"
-msgstr "यो नक्शाबाट लेयरहरु छान्नुहोस्"
+msgstr "मानचित्र से स्तर चयन करें"
 
 #: content-share.php:93 content-share.php:95 content-share.php:106
 msgid "Select layers"
-msgstr "लेयरहरु छान्नुहोस् ।"
+msgstr "स्तर चयन करें"
 
 #: content-share.php:100
 msgid "Choose any layers from the list"
-msgstr "सुचीबाट कुनैपनि लेयर छान्नुहोस्"
+msgstr "सूची से स्तर चयन करें"
 
 #: content-share.php:118
 msgid "Back to default layer configuration"
-msgstr "Back to default layer configuration"
+msgstr "पहले स्तर पर जाएँ"
 
 #: content-share.php:120 content-share.php:126
 msgid "View all maps"
-msgstr "सबै नक्शा हर्नुहोस्"
+msgstr "सभी मानचित्र देखें"
 
 #: content-share.php:139
 msgid "Filter content"
-msgstr "Filter content"
+msgstr "लेख फिल्टर करें"
 
 #: content-share.php:143
 msgid "Filter the content displayed on the map through our options"
-msgstr "Filter the content displayed on the map through our options"
+msgstr "हमारे विकल्प के माध्यम से मानचित्र पर प्रदर्शित सामग्री फ़िल्टर करें"
 
 #: content-share.php:148
 msgid "Select content"
-msgstr "सामाग्री छान्नुहोस्"
+msgstr "लेख चयन करें"
 
 #: content-share.php:153
 msgid "Selected content"
-msgstr "छानिएका सामग्री"
+msgstr "चुना गया लेख"
 
 #: content-share.php:158
 msgid "General content"
-msgstr "सामान्य सामग्री"
+msgstr "आम लेख"
 
 #: content-share.php:159
 msgid "Content from the map"
-msgstr "नक्शाको सामग्री"
+msgstr "मानचित्र से सूचना"
 
 #: content-share.php:159
 msgid "Latest content"
-msgstr "पछिल्लाो सामग्री"
+msgstr "नवीनतम लेख"
 
 #: content-share.php:160
 msgid "No content (map only)"
-msgstr "No content( नक्शा मात्रै) "
+msgstr "केवल मानचित्र "
 
 #: content-share.php:168
 msgid "By"
-msgstr "बाट"
+msgstr "द्वारा"
 
 #: content-share.php:185
 msgid "Width & Height"
-msgstr "चौडाइ र उचाइ"
+msgstr "चौड़ाई ऊंचाई"
 
 #: content-share.php:189
 msgid "Select the width and height proportions you would like to embed to be."
-msgstr "उचाइ र चौडाइ को proportions छान्नुहोस्"
+msgstr "ई और ऊंचाई के अनुपात का चयन करें"
 
 #: content-share.php:194
 msgid "Small"
-msgstr "सानो"
+msgstr "छोटा"
 
 #: content-share.php:195
 msgid "Medium"
@@ -149,7 +149,7 @@ msgstr "मध्यम"
 
 #: content-share.php:196
 msgid "Large"
-msgstr "ठुलो"
+msgstr "बड़ा"
 
 #: content-share.php:206
 msgid "HTML Output"
@@ -160,26 +160,26 @@ msgid ""
 "Copy and paste this code into an HTML page to embed with it's current "
 "settings and location"
 msgstr ""
-"Copy and paste this code into an HTML page to embed with it's current "
-"settings and location"
+"वर्तमान सेटिंग्स और स्थान के साथ एम्बेड करने के लिए एक HTML पृष्ठ में इस कोड को कॉपी और "
+"पेस्ट करें"
 
 #: content-share.php:219
 msgid "URL"
-msgstr "URL"
+msgstr "यूआरएल"
 
 #: content-share.php:223
 msgid "Get the original to use as a link or a custom embed."
-msgstr "Get the original to use as a link or a custom embed"
+msgstr "लिंक या कस्टम के रूप में उपयोग करने के लिए मूल जाएँ"
 
 #: content-share.php:241
 msgid ""
 "Share this map, with it's current settings and location, on your social "
 "network"
-msgstr "अहिलेको settings र location सहित सोसियल मेडियामा यो नक्शा सेयर गर्नुहोस्"
+msgstr "वर्तमान सेटिंग्स और स्थान के साथ इस मानचित्र को सोशल नेटवर्क पर शेयर करें"
 
 #: content-share.php:257
 msgid "Map preview"
-msgstr "नक्शाको पुर्वावलोकन"
+msgstr "मानचित्र पूर्वावलोकन"
 
 #: footer.php:10
 #, php-format
@@ -188,33 +188,33 @@ msgid ""
 "\">WordPress</a> using the <a href=\"%s\" target=\"_blank\" rel=\"external"
 "\">JEO Newsroom</a> theme"
 msgstr ""
-"यो वेवसाइट <a href=\"%s\" target=\"_blank\" rel=\"external\"> को WordPress</"
-"a> मा  <a href=\"%s\" target=\"_blank\" rel=\"external\"> JEO Newsroom </a> "
-"theme"
+"<a href=\"%s\" target=\"_blank\" rel=\"external\">JEO न्यूज़ रूम</a> विषय उपयोग "
+"से यह वेबसाइट <a href=\"%s\" target=\"_blank\" rel=\"external\">WordPress</a> "
+"के साथ बनाया गया है"
 
 #: functions.php:77
 msgid "Header menu"
-msgstr "हेडर मेनु"
+msgstr "हेडर सूची"
 
 #: functions.php:78
 msgid "Footer menu"
-msgstr "फुटर मेनु"
+msgstr "फुटर सूची"
 
 #: functions.php:86
 msgid "Post sidebar"
-msgstr "Post sidebar"
+msgstr "पोस्ट साइडबार"
 
 #: functions.php:92
 msgid "Footer content"
-msgstr "Footer content"
+msgstr "फुटर विषय"
 
 #: functions.php:98
 msgid "Archive sidebar"
-msgstr "Archive sidebar"
+msgstr "आर्काइव साइडबार"
 
 #: functions.php:104
 msgid "Search results sidebar"
-msgstr "Search results sidebar"
+msgstr "खोज परिणाम साइडबार"
 
 #: header.php:17
 msgid "Page"
@@ -222,67 +222,67 @@ msgstr "पृष्ठ"
 
 #: header.php:76
 msgid "Select your language"
-msgstr "भाषा रोज्नुहोस्"
+msgstr "अपनी भाषा चुनें"
 
 #: inc/advanced-nav.php:148
 msgid "Select"
-msgstr "रोज्नुहोस्"
+msgstr "चुनें"
 
 #: inc/advanced-nav.php:166
 msgid "Text search"
-msgstr "Text search"
+msgstr "पाठ्य खोज"
 
 #: inc/advanced-nav.php:167
 msgid "Type your search here"
-msgstr "तपाइको सर्च यहाँ टाइप गर्नुहोेस्।"
+msgstr "यहाँ अपनी खोज लिखें"
 
 #: inc/advanced-nav.php:186
 msgid "Date range"
-msgstr "मिति"
+msgstr "तिथि सीमा"
 
 #: inc/advanced-nav.php:189
 msgid "From"
-msgstr "बाट"
+msgstr "से"
 
 #: inc/advanced-nav.php:193
 msgid "To"
-msgstr "सम्म"
+msgstr "तक"
 
 #: inc/advanced-nav.php:198
 msgid "Filter"
-msgstr "फिल्टर"
+msgstr "फ़िल्टर"
 
 #: inc/advanced-nav.php:208 inc/advanced-nav.php:219
 msgid "Cancel filters"
-msgstr "फिल्टर रद्द गर्नुहोस्।"
+msgstr "फिल्टर रद्द करें"
 
 #: inc/advanced-nav.php:216
 msgid "More filters"
-msgstr "थप फिल्टर"
+msgstr "अतिरिक्त फिल्टर"
 
 #: inc/featured-media/featured-media.php:20
 msgid "Featured media"
-msgstr "Featured media"
+msgstr "विशेष माध्यम"
 
 #: inc/featured-media/featured-media.php:33
 msgid "Select the type of media you'd like to feature for this post"
-msgstr "Select the type of media you'd like to feature for this post"
+msgstr "इस पोस्ट के लिए अपनी पसंद का माध्यम चुनें"
 
 #: inc/featured-media/featured-media.php:36
 msgid "Post featured image"
-msgstr "Post featured image"
+msgstr "विशेष तस्वीर पोस्ट करें"
 
 #: inc/featured-media/featured-media.php:41
 msgid "Post image gallery"
-msgstr "Post image gallery"
+msgstr "तस्वीर गैलरी पोस्ट करें"
 
 #: inc/featured-media/featured-media.php:46 inc/widgets/single-map.php:48
 msgid "Map"
-msgstr "नक्सा"
+msgstr "मानचित्र"
 
 #: inc/featured-media/featured-media.php:50
 msgid "Post media"
-msgstr "Post media"
+msgstr "पोस्ट मीडिया"
 
 #: inc/featured-media/featured-media.php:50
 #, php-format
@@ -290,174 +290,173 @@ msgid ""
 "(First external media attached to post content. <a href=\"%s\">See available "
 "media here</a>)"
 msgstr ""
-"(पोस्टमा पहिलो थप गरिएको माध्यम . <a href=\"%s\">Veja mídias disponíveis aqui</"
-"a>)"
+"(सबसे पहले बाहर मीडिया पोस्ट के साथ संलग्न। <a href=\"%s\">यहाँ उपलब्ध मीडिया देखें</a>)"
 
 #: inc/photoswipe/photoswipe.php:42
 msgid "images"
-msgstr "तस्विरहरु"
+msgstr "तस्वीर"
 
 #: inc/single-templates/single-templates.php:15
 msgid "Story"
-msgstr "समाचार"
+msgstr "कहानी"
 
 #: inc/single-templates/single-templates.php:44
 msgid "Template"
-msgstr "Template"
+msgstr "टेम्पलेट"
 
 #: inc/single-templates/single-templates.php:58
 msgid "Select the template to display this post"
-msgstr "समाचार हेर्न यो display छान्नुहोस्"
+msgstr "इस पोस्ट के प्रदर्शन के लिए टेम्पलेट चुनें"
 
 #: inc/single-templates/templates/sequence.php:31
 #: inc/single-templates/templates/story.php:50 page.php:12
 msgid "Pages:"
-msgstr "पृष्ठहरु:"
+msgstr "पृष्ठ:"
 
 #: inc/single-templates/templates/story.php:29
 #: inc/single-templates/templates/story.php:57
 msgid "Share this story"
-msgstr "यो लेख सेयर गर्नुहोस्"
+msgstr "यह कहानी शेयर करें"
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:11
 msgid "Newsroom Highlight Carousel"
-msgstr "Newsroom Highlight Carousel"
+msgstr "न्यूजरूम हाइलाइट कैरसेल"
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:13
 msgid "Display featured posts with featured image as a interactive carousel"
-msgstr "Display featured posts with featured image as a interactive carousel"
+msgstr "एक संवादात्मक कैरसेल के रूप में विशेष तस्वीर के साथ विशेष पोस्ट्स का प्रदर्शन"
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:21
 msgid "Title for the carousel."
-msgstr "Carousel को शिर्षक."
+msgstr "कैरसेल के लिए शीर्षक"
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:26
 msgid "Build query for highlighted posts"
-msgstr "Build query for highlighted posts"
+msgstr "रेखांकित पोस्ट्स के लिए सवालों का निर्माण"
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:30
 msgid "Auto rotate carousel"
-msgstr "Auto rotate carousel"
+msgstr "अपने आप घूमने वाला कैरसेल"
 
 #: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:35
 msgid "Milisseconds to rotate the carousel"
-msgstr "Milisseconds to rotate the carousel"
+msgstr "कैरसेल को घुमाने के लिए मिलीसेकेंड"
 
 #: inc/siteorigin-widgets/list-images/list-images.php:11
 msgid "Newsroom List Images"
-msgstr "समाचारकक्षको तस्विरको सुचि"
+msgstr "न्यूजरूम तस्वीरों की सूची"
 
 #: inc/siteorigin-widgets/list-images/list-images.php:13
 msgid "Display a list of images in a regular list format."
-msgstr "नियमित फर्म्याटमा तस्विरको सुचि देखाउ "
+msgstr "एक सामान्य सूची प्रारूप में तस्वीरों की एक सूची का प्रदर्शन"
 
 #: inc/siteorigin-widgets/list-images/list-images.php:21
 msgid "Title for image list."
-msgstr "सुचिमा रहेको तस्विरको शिर्षक ।"
+msgstr "तस्वीर सूची के लिए शीर्षक"
 
 #: inc/siteorigin-widgets/list-images/list-images.php:26
 msgid "Link for the title (optional)"
-msgstr "शिर्षकको लागि लिङ्क (वैकल्पिक)"
+msgstr "शीर्षक के लिए लिंक(वैकल्पिक)"
 
 #: inc/siteorigin-widgets/list-images/list-images.php:31
 msgid "Images"
-msgstr "तस्विरहरु"
+msgstr "तस्वीरें"
 
 #: inc/siteorigin-widgets/list-images/list-images.php:32
 #: inc/siteorigin-widgets/list-images/list-images.php:36
 msgid "Image"
-msgstr "तस्विर"
+msgstr "तस्वीर"
 
 #: inc/siteorigin-widgets/list-images/list-images.php:40
 msgid "Link for the image (optional)"
-msgstr "तस्विरको लागि लिङ्क (वैकल्पिक)"
+msgstr "तस्वीर के लिए लिंक (वैकल्पिक)"
 
 #: inc/siteorigin-widgets/list-posts/list-posts.php:11
 msgid "Newsroom List Posts"
-msgstr "समाचार सुचि"
+msgstr "न्यूजरूम पोस्ट्स सूची"
 
 #: inc/siteorigin-widgets/list-posts/list-posts.php:13
 msgid "Display a list of posts in a regular list format."
-msgstr "नियमित फर्म्याटमा तस्विरको सुचि ।"
+msgstr "एक सामान्य सूची प्रारूप में पोस्ट्स की एक सूची का प्रदर्शन"
 
 #: inc/siteorigin-widgets/list-posts/list-posts.php:21
 #: inc/siteorigin-widgets/square-posts/square-posts.php:22
 msgid "Title for post list."
-msgstr "समाचार सुचि को शिर्षक।"
+msgstr "पोस्ट सूची के लिए शीर्षक"
 
 #: inc/siteorigin-widgets/list-posts/list-posts.php:26
 msgid "Link for the title"
-msgstr "शिर्षकको लिङ्क ।"
+msgstr "शीर्षक के लिए लिंक"
 
 #: inc/siteorigin-widgets/list-posts/list-posts.php:31
 #: inc/siteorigin-widgets/square-posts/square-posts.php:27
 msgid "Build query for posts to be displayed"
-msgstr "Build query for posts to be displayed"
+msgstr "पोस्ट्स के प्रदर्शन के लिए सवालों का निर्माण"
 
 #: inc/siteorigin-widgets/list-posts/list-posts.php:35
 #: inc/siteorigin-widgets/square-posts/square-posts.php:31
 msgid "Posts to display per row"
-msgstr "प्रत्येक लाइनमा देखिनुपर्ने समाचार सुचि ।"
+msgstr "हर पंक्ति प्रदर्शन के लिए पोस्ट्स"
 
 #: inc/siteorigin-widgets/square-posts/square-posts.php:11
 msgid "Newsroom Square Posts"
-msgstr "Newsroom Square Posts"
+msgstr "न्यूजरूम स्क्वायर पोस्ट्स"
 
 #: inc/siteorigin-widgets/square-posts/square-posts.php:13
 msgid "Display a list of posts in a small square format."
-msgstr "Display a list of posts in a small square format."
+msgstr "एक छोटे स्क्वायर फॉर्मेट में पोस्ट्स की सूची का प्रदर्शन"
 
 #: inc/theme-options.php:33
 msgid "Newsroom Style"
-msgstr "समाचारकक्षको style"
+msgstr "न्यूजरूम स्टाइल"
 
 #: inc/theme-options.php:33
 msgid "Newsroom"
-msgstr "समाचारकक्ष"
+msgstr "न्यूजरूम"
 
 #: inc/theme-options.php:44
 msgid "Newsroom Theme Options"
-msgstr "Newsroom Theme Options"
+msgstr "न्यूजरूम थीम ऑप्शंस"
 
 #: inc/theme-options.php:62
 msgid "Style"
-msgstr "स्टायल"
+msgstr "स्टाइल"
 
 #: inc/theme-options.php:69
 msgid "Links"
-msgstr "लिङ्क"
+msgstr "लिंक्स"
 
 #: inc/theme-options.php:76
 msgid "Social APIs"
-msgstr "Social APIs"
+msgstr "सामाजिक एपीआई"
 
 #: inc/theme-options.php:83
 msgid "Choose a style"
-msgstr "स्टायल छान्नुहोस्"
+msgstr "स्टाइल का चयन करें"
 
 #: inc/theme-options.php:91
 msgid "Upload a custom logo"
-msgstr " Upload a custom logo "
+msgstr "कस्टम लोगो अपलोड करें"
 
 #: inc/theme-options.php:99
 msgid "Facebook url"
-msgstr "फेसबुक url"
+msgstr "फेसबुक से जुड़ें"
 
 #: inc/theme-options.php:107
 msgid "Twitter url"
-msgstr "ट्विटर url"
+msgstr "टिवटर पर आएं"
 
 #: inc/theme-options.php:115
 msgid "Legal disclaimer"
-msgstr "Legal disclaimer"
+msgstr "लीगल डिस्क्लेमर"
 
 #: inc/theme-options.php:123
 msgid "Facebook App ID"
-msgstr "फेसबुक APP ID"
+msgstr "फेसबुक ऐप आईडी"
 
 #: inc/theme-options.php:147
 msgid "Logo url"
-msgstr "Logo url"
+msgstr "लोगो यूआरएल"
 
 #: inc/theme-options.php:148
 msgid "Upload"
@@ -465,36 +464,36 @@ msgstr "अपलोड"
 
 #: inc/widgets/single-map.php:14
 msgid "JEO Map Widget"
-msgstr "JEO Map Widget"
+msgstr "जियो मैप विजेट"
 
 #: inc/widgets/single-map.php:15
 msgid "Display a map"
-msgstr "तस्विर देखाउ"
+msgstr "मानचित्र प्रदर्शन"
 
 #: inc/widgets/single-map.php:44
 msgid "Title"
-msgstr "शिर्षक"
+msgstr "शीर्षक"
 
 #: inc/widgets/single-map.php:57
 msgid "Display map posts"
-msgstr "नक्सा देखाउ"
+msgstr "मैप संबंधी पोस्ट का डिस्प्ले"
 
 #: inc/widgets/single-map.php:60
 msgid "Map height"
-msgstr "नक्साको उचाइ"
+msgstr "मानचित्र की ऊंचाई"
 
 #: search.php:23
 msgid "Search results for:"
-msgstr "नतिजा खोज्नुहोस् ।"
+msgstr "खोज परिणाम:"
 
 #: search.php:32
 msgid "Advanced navigation"
-msgstr "Advanced navigation"
+msgstr "उन्नत नेविगेशन"
 
 #: searchform.php:3
 msgid "Search here..."
-msgstr "यहाँ खोज्नुहोस्।"
+msgstr "यहां खोज करें ..."
 
 #: yarpp-template-newsroom.php:4
 msgid "Related Posts"
-msgstr "अन्य सम्वन्धित समाचारहरु।"
+msgstr "संबंधित पोस्ट"
