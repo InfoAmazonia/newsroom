@@ -129,7 +129,7 @@ class Newsroom_AdvancedNav {
 			wp_enqueue_script('moment');
 			wp_enqueue_style('chosen');
 			wp_enqueue_script('jquery-ui-datepicker');
-			wp_enqueue_style('jquery-ui-smoothness', 'http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css');
+			wp_enqueue_style('jquery-ui-smoothness', '//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css');
 
 		}
 
