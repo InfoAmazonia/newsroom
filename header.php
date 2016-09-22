@@ -31,13 +31,31 @@
 			<div class="site-meta">
 				<?php newsroom_logo(); ?>
 			</div>
-			<nav id="langnav">
-				<?php
-				if(function_exists('qtranxf_generateLanguageSelectCode')) {
-					echo qtranxf_generateLanguageSelectCode('text');
-				}
-				?>
-			</nav>
+			<div class="top-nav">
+				<nav id="langnav">
+					<?php
+					if(function_exists('qtranxf_generateLanguageSelectCode')) {
+						echo qtranxf_generateLanguageSelectCode('text');
+					}
+					?>
+				</nav>
+				<nav id="socialnav">
+					<?php
+					$fb = newsroom_get_facebook_url();
+					$tw = newsroom_get_twitter_url();
+					if($fb) :
+						?>
+						<a href="<?php echo $fb; ?>" rel="external" title="Facebook" class="icon icon-facebook"></a>
+						<?php
+					endif;
+					if($tw) :
+						?>
+						<a href="<?php echo $tw; ?>" rel="external" title="Twitter" class="icon icon-twitter"></a>
+						<?php
+					endif;
+					?>
+				</nav>
+			</div>
 		</div>
 		<div>
 			<nav id="mastnav">
@@ -48,4 +66,19 @@
 	</header>
 	<div class="mobile-header" style="display:none;">
 		<?php newsroom_logo(true); ?>
+		<nav id="mobile-nav">
+			<a href="javascript:void(0);" class="icon toggle-nav icon-menu"></a>
+			<div class="mobile-nav-content">
+				<?php wp_nav_menu(array('theme_location' => 'header_menu')); ?>
+				<?php
+				if(function_exists('qtranxf_generateLanguageSelectCode')) :
+					?>
+					<p class="label"><?php _e('Select your language', 'newsroom'); ?></p>
+					<?php echo qtranxf_generateLanguageSelectCode('text'); ?>
+					<?php
+				endif;
+				?>
+	      <?php get_search_form(); ?>
+			</div>
+		</nav>
 	</div>

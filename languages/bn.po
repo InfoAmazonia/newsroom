@@ -1,0 +1,499 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Joydeep Gupta <joydeep.gupta@thethirdpole.net>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Newsroom\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-12 15:14-0200\n"
+"PO-Revision-Date: 2015-11-23 14:13-0300\n"
+"Last-Translator: Miguel Peixe <miguel@cardume.art.br>\n"
+"Language-Team: Bengali (http://www.transifex.com/jeo/newsroom/language/bn/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: bn\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: archive.php:42
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: archive.php:44
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "রোজকার খবর %s"
+
+#: archive.php:46
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "মাসের খবর %s"
+
+#: archive.php:46
+msgid "F Y"
+msgstr "FY"
+
+#: archive.php:48
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "বছরের খবর %s"
+
+#: archive.php:48
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:50
+msgid "Archives"
+msgstr "পুরনো সংস্করণ"
+
+#: content-share.php:4
+msgid "Share a map"
+msgstr "মানচিত্রটি শেয়ার করুন"
+
+#: content-share.php:9 content-share.php:237
+msgid "Share"
+msgstr "শেয়ার"
+
+#: content-share.php:20
+msgid "Share the map"
+msgstr "মানচিত্রটি শেয়ার করুন"
+
+#: content-share.php:71
+msgid "Choose a map"
+msgstr "মানচিত্রটি বেছে নিন "
+
+#: content-share.php:75
+msgid "Choose any map from the list"
+msgstr "তালিকা থেকে যে কোনো মানচিত্র বেছে নিন "
+
+#: content-share.php:80
+msgid "Select a map"
+msgstr "মানচিত্র বাছুন"
+
+#: content-share.php:86
+msgid "Select layers from this map"
+msgstr "এই মানচিত্র থেকে আপনার পছন্দমত বিষয় বেছে নিন "
+
+#: content-share.php:93 content-share.php:95 content-share.php:106
+msgid "Select layers"
+msgstr "বিষয় অনুযায়ী লেয়ার বেছে নিন"
+
+#: content-share.php:100
+msgid "Choose any layers from the list"
+msgstr "তালিকা থেকে যে কোনো লেয়ার বেছে নিন"
+
+#: content-share.php:118
+msgid "Back to default layer configuration"
+msgstr "প্রথম লেয়ারে ফিরে যান "
+
+#: content-share.php:120 content-share.php:126
+msgid "View all maps"
+msgstr "সব মানচিত্র দেখুন "
+
+#: content-share.php:139
+msgid "Filter content"
+msgstr "বিষয় বাছাই করুন "
+
+#: content-share.php:143
+msgid "Filter the content displayed on the map through our options"
+msgstr "মানচিত্রে দেওয়া তালিকা থেকে বিষয় বাছাই করুন "
+
+#: content-share.php:148
+msgid "Select content"
+msgstr "খবর বেছে নিন "
+
+#: content-share.php:153
+msgid "Selected content"
+msgstr "বাছাই খবর"
+
+#: content-share.php:158
+msgid "General content"
+msgstr "সব খবর"
+
+#: content-share.php:159
+msgid "Content from the map"
+msgstr "মানচিত্র থেকে বিষয় বাছাই করুন "
+
+#: content-share.php:159
+msgid "Latest content"
+msgstr "নতুন খবর "
+
+#: content-share.php:160
+msgid "No content (map only)"
+msgstr "শুধু মানচিত্র (অন্য খবর নেই)"
+
+#: content-share.php:168
+msgid "By"
+msgstr "লিখেছেন"
+
+#: content-share.php:185
+msgid "Width & Height"
+msgstr "দৈর্ঘ্য প্রস্থ "
+
+#: content-share.php:189
+msgid "Select the width and height proportions you would like to embed to be."
+msgstr "আপনার ওয়েবসাইট এর জন্য যে দৈর্ঘ্য প্রস্থ চান সেটা বেছে নিন"
+
+#: content-share.php:194
+msgid "Small"
+msgstr "ছোট "
+
+#: content-share.php:195
+msgid "Medium"
+msgstr "মাঝারি"
+
+#: content-share.php:196
+msgid "Large"
+msgstr "বড়"
+
+#: content-share.php:206
+msgid "HTML Output"
+msgstr "html আউটপুট"
+
+#: content-share.php:210
+msgid ""
+"Copy and paste this code into an HTML page to embed with it's current "
+"settings and location"
+msgstr "এটাকে এমবেড করার জন্য এই কোডটা html পাতায় টুকে নিন"
+
+#: content-share.php:219
+msgid "URL"
+msgstr "URL"
+
+#: content-share.php:223
+msgid "Get the original to use as a link or a custom embed."
+msgstr ""
+"লিংক হিসেবে ব্যবহার করার জন্য অথবা আপনার সুবিধেমতো এমবেড করার জন্য মূলটা বেছে নিন "
+
+#: content-share.php:241
+msgid ""
+"Share this map, with it's current settings and location, on your social "
+"network"
+msgstr "আপনার সোশ্যাল নেটওয়ার্ক এর সঙ্গে এই মানচিত্রটা শেয়ার করুন"
+
+#: content-share.php:257
+msgid "Map preview"
+msgstr "মানচিত্রটা দেখুন"
+
+#: footer.php:10
+#, php-format
+msgid ""
+"This website is built on <a href=\"%s\" target=\"_blank\" rel=\"external"
+"\">WordPress</a> using the <a href=\"%s\" target=\"_blank\" rel=\"external"
+"\">JEO Newsroom</a> theme"
+msgstr ""
+"এই ওয়েবসাইট <a href=\"%s\" target=\"_blank\" rel=\"external\"> wordpress এর</"
+"a> <a href=\"%s\" target=\"_blank\" rel=\"external\">JEO newsroom</a> বিষয় "
+"ব্যবহার করে বানানো হয়েছে "
+
+#: functions.php:77
+msgid "Header menu"
+msgstr "শিরোনামের তালিকা "
+
+#: functions.php:78
+msgid "Footer menu"
+msgstr "ফুটার মেন্যু"
+
+#: functions.php:86
+msgid "Post sidebar"
+msgstr "পোস্ট সাইডবার"
+
+#: functions.php:92
+msgid "Footer content"
+msgstr "ফুটার বিষয় "
+
+#: functions.php:98
+msgid "Archive sidebar"
+msgstr "পুরনো সংস্করণ"
+
+#: functions.php:104
+msgid "Search results sidebar"
+msgstr "খোঁজ্ফল"
+
+#: header.php:17
+msgid "Page"
+msgstr "পৃষ্ঠা "
+
+#: header.php:76
+msgid "Select your language"
+msgstr "ভাষা বেছে নিন "
+
+#: inc/advanced-nav.php:148
+msgid "Select"
+msgstr "বেছে নিন "
+
+#: inc/advanced-nav.php:166
+msgid "Text search"
+msgstr "শব্দখোঁজ"
+
+#: inc/advanced-nav.php:167
+msgid "Type your search here"
+msgstr "যা খুঁজছেন এখানে লিখুন "
+
+#: inc/advanced-nav.php:186
+msgid "Date range"
+msgstr "কোন তারিখ থেকে কোন তারিখ "
+
+#: inc/advanced-nav.php:189
+msgid "From"
+msgstr "এখান থেকে "
+
+#: inc/advanced-nav.php:193
+msgid "To"
+msgstr "এখান অবধি "
+
+#: inc/advanced-nav.php:198
+msgid "Filter"
+msgstr "ফিল্টার "
+
+#: inc/advanced-nav.php:208 inc/advanced-nav.php:219
+msgid "Cancel filters"
+msgstr "ফিল্টার রদ করুন "
+
+#: inc/advanced-nav.php:216
+msgid "More filters"
+msgstr "আরো ফিল্টার"
+
+#: inc/featured-media/featured-media.php:20
+msgid "Featured media"
+msgstr "বাছাই মিডিয়া "
+
+#: inc/featured-media/featured-media.php:33
+msgid "Select the type of media you'd like to feature for this post"
+msgstr "এই পোস্ট এ যে মিডিয়াম ব্যবহার করতে চান বেছে নিন"
+
+#: inc/featured-media/featured-media.php:36
+msgid "Post featured image"
+msgstr "বাছাই ছবি পোস্ট করুন"
+
+#: inc/featured-media/featured-media.php:41
+msgid "Post image gallery"
+msgstr "ছবির গ্যালারি পোষ্ট করুন"
+
+#: inc/featured-media/featured-media.php:46 inc/widgets/single-map.php:48
+msgid "Map"
+msgstr "মানচিত্র"
+
+#: inc/featured-media/featured-media.php:50
+msgid "Post media"
+msgstr "মিডিয়া পোষ্ট করুন"
+
+#: inc/featured-media/featured-media.php:50
+#, php-format
+msgid ""
+"(First external media attached to post content. <a href=\"%s\">See available "
+"media here</a>)"
+msgstr ""
+"(First external media attached to post content. <a href=\"%s\">See available "
+"media here</a>)"
+
+#: inc/photoswipe/photoswipe.php:42
+msgid "images"
+msgstr "ছবি"
+
+#: inc/single-templates/single-templates.php:15
+msgid "Story"
+msgstr "খবর"
+
+#: inc/single-templates/single-templates.php:44
+msgid "Template"
+msgstr "টেমপ্লেট"
+
+#: inc/single-templates/single-templates.php:58
+msgid "Select the template to display this post"
+msgstr "এই খবরটা দেখানোর জন্য টেম্পলেট বাছাই করুন"
+
+#: inc/single-templates/templates/sequence.php:31
+#: inc/single-templates/templates/story.php:50 page.php:12
+msgid "Pages:"
+msgstr "পৃষ্ঠা:"
+
+#: inc/single-templates/templates/story.php:29
+#: inc/single-templates/templates/story.php:57
+msgid "Share this story"
+msgstr "খবরটা শেয়ার করুন"
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:11
+msgid "Newsroom Highlight Carousel"
+msgstr "নিউজরুম হাইলাইট কেরুজেল"
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:13
+msgid "Display featured posts with featured image as a interactive carousel"
+msgstr "বাছাই খবর আর বাছাই ছবি একসঙ্গে দেখান "
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:21
+msgid "Title for the carousel."
+msgstr "কেরুজেলের নাম"
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:26
+msgid "Build query for highlighted posts"
+msgstr "বাছাই খবরের জন্য প্রশ্ন তৈরী করুন "
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:30
+msgid "Auto rotate carousel"
+msgstr "কেরুজেল নিজের থেকে ঘোরান "
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:35
+msgid "Milisseconds to rotate the carousel"
+msgstr "কেরুজেল ঘোরাতে  কত  মিলি সেকেন্ড লাগবে ঠিক করুন "
+
+#: inc/siteorigin-widgets/list-images/list-images.php:11
+msgid "Newsroom List Images"
+msgstr "ছবির তালিকা "
+
+#: inc/siteorigin-widgets/list-images/list-images.php:13
+msgid "Display a list of images in a regular list format."
+msgstr "ছবিগুলো সাধারণ তালিকার মত দেখান "
+
+#: inc/siteorigin-widgets/list-images/list-images.php:21
+msgid "Title for image list."
+msgstr "ছবির তালিকার নাম"
+
+#: inc/siteorigin-widgets/list-images/list-images.php:26
+msgid "Link for the title (optional)"
+msgstr "নামের লিংক (optional)"
+
+#: inc/siteorigin-widgets/list-images/list-images.php:31
+msgid "Images"
+msgstr "ছবি"
+
+#: inc/siteorigin-widgets/list-images/list-images.php:32
+#: inc/siteorigin-widgets/list-images/list-images.php:36
+msgid "Image"
+msgstr "ছবি"
+
+#: inc/siteorigin-widgets/list-images/list-images.php:40
+msgid "Link for the image (optional)"
+msgstr "ছবির লিংক (optional)"
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:11
+msgid "Newsroom List Posts"
+msgstr "খবরের তালিকা "
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:13
+msgid "Display a list of posts in a regular list format."
+msgstr "খবরগুলো সাধারণ তালিকার মত দেখান"
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:21
+#: inc/siteorigin-widgets/square-posts/square-posts.php:22
+msgid "Title for post list."
+msgstr "খবর তালিকার নাম "
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:26
+msgid "Link for the title"
+msgstr "শিরোনামের লিংক "
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:31
+#: inc/siteorigin-widgets/square-posts/square-posts.php:27
+msgid "Build query for posts to be displayed"
+msgstr "যে খবর দেখাতে চান তার জন্য প্রশ্ন তৈরী করুন "
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:35
+#: inc/siteorigin-widgets/square-posts/square-posts.php:31
+msgid "Posts to display per row"
+msgstr "প্রতি সারিতে কটা খবর "
+
+#: inc/siteorigin-widgets/square-posts/square-posts.php:11
+msgid "Newsroom Square Posts"
+msgstr "নিউসরুম স্কয়ারের খবর"
+
+#: inc/siteorigin-widgets/square-posts/square-posts.php:13
+msgid "Display a list of posts in a small square format."
+msgstr "খবরগুলো ছোট তালিকা করে দেখান "
+
+#: inc/theme-options.php:33
+msgid "Newsroom Style"
+msgstr "নিউসরুম শৈলী"
+
+#: inc/theme-options.php:33
+msgid "Newsroom"
+msgstr "নিউসরুম"
+
+#: inc/theme-options.php:44
+msgid "Newsroom Theme Options"
+msgstr "নিউসরুমে বিষয় বাছাই "
+
+#: inc/theme-options.php:62
+msgid "Style"
+msgstr "শৈলী "
+
+#: inc/theme-options.php:69
+msgid "Links"
+msgstr "লিংক"
+
+#: inc/theme-options.php:76
+msgid "Social APIs"
+msgstr "সোশ্যাল API"
+
+#: inc/theme-options.php:83
+msgid "Choose a style"
+msgstr "শৈলী বেছে নিন"
+
+#: inc/theme-options.php:91
+msgid "Upload a custom logo"
+msgstr "পছন্দমত লোগো আপলোড করুন "
+
+#: inc/theme-options.php:99
+msgid "Facebook url"
+msgstr "ফেসবুক url"
+
+#: inc/theme-options.php:107
+msgid "Twitter url"
+msgstr "টুইটার url"
+
+#: inc/theme-options.php:115
+msgid "Legal disclaimer"
+msgstr "আইন অনুযায়ী ডিসক্লেইমার "
+
+#: inc/theme-options.php:123
+msgid "Facebook App ID"
+msgstr "Facebook app id"
+
+#: inc/theme-options.php:147
+msgid "Logo url"
+msgstr "লোগো url"
+
+#: inc/theme-options.php:148
+msgid "Upload"
+msgstr "আপলোড"
+
+#: inc/widgets/single-map.php:14
+msgid "JEO Map Widget"
+msgstr "JEO মানচিত্র widget"
+
+#: inc/widgets/single-map.php:15
+msgid "Display a map"
+msgstr "মানচিত্র দেখান "
+
+#: inc/widgets/single-map.php:44
+msgid "Title"
+msgstr "শিরোনাম"
+
+#: inc/widgets/single-map.php:57
+msgid "Display map posts"
+msgstr "ম্যাপ সংক্রান্ত পোস্ট প্রদর্শন করুন”"
+
+#: inc/widgets/single-map.php:60
+msgid "Map height"
+msgstr "মানচিত্রের দৈর্ঘ্য"
+
+#: search.php:23
+msgid "Search results for:"
+msgstr "খুঁজুন "
+
+#: search.php:32
+msgid "Advanced navigation"
+msgstr "অ্যাডভান্সড ন্যাভিগেশন "
+
+#: searchform.php:3
+msgid "Search here..."
+msgstr "এখানে খুঁজুন "
+
+#: yarpp-template-newsroom.php:4
+msgid "Related Posts"
+msgstr "এই সংক্রান্ত অন্য খবর "

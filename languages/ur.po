@@ -1,0 +1,495 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Ramesh Bhushal <toramesh25@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Newsroom\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-12 15:14-0200\n"
+"PO-Revision-Date: 2016-05-04 14:05-0300\n"
+"Last-Translator: Miguel Peixe <miguel@cardume.art.br>\n"
+"Language-Team: Urdu (http://www.transifex.com/jeo/newsroom/language/ur/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ur\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: archive.php:42
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: archive.php:44
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "\tیومیہ  آرکائیو%s "
+
+#: archive.php:46
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "\tماہانہ آرکائیو%s "
+
+#: archive.php:46
+msgid "F Y"
+msgstr "\tایف وائی  ؟؟"
+
+#: archive.php:48
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "\tسالانہ آرکائیو:%s "
+
+#: archive.php:48
+msgid "Y"
+msgstr "\tوائی  ؟؟"
+
+#: archive.php:50
+msgid "Archives"
+msgstr "\tآرکائیوز"
+
+#: content-share.php:4
+msgid "Share a map"
+msgstr "\tنقشہ شیُر کریں "
+
+#: content-share.php:9 content-share.php:237
+msgid "Share"
+msgstr "\tشیُر"
+
+#: content-share.php:20
+msgid "Share the map"
+msgstr "\tنقشہ شیُر کریں "
+
+#: content-share.php:71
+msgid "Choose a map"
+msgstr "\tنقشہ منتخب کریں "
+
+#: content-share.php:75
+msgid "Choose any map from the list"
+msgstr "\tلِسٹ میں سے کوئی نقشہ منتخب کریں "
+
+#: content-share.php:80
+msgid "Select a map"
+msgstr "\tنقشے کا انتخاب کریں "
+
+#: content-share.php:86
+msgid "Select layers from this map"
+msgstr "\tاس نقشے میں سے  لیئرز/تہوں کا انتخاب کریں "
+
+#: content-share.php:93 content-share.php:95 content-share.php:106
+msgid "Select layers"
+msgstr "\tلیئر/تہه کا انتخاب کریں "
+
+#: content-share.php:100
+msgid "Choose any layers from the list"
+msgstr "\tلِسٹ میں سے لیئر/تہه منتخب کریں "
+
+#: content-share.php:118
+msgid "Back to default layer configuration"
+msgstr "\tڈیفالٹ لیئرز/تہه پر واپس جائیں "
+
+#: content-share.php:120 content-share.php:126
+msgid "View all maps"
+msgstr "\tتمام نقشے دیکھیں "
+
+#: content-share.php:139
+msgid "Filter content"
+msgstr "\tکونٹینٹ فلٹر کریں "
+
+#: content-share.php:143
+msgid "Filter the content displayed on the map through our options"
+msgstr "\tآپشنز کے ذریعہ نقشے پر موجود کونٹینٹ فلٹر کریں "
+
+#: content-share.php:148
+msgid "Select content"
+msgstr "\tکونٹینٹ منتخب کریں "
+
+#: content-share.php:153
+msgid "Selected content"
+msgstr "\tمنتخب شدہ کونٹینٹ  "
+
+#: content-share.php:158
+msgid "General content"
+msgstr "\tجنرل کونٹینٹ  "
+
+#: content-share.php:159
+msgid "Content from the map"
+msgstr "\tنقشے سے حاصل کردہ میٹریل "
+
+#: content-share.php:159
+msgid "Latest content"
+msgstr "\tتازہ ترین میٹریل "
+
+#: content-share.php:160
+msgid "No content (map only)"
+msgstr "\tکوئی میٹریل نہیں (صرف نقشہ)"
+
+#: content-share.php:168
+msgid "By"
+msgstr "\tبائی "
+
+#: content-share.php:185
+msgid "Width & Height"
+msgstr "\tچوڑائی اور اونچائی"
+
+#: content-share.php:189
+msgid "Select the width and height proportions you would like to embed to be."
+msgstr "\tامبیڈ کیلئے چوڑائی اور اونچائی کا تناسب منتخب "
+
+#: content-share.php:194
+msgid "Small"
+msgstr "\tچھوٹا"
+
+#: content-share.php:195
+msgid "Medium"
+msgstr "\tدرمیانہ"
+
+#: content-share.php:196
+msgid "Large"
+msgstr "\tبڑا"
+
+#: content-share.php:206
+msgid "HTML Output"
+msgstr "\tایچ ٹی ایم ایل آؤٹ پٹ "
+
+#: content-share.php:210
+msgid ""
+"Copy and paste this code into an HTML page to embed with it's current "
+"settings and location"
+msgstr ""
+"\tموجودہ ترتیب اور مقام میں امبیڈ کرنے کے لئے کوڈ ایچ ٹی ایم ایل پر کاپی اور "
+"پیسٹ کریں "
+
+#: content-share.php:219
+msgid "URL"
+msgstr "\tیو آر ایل"
+
+#: content-share.php:223
+msgid "Get the original to use as a link or a custom embed."
+msgstr "\tمطلوبہ امبیڈ یا بطور لنک استعمال کرنے کے لئے اوریجنل  حاصل کریں  "
+
+#: content-share.php:241
+msgid ""
+"Share this map, with it's current settings and location, on your social "
+"network"
+msgstr "\tسوشل نیٹ ورک پر نقشہ اپنی ترتیب اور مقام کے ساتھ شیُر کریں "
+
+#: content-share.php:257
+msgid "Map preview"
+msgstr "\tنقشے کا پیش منظر "
+
+#: footer.php:10
+#, php-format
+msgid ""
+"This website is built on <a href=\"%s\" target=\"_blank\" rel=\"external"
+"\">WordPress</a> using the <a href=\"%s\" target=\"_blank\" rel=\"external"
+"\">JEO Newsroom</a> theme"
+msgstr ""
+
+#: functions.php:77
+msgid "Header menu"
+msgstr "\tہیڈر مینیو"
+
+#: functions.php:78
+msgid "Footer menu"
+msgstr "\tفوٹر مینیو "
+
+#: functions.php:86
+msgid "Post sidebar"
+msgstr "\tپوسٹ سائڈ-بار "
+
+#: functions.php:92
+msgid "Footer content"
+msgstr "\tفوٹر کا کونٹینٹ "
+
+#: functions.php:98
+msgid "Archive sidebar"
+msgstr "\tآرکائیو سائڈ-بار "
+
+#: functions.php:104
+msgid "Search results sidebar"
+msgstr "\tسرچ ریزلٹ سائڈ-بار "
+
+#: header.php:17
+msgid "Page"
+msgstr "\tصفحہ"
+
+#: header.php:76
+msgid "Select your language"
+msgstr "\tزبان کا انتخاب کریں "
+
+#: inc/advanced-nav.php:148
+msgid "Select"
+msgstr "\tانتخاب کریں "
+
+#: inc/advanced-nav.php:166
+msgid "Text search"
+msgstr "\tٹیکسٹ کی تلاش "
+
+#: inc/advanced-nav.php:167
+msgid "Type your search here"
+msgstr "\tاپنی تلاش یہاں لکھیں "
+
+#: inc/advanced-nav.php:186
+msgid "Date range"
+msgstr "\tتاریخ کی حد"
+
+#: inc/advanced-nav.php:189
+msgid "From"
+msgstr "\tسے"
+
+#: inc/advanced-nav.php:193
+msgid "To"
+msgstr "\tتک"
+
+#: inc/advanced-nav.php:198
+msgid "Filter"
+msgstr "\tفلٹر"
+
+#: inc/advanced-nav.php:208 inc/advanced-nav.php:219
+msgid "Cancel filters"
+msgstr "\tفلٹر کینسل کریں "
+
+#: inc/advanced-nav.php:216
+msgid "More filters"
+msgstr "\tمزید فلٹرز "
+
+#: inc/featured-media/featured-media.php:20
+msgid "Featured media"
+msgstr "\tفیچرڈ میڈیا "
+
+#: inc/featured-media/featured-media.php:33
+msgid "Select the type of media you'd like to feature for this post"
+msgstr "\tاس پوسٹ کے لئے فیچرڈ میڈیا کا انتخاب کریں "
+
+#: inc/featured-media/featured-media.php:36
+msgid "Post featured image"
+msgstr "\tفیچرڈ امیج پوسٹ کریں"
+
+#: inc/featured-media/featured-media.php:41
+msgid "Post image gallery"
+msgstr "\tامیج گیلری پوسٹ کریں  "
+
+#: inc/featured-media/featured-media.php:46 inc/widgets/single-map.php:48
+msgid "Map"
+msgstr "\tنقشہ"
+
+#: inc/featured-media/featured-media.php:50
+msgid "Post media"
+msgstr "\tمیڈیا پوسٹ کریں "
+
+#: inc/featured-media/featured-media.php:50
+#, php-format
+msgid ""
+"(First external media attached to post content. <a href=\"%s\">See available "
+"media here</a>)"
+msgstr ""
+
+#: inc/photoswipe/photoswipe.php:42
+msgid "images"
+msgstr "\tامیج  "
+
+#: inc/single-templates/single-templates.php:15
+msgid "Story"
+msgstr "\tاسٹوری"
+
+#: inc/single-templates/single-templates.php:44
+msgid "Template"
+msgstr "\tٹیمپلیٹ "
+
+#: inc/single-templates/single-templates.php:58
+msgid "Select the template to display this post"
+msgstr "\tپوسٹ دکھانے کے لئےٹیمپلیٹ کا انتخاب کریں "
+
+#: inc/single-templates/templates/sequence.php:31
+#: inc/single-templates/templates/story.php:50 page.php:12
+msgid "Pages:"
+msgstr "\tصفحات"
+
+#: inc/single-templates/templates/story.php:29
+#: inc/single-templates/templates/story.php:57
+msgid "Share this story"
+msgstr "\tاسٹوری شئیر کریں "
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:11
+msgid "Newsroom Highlight Carousel"
+msgstr "\tنیوزروم  ہائی-لائٹڈ کاروزل "
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:13
+msgid "Display featured posts with featured image as a interactive carousel"
+msgstr "\tفیچرڈ امیج اور فیچرڈ پوسٹس بطور انٹرایکٹو کاروزل دکھائیں "
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:21
+msgid "Title for the carousel."
+msgstr "\tکاروزل کا ٹائٹل "
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:26
+msgid "Build query for highlighted posts"
+msgstr "\tخاص پوسٹس کے لئے سوالنامہ بنائیں "
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:30
+msgid "Auto rotate carousel"
+msgstr "\tخودکار کاروزل "
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:35
+msgid "Milisseconds to rotate the carousel"
+msgstr "\tکاروزل گھومنے کے لئے ملّی سیکنڈ "
+
+#: inc/siteorigin-widgets/list-images/list-images.php:11
+msgid "Newsroom List Images"
+msgstr "\tنیوز روم لسٹ امیجز"
+
+#: inc/siteorigin-widgets/list-images/list-images.php:13
+msgid "Display a list of images in a regular list format."
+msgstr "\tامیجزکی لسٹ ریگولر لسٹ فورمیٹ میں دکھائیں "
+
+#: inc/siteorigin-widgets/list-images/list-images.php:21
+msgid "Title for image list."
+msgstr "\tامیج لسٹ کے ٹائٹل  "
+
+#: inc/siteorigin-widgets/list-images/list-images.php:26
+msgid "Link for the title (optional)"
+msgstr "\tٹائٹل کے لئے لنک (آپشنل )"
+
+#: inc/siteorigin-widgets/list-images/list-images.php:31
+msgid "Images"
+msgstr "\tامیجز"
+
+#: inc/siteorigin-widgets/list-images/list-images.php:32
+#: inc/siteorigin-widgets/list-images/list-images.php:36
+msgid "Image"
+msgstr "\tامیج "
+
+#: inc/siteorigin-widgets/list-images/list-images.php:40
+msgid "Link for the image (optional)"
+msgstr "\tامیج کے لئے لنک (آپشنل) "
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:11
+msgid "Newsroom List Posts"
+msgstr "\tنیوز روم لسٹ کی پوسٹس"
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:13
+msgid "Display a list of posts in a regular list format."
+msgstr "\tپوسٹس کی لسٹ باقاعدہ لسٹ فورمیٹ میں دکھائیں "
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:21
+#: inc/siteorigin-widgets/square-posts/square-posts.php:22
+msgid "Title for post list."
+msgstr "\tپوسٹ لسٹ کے لئے ٹائٹل "
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:26
+msgid "Link for the title"
+msgstr "\tٹائٹل کا لنک "
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:31
+#: inc/siteorigin-widgets/square-posts/square-posts.php:27
+msgid "Build query for posts to be displayed"
+msgstr "\tدکھاۓ جانے والی پوسٹس کے لئے سوالنامہ بنائیں "
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:35
+#: inc/siteorigin-widgets/square-posts/square-posts.php:31
+msgid "Posts to display per row"
+msgstr "\tدکھائی جانے والی پوسٹس کی تعداد (فی قطار )"
+
+#: inc/siteorigin-widgets/square-posts/square-posts.php:11
+msgid "Newsroom Square Posts"
+msgstr "\tنیوز روم اسکوائر پوسٹس"
+
+#: inc/siteorigin-widgets/square-posts/square-posts.php:13
+msgid "Display a list of posts in a small square format."
+msgstr "\tپوسٹس کی لسٹ ایک چھوٹے اسکوائر فارمیٹ میں دکھائیں  "
+
+#: inc/theme-options.php:33
+msgid "Newsroom Style"
+msgstr "\tنیوز روم کا اسٹائل "
+
+#: inc/theme-options.php:33
+msgid "Newsroom"
+msgstr "\tنیوز روم "
+
+#: inc/theme-options.php:44
+msgid "Newsroom Theme Options"
+msgstr "\tنیوز روم تھیم کے آپشنز "
+
+#: inc/theme-options.php:62
+msgid "Style"
+msgstr "\tاسٹائ"
+
+#: inc/theme-options.php:69
+msgid "Links"
+msgstr "\tلنکس"
+
+#: inc/theme-options.php:76
+msgid "Social APIs"
+msgstr "\tسوشل اے پی آئیز "
+
+#: inc/theme-options.php:83
+msgid "Choose a style"
+msgstr "\tاسٹائل کا انتخاب کریں "
+
+#: inc/theme-options.php:91
+msgid "Upload a custom logo"
+msgstr "\tاپنی مرضی کا لوگو اپلوڈ کریں "
+
+#: inc/theme-options.php:99
+msgid "Facebook url"
+msgstr "\tفیس بک یو آر ایل"
+
+#: inc/theme-options.php:107
+msgid "Twitter url"
+msgstr "\tٹویٹر یو آر ایل "
+
+#: inc/theme-options.php:115
+msgid "Legal disclaimer"
+msgstr "قانونی ڈس کلیم"
+
+#: inc/theme-options.php:123
+msgid "Facebook App ID"
+msgstr "فیس بک اپلی کیشن آئی ڈی"
+
+#: inc/theme-options.php:147
+msgid "Logo url"
+msgstr "علامت (لوگو) یو آر ایل"
+
+#: inc/theme-options.php:148
+msgid "Upload"
+msgstr "اپ لوڈ"
+
+#: inc/widgets/single-map.php:14
+msgid "JEO Map Widget"
+msgstr "جیو کا نقشہ ویجیٹ"
+
+#: inc/widgets/single-map.php:15
+msgid "Display a map"
+msgstr "ایک نقشہ ظاہر"
+
+#: inc/widgets/single-map.php:44
+msgid "Title"
+msgstr "عنوان"
+
+#: inc/widgets/single-map.php:57
+msgid "Display map posts"
+msgstr "ڈسپلے نقشہ"
+
+#: inc/widgets/single-map.php:60
+msgid "Map height"
+msgstr "نقشہ اونچائی"
+
+#: search.php:23
+msgid "Search results for:"
+msgstr "کے لئے تلاش کے نتائج:"
+
+#: search.php:32
+msgid "Advanced navigation"
+msgstr "اعلی درجے کی نیویگیشن"
+
+#: searchform.php:3
+msgid "Search here..."
+msgstr "یہاں تلاش"
+
+#: yarpp-template-newsroom.php:4
+msgid "Related Posts"
+msgstr "متعلقہ اشاعت"

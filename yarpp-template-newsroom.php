@@ -1,7 +1,7 @@
 <?php
 if(have_posts()) :
   ?>
-  <h3><?php _e('You might also like', 'newsroom'); ?></h3>
+  <h3><?php _e('Related Posts', 'newsroom'); ?></h3>
   <div class="newsroom-square-posts">
     <ul class="square-posts-posts">
     <?php

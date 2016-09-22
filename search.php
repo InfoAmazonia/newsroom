@@ -19,12 +19,20 @@ get_header(); ?>
 
 	<div id="content" class="site-content" role="main">
 
-		<h1 class="search-title"><?php _e('Search results for:', 'jeo'); ?> <?php echo $_GET['s']; ?></h1>
+		<div class="archive-header">
+			<h1 class="search-title"><?php _e('Search results for:', 'jeo'); ?> <?php echo $_GET['s'] ? $_GET['s'] : $_GET['newsroom_filter_s']; ?></h1>
+		</div>
 
     <div class="row">
       <?php jeo_featured(); ?>
     </div>
     <ul class="search-sidebar">
+			<?php if(function_exists('newsroom_adv_nav_filters')) : ?>
+				<li class="advanced-nav-container">
+					<h3><?php _e('Advanced navigation'); ?></h3>
+					<?php newsroom_adv_nav_filters(); ?>
+				</li>
+			<?php endif; ?>
       <?php dynamic_sidebar('search'); ?>
     </ul>
 		<?php get_template_part( 'loop' ); ?>
@@ -32,7 +40,5 @@ get_header(); ?>
 	</div><!-- #content .site-content -->
 
 </div><!-- #primary .content-area -->
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

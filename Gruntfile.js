@@ -60,6 +60,26 @@ module.exports = function(grunt) {
             expand: true
           }
         ]
+      },
+      chosen: {
+        files: [
+          {
+            cwd: 'bower_components/chosen',
+            src: ['**/*'],
+            dest: 'lib/chosen',
+            expand: true
+          }
+        ]
+      },
+      moment: {
+        files: [
+          {
+            cwd: 'bower_components/moment/min',
+              src: ['**/*'],
+              dest: 'lib/moment',
+              expand: true
+          }
+        ]
       }
     },
     pot: {

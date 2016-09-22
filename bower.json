@@ -20,6 +20,8 @@
     "normalize.css": "~3.0.3",
     "fitvids": "~1.1.0",
     "photoswipe": "~4.1.0",
-    "hammer.js": "~2.0.4"
+    "hammer.js": "~2.0.4",
+    "chosen": "~1.4.2",
+    "moment": "~2.10.6"
   }
 }

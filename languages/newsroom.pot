@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: newsroom 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-09 17:29-0300\n"
+"POT-Creation-Date: 2015-11-12 15:14-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -177,7 +177,7 @@ msgstr ""
 msgid "Map preview"
 msgstr ""
 
-#: footer.php:7
+#: footer.php:10
 #, php-format
 msgid ""
 "This website is built on <a href=\"%s\" target=\"_blank\" rel=\"external"
@@ -193,19 +193,19 @@ msgstr ""
 msgid "Footer menu"
 msgstr ""
 
-#: functions.php:85
+#: functions.php:86
 msgid "Post sidebar"
 msgstr ""
 
-#: functions.php:91
-msgid "General sidebar"
+#: functions.php:92
+msgid "Footer content"
 msgstr ""
 
-#: functions.php:97
+#: functions.php:98
 msgid "Archive sidebar"
 msgstr ""
 
-#: functions.php:103
+#: functions.php:104
 msgid "Search results sidebar"
 msgstr ""
 
@@ -213,31 +213,71 @@ msgstr ""
 msgid "Page"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:21
+#: header.php:76
+msgid "Select your language"
+msgstr ""
+
+#: inc/advanced-nav.php:148
+msgid "Select"
+msgstr ""
+
+#: inc/advanced-nav.php:166
+msgid "Text search"
+msgstr ""
+
+#: inc/advanced-nav.php:167
+msgid "Type your search here"
+msgstr ""
+
+#: inc/advanced-nav.php:186
+msgid "Date range"
+msgstr ""
+
+#: inc/advanced-nav.php:189
+msgid "From"
+msgstr ""
+
+#: inc/advanced-nav.php:193
+msgid "To"
+msgstr ""
+
+#: inc/advanced-nav.php:198
+msgid "Filter"
+msgstr ""
+
+#: inc/advanced-nav.php:208 inc/advanced-nav.php:219
+msgid "Cancel filters"
+msgstr ""
+
+#: inc/advanced-nav.php:216
+msgid "More filters"
+msgstr ""
+
+#: inc/featured-media/featured-media.php:20
 msgid "Featured media"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:34
+#: inc/featured-media/featured-media.php:33
 msgid "Select the type of media you'd like to feature for this post"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:37
+#: inc/featured-media/featured-media.php:36
 msgid "Post featured image"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:42
+#: inc/featured-media/featured-media.php:41
 msgid "Post image gallery"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:47 inc/widgets/single-map.php:48
+#: inc/featured-media/featured-media.php:46 inc/widgets/single-map.php:48
 msgid "Map"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:51
+#: inc/featured-media/featured-media.php:50
 msgid "Post media"
 msgstr ""
 
-#: inc/featured-media/featured-media.php:51
+#: inc/featured-media/featured-media.php:50
 #, php-format
 msgid ""
 "(First external media attached to post content. <a href=\"%s\">See available "
@@ -261,12 +301,12 @@ msgid "Select the template to display this post"
 msgstr ""
 
 #: inc/single-templates/templates/sequence.php:31
-#: inc/single-templates/templates/story.php:46 page.php:12
+#: inc/single-templates/templates/story.php:50 page.php:12
 msgid "Pages:"
 msgstr ""
 
 #: inc/single-templates/templates/story.php:29
-#: inc/single-templates/templates/story.php:53
+#: inc/single-templates/templates/story.php:57
 msgid "Share this story"
 msgstr ""
 
@@ -434,10 +474,18 @@ msgstr ""
 msgid "Map height"
 msgstr ""
 
-#: search.php:22
+#: search.php:23
 msgid "Search results for:"
 msgstr ""
 
+#: search.php:32
+msgid "Advanced navigation"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search here..."
+msgstr ""
+
 #: yarpp-template-newsroom.php:4
-msgid "You might also like"
+msgid "Related Posts"
 msgstr ""

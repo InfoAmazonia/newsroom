@@ -57,7 +57,7 @@ if($post_id) {
 			</div>
 		</div>
 	</header>
-	<div id="newsroom-share-widget">
+	<div id="jeo-share-widget">
 		<div id="configuration">
 			<div class="container row">
 				<?php
@@ -243,7 +243,7 @@ if($post_id) {
 							</a>
 						</h4>
 					</div>
-					<p id="newsroom-share-social" class="links">
+					<p id="jeo-share-social" class="links">
 						<a href="#" class="facebook"><span class="icon-facebook"></span></a>
 						<a href="#" class="twitter"><span class="icon-twitter"></span></a>
 					</p>

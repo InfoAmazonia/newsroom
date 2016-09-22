@@ -1,5 +1,7 @@
 <?php
 
+
+
 /*
  * Plugin dependencies
 */
@@ -79,6 +81,7 @@ function newsroom_setup() {
 	));
 
 	unregister_sidebar('front_page');
+	unregister_sidebar('general');
 
 	//sidebars
 	register_sidebar(array(
@@ -88,8 +91,8 @@ function newsroom_setup() {
 		'after_title' => '</h2>'
 	));
 	register_sidebar(array(
-		'name' => __('General sidebar', 'newsroom'),
-		'id' => 'general',
+		'name' => __('Footer content', 'newsroom'),
+		'id' => 'footer',
 		'before_title' => '<h2 class="widget-title">',
 		'after_title' => '</h2>'
 	));
@@ -113,10 +116,13 @@ add_action('after_setup_theme', 'newsroom_setup', 100);
  */
 
 include_once(STYLESHEETPATH . '/inc/widgets/single-map.php');
-include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php');
-include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/square-posts/square-posts.php');
-include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/list-posts/list-posts.php');
-include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/list-images/list-images.php');
+
+if(class_exists('SiteOrigin_Widget')) {
+	include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php');
+	include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/square-posts/square-posts.php');
+	include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/list-posts/list-posts.php');
+	include_once(STYLESHEETPATH . '/inc/siteorigin-widgets/list-images/list-images.php');
+}
 
 /*
  * Clears JEO default front-end styles and scripts
@@ -143,11 +149,17 @@ function newsroom_init() {
 add_action('jeo_init', 'newsroom_init');
 
 // Hook scripts after JEO scripts has been initialized
-function newsroom_jeo_scripts() {
+function newsroom_main_scripts() {
 
 	// JS libraries
 	wp_register_script('fitvids', get_stylesheet_directory_uri() . '/lib/jquery.fitvids.js', array('jquery'), '1.1');
+
 	wp_register_script('hammer.js', get_stylesheet_directory_uri() . '/lib/hammerjs/hammer.min.js');
+
+	wp_register_script('chosen', get_stylesheet_directory_uri() . '/lib/chosen/chosen.jquery.min.js', array('jquery'));
+	wp_register_style('chosen', get_stylesheet_directory_uri() . '/lib/chosen/chosen.min.css');
+
+	wp_register_script('moment', get_stylesheet_directory_uri() . '/lib/moment/moment.min.js');
 
 
 	// CSS Dependencies
@@ -167,7 +179,7 @@ function newsroom_jeo_scripts() {
   wp_enqueue_style('newsroom-styles', get_stylesheet_directory_uri() . '/css/main.css', array('newsroom-normalize', 'newsroom-entypo', 'newsroom-fonts'));
 
 }
-add_action('jeo_enqueue_scripts', 'newsroom_jeo_scripts', 20);
+add_action('wp_enqueue_scripts', 'newsroom_main_scripts');
 
 function newsroom_pb_parse_query($pb_query) {
 	$query = wp_parse_args($pb_query);
@@ -229,6 +241,9 @@ include_once(STYLESHEETPATH . '/inc/photoswipe/photoswipe.php');
 // Featured media
 include_once(STYLESHEETPATH . '/inc/featured-media/featured-media.php');
 
+// Advanced nav
+include_once(STYLESHEETPATH . '/inc/advanced-nav.php');
+
 
 /*
  * Social APIs
@@ -244,7 +259,7 @@ function newsroom_social_apis() {
 		  var js, fjs = d.getElementsByTagName(s)[0];
 		  if (d.getElementById(id)) return;
 		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=<?php echo $fb_api; ?>";
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=<?php echo $fb_api; ?>";
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
 		<?php
@@ -267,3 +282,72 @@ function newsroom_social_apis() {
 	<?php
 }
 add_action('wp_footer', 'newsroom_social_apis');
+
+
+function newsroom_the_author($display_name) {
+	global $post;
+	if(function_exists('get_field') && get_field('author')) {
+		return get_field('author');
+	}
+	return $display_name;
+}
+add_filter('the_author', 'newsroom_the_author');
+
+
+/******************************************
+CUSTOM AUTHORS SHORTCODE
+******************************************/
+
+function author_list_func( ){ 
+
+	$result = '';
+
+	$result .= '<div class="author-alphabet">';
+
+	$letter = '';
+	$newletter = '1';
+	$blogusers = get_users( 'orderby=nicename' );
+	usort($blogusers, create_function('$a, $b', 'return strnatcasecmp($a->last_name, $b->last_name);'));
+	foreach ( $blogusers as $user ) {
+		if(!$user->last_name == "") {			
+			$letter = substr($user->last_name,0,1);
+			$letter = strtoupper($letter);
+			if($letter !== $newletter) {
+				$newletter = $letter;
+				$result .= '<a href="#al-' . $letter . '">' . $letter . '</a>';
+			}
+		} 
+	}
+	
+	$result .='</div>';
+
+	$result .='<div class="authorsList">';
+
+	$letter = '';
+	$newletter = '1';
+	$blogusers = get_users( 'orderby=nicename' );
+	usort($blogusers, create_function('$a, $b', 'return strnatcasecmp($a->last_name, $b->last_name);'));
+	foreach ( $blogusers as $user ) {
+		if(!$user->last_name == "") {			
+			$letter = substr($user->last_name,0,1);
+			$letter = strtoupper($letter);
+			if($letter !== $newletter) {
+				$newletter = $letter;
+				$result .='<div class="alphabetListing" id="al-' . $letter . '">' . $letter . '</div>';
+			}
+							
+			$result .= $user->user_url;
+			$result .='<div class="authorListing"><a href="' . get_bloginfo('url') . '/author/' . $user->user_nicename . '">';
+			$result .= '' . esc_html( $user->last_name ) . ', ' . esc_html( $user->first_name ) . '';
+			$result .='</a></div>';
+		}
+	}
+
+	$result .='</div>';
+
+	return $result;
+
+}
+add_shortcode( 'author_list', 'author_list_func' );
+
+

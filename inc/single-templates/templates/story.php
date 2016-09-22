@@ -29,13 +29,17 @@
 				<p><?php _e('Share this story', 'newsroom'); ?></p>
 				<ul>
 					<li>
-						<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="box_count" data-show-faces="false" data-send="false"></div>
+						<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="box_count" data-show-faces="false" data-send="false" data-share="true"></div>
 					</li>
 					<li>
 						<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink(); ?>" data-lang="en" data-count="vertical">Tweet</a>
 					</li>
 					<li>
 						<div class="g-plusone" data-size="tall" data-href="<?php the_permalink(); ?>"></div>
+					</li>
+					<li>
+						<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+						<script type="IN/Share" data-counter="top"></script>
 					</li>
 				</ul>
 			</aside>
@@ -53,13 +57,17 @@
 						<p><?php _e('Share this story', 'newsroom'); ?></p>
 						<ul>
 							<li>
-								<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="box_count" data-show-faces="false" data-send="false"></div>
+								<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="box_count" data-show-faces="false" data-send="false" data-share="true"></div>
 							</li>
 							<li>
 								<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink(); ?>" data-lang="en" data-count="vertical">Tweet</a>
 							</li>
 							<li>
 								<div class="g-plusone" data-size="tall" data-href="<?php the_permalink(); ?>"></div>
+							</li>
+							<li>
+								<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+								<script type="IN/Share" data-counter="top"></script>
 							</li>
 						</ul>
 					</aside>
