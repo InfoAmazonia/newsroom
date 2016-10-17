@@ -1,5 +1,7 @@
 <?php
 
+
+
 /*
  * Plugin dependencies
 */
@@ -290,3 +292,60 @@ function newsroom_the_author($display_name) {
 	return $display_name;
 }
 add_filter('the_author', 'newsroom_the_author');
+
+
+/******************************************
+CUSTOM AUTHORS SHORTCODE
+******************************************/
+
+function author_list_func( ){
+
+	$result = '';
+
+	$result .= '<div class="author-alphabet">';
+
+	$letter = '';
+	$newletter = '1';
+	$blogusers = get_users( 'orderby=nicename' );
+	usort($blogusers, create_function('$a, $b', 'return strnatcasecmp($a->last_name, $b->last_name);'));
+	foreach ( $blogusers as $user ) {
+		if(!$user->last_name == "") {
+			$letter = substr($user->last_name,0,1);
+			$letter = strtoupper($letter);
+			if($letter !== $newletter) {
+				$newletter = $letter;
+				$result .= '<a href="#al-' . $letter . '">' . $letter . '</a>';
+			}
+		}
+	}
+
+	$result .='</div>';
+
+	$result .='<div class="authorsList">';
+
+	$letter = '';
+	$newletter = '1';
+	$blogusers = get_users( 'orderby=nicename' );
+	usort($blogusers, create_function('$a, $b', 'return strnatcasecmp($a->last_name, $b->last_name);'));
+	foreach ( $blogusers as $user ) {
+		if(!$user->last_name == "") {
+			$letter = substr($user->last_name,0,1);
+			$letter = strtoupper($letter);
+			if($letter !== $newletter) {
+				$newletter = $letter;
+				$result .='<div class="alphabetListing" id="al-' . $letter . '">' . $letter . '</div>';
+			}
+
+			$result .= $user->user_url;
+			$result .='<div class="authorListing"><a href="' . get_bloginfo('url') . '/author/' . $user->user_nicename . '">';
+			$result .= '' . esc_html( $user->last_name ) . ', ' . esc_html( $user->first_name ) . '';
+			$result .='</a></div>';
+		}
+	}
+
+	$result .='</div>';
+
+	return $result;
+
+}
+add_shortcode( 'author_list', 'author_list_func' );
