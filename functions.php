@@ -225,7 +225,7 @@ function newsroom_tax_terms($post_id = false) {
 					<p><?php echo $tax['taxonomy']->labels->name; ?>:</p>
 					<ul>
 						<?php foreach($tax['terms'] as $term) : ?>
-							<li><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a></li>
+							<li><a href="<?php echo get_term_link($term); ?>"><?php echo apply_filters('the_title', $term->name); ?></a></li>
 						<?php endforeach; ?>
 					</ul>
 				</div>
