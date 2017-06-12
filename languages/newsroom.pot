@@ -1,0 +1,491 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: newsroom 0.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-12 15:14-0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: archive.php:42
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: archive.php:44
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php:46
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:46
+msgid "F Y"
+msgstr ""
+
+#: archive.php:48
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive.php:48
+msgid "Y"
+msgstr ""
+
+#: archive.php:50
+msgid "Archives"
+msgstr ""
+
+#: content-share.php:4
+msgid "Share a map"
+msgstr ""
+
+#: content-share.php:9 content-share.php:237
+msgid "Share"
+msgstr ""
+
+#: content-share.php:20
+msgid "Share the map"
+msgstr ""
+
+#: content-share.php:71
+msgid "Choose a map"
+msgstr ""
+
+#: content-share.php:75
+msgid "Choose any map from the list"
+msgstr ""
+
+#: content-share.php:80
+msgid "Select a map"
+msgstr ""
+
+#: content-share.php:86
+msgid "Select layers from this map"
+msgstr ""
+
+#: content-share.php:93 content-share.php:95 content-share.php:106
+msgid "Select layers"
+msgstr ""
+
+#: content-share.php:100
+msgid "Choose any layers from the list"
+msgstr ""
+
+#: content-share.php:118
+msgid "Back to default layer configuration"
+msgstr ""
+
+#: content-share.php:120 content-share.php:126
+msgid "View all maps"
+msgstr ""
+
+#: content-share.php:139
+msgid "Filter content"
+msgstr ""
+
+#: content-share.php:143
+msgid "Filter the content displayed on the map through our options"
+msgstr ""
+
+#: content-share.php:148
+msgid "Select content"
+msgstr ""
+
+#: content-share.php:153
+msgid "Selected content"
+msgstr ""
+
+#: content-share.php:158
+msgid "General content"
+msgstr ""
+
+#: content-share.php:159
+msgid "Content from the map"
+msgstr ""
+
+#: content-share.php:159
+msgid "Latest content"
+msgstr ""
+
+#: content-share.php:160
+msgid "No content (map only)"
+msgstr ""
+
+#: content-share.php:168
+msgid "By"
+msgstr ""
+
+#: content-share.php:185
+msgid "Width & Height"
+msgstr ""
+
+#: content-share.php:189
+msgid "Select the width and height proportions you would like to embed to be."
+msgstr ""
+
+#: content-share.php:194
+msgid "Small"
+msgstr ""
+
+#: content-share.php:195
+msgid "Medium"
+msgstr ""
+
+#: content-share.php:196
+msgid "Large"
+msgstr ""
+
+#: content-share.php:206
+msgid "HTML Output"
+msgstr ""
+
+#: content-share.php:210
+msgid ""
+"Copy and paste this code into an HTML page to embed with it's current "
+"settings and location"
+msgstr ""
+
+#: content-share.php:219
+msgid "URL"
+msgstr ""
+
+#: content-share.php:223
+msgid "Get the original to use as a link or a custom embed."
+msgstr ""
+
+#: content-share.php:241
+msgid ""
+"Share this map, with it's current settings and location, on your social "
+"network"
+msgstr ""
+
+#: content-share.php:257
+msgid "Map preview"
+msgstr ""
+
+#: footer.php:10
+#, php-format
+msgid ""
+"This website is built on <a href=\"%s\" target=\"_blank\" rel=\"external"
+"\">WordPress</a> using the <a href=\"%s\" target=\"_blank\" rel=\"external"
+"\">JEO Newsroom</a> theme"
+msgstr ""
+
+#: functions.php:77
+msgid "Header menu"
+msgstr ""
+
+#: functions.php:78
+msgid "Footer menu"
+msgstr ""
+
+#: functions.php:86
+msgid "Post sidebar"
+msgstr ""
+
+#: functions.php:92
+msgid "Footer content"
+msgstr ""
+
+#: functions.php:98
+msgid "Archive sidebar"
+msgstr ""
+
+#: functions.php:104
+msgid "Search results sidebar"
+msgstr ""
+
+#: header.php:17
+msgid "Page"
+msgstr ""
+
+#: header.php:76
+msgid "Select your language"
+msgstr ""
+
+#: inc/advanced-nav.php:148
+msgid "Select"
+msgstr ""
+
+#: inc/advanced-nav.php:166
+msgid "Text search"
+msgstr ""
+
+#: inc/advanced-nav.php:167
+msgid "Type your search here"
+msgstr ""
+
+#: inc/advanced-nav.php:186
+msgid "Date range"
+msgstr ""
+
+#: inc/advanced-nav.php:189
+msgid "From"
+msgstr ""
+
+#: inc/advanced-nav.php:193
+msgid "To"
+msgstr ""
+
+#: inc/advanced-nav.php:198
+msgid "Filter"
+msgstr ""
+
+#: inc/advanced-nav.php:208 inc/advanced-nav.php:219
+msgid "Cancel filters"
+msgstr ""
+
+#: inc/advanced-nav.php:216
+msgid "More filters"
+msgstr ""
+
+#: inc/featured-media/featured-media.php:20
+msgid "Featured media"
+msgstr ""
+
+#: inc/featured-media/featured-media.php:33
+msgid "Select the type of media you'd like to feature for this post"
+msgstr ""
+
+#: inc/featured-media/featured-media.php:36
+msgid "Post featured image"
+msgstr ""
+
+#: inc/featured-media/featured-media.php:41
+msgid "Post image gallery"
+msgstr ""
+
+#: inc/featured-media/featured-media.php:46 inc/widgets/single-map.php:48
+msgid "Map"
+msgstr ""
+
+#: inc/featured-media/featured-media.php:50
+msgid "Post media"
+msgstr ""
+
+#: inc/featured-media/featured-media.php:50
+#, php-format
+msgid ""
+"(First external media attached to post content. <a href=\"%s\">See available "
+"media here</a>)"
+msgstr ""
+
+#: inc/photoswipe/photoswipe.php:42
+msgid "images"
+msgstr ""
+
+#: inc/single-templates/single-templates.php:15
+msgid "Story"
+msgstr ""
+
+#: inc/single-templates/single-templates.php:44
+msgid "Template"
+msgstr ""
+
+#: inc/single-templates/single-templates.php:58
+msgid "Select the template to display this post"
+msgstr ""
+
+#: inc/single-templates/templates/sequence.php:31
+#: inc/single-templates/templates/story.php:50 page.php:12
+msgid "Pages:"
+msgstr ""
+
+#: inc/single-templates/templates/story.php:29
+#: inc/single-templates/templates/story.php:57
+msgid "Share this story"
+msgstr ""
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:11
+msgid "Newsroom Highlight Carousel"
+msgstr ""
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:13
+msgid "Display featured posts with featured image as a interactive carousel"
+msgstr ""
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:21
+msgid "Title for the carousel."
+msgstr ""
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:26
+msgid "Build query for highlighted posts"
+msgstr ""
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:30
+msgid "Auto rotate carousel"
+msgstr ""
+
+#: inc/siteorigin-widgets/highlight-carousel/highlight-carousel.php:35
+msgid "Milisseconds to rotate the carousel"
+msgstr ""
+
+#: inc/siteorigin-widgets/list-images/list-images.php:11
+msgid "Newsroom List Images"
+msgstr ""
+
+#: inc/siteorigin-widgets/list-images/list-images.php:13
+msgid "Display a list of images in a regular list format."
+msgstr ""
+
+#: inc/siteorigin-widgets/list-images/list-images.php:21
+msgid "Title for image list."
+msgstr ""
+
+#: inc/siteorigin-widgets/list-images/list-images.php:26
+msgid "Link for the title (optional)"
+msgstr ""
+
+#: inc/siteorigin-widgets/list-images/list-images.php:31
+msgid "Images"
+msgstr ""
+
+#: inc/siteorigin-widgets/list-images/list-images.php:32
+#: inc/siteorigin-widgets/list-images/list-images.php:36
+msgid "Image"
+msgstr ""
+
+#: inc/siteorigin-widgets/list-images/list-images.php:40
+msgid "Link for the image (optional)"
+msgstr ""
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:11
+msgid "Newsroom List Posts"
+msgstr ""
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:13
+msgid "Display a list of posts in a regular list format."
+msgstr ""
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:21
+#: inc/siteorigin-widgets/square-posts/square-posts.php:22
+msgid "Title for post list."
+msgstr ""
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:26
+msgid "Link for the title"
+msgstr ""
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:31
+#: inc/siteorigin-widgets/square-posts/square-posts.php:27
+msgid "Build query for posts to be displayed"
+msgstr ""
+
+#: inc/siteorigin-widgets/list-posts/list-posts.php:35
+#: inc/siteorigin-widgets/square-posts/square-posts.php:31
+msgid "Posts to display per row"
+msgstr ""
+
+#: inc/siteorigin-widgets/square-posts/square-posts.php:11
+msgid "Newsroom Square Posts"
+msgstr ""
+
+#: inc/siteorigin-widgets/square-posts/square-posts.php:13
+msgid "Display a list of posts in a small square format."
+msgstr ""
+
+#: inc/theme-options.php:33
+msgid "Newsroom Style"
+msgstr ""
+
+#: inc/theme-options.php:33
+msgid "Newsroom"
+msgstr ""
+
+#: inc/theme-options.php:44
+msgid "Newsroom Theme Options"
+msgstr ""
+
+#: inc/theme-options.php:62
+msgid "Style"
+msgstr ""
+
+#: inc/theme-options.php:69
+msgid "Links"
+msgstr ""
+
+#: inc/theme-options.php:76
+msgid "Social APIs"
+msgstr ""
+
+#: inc/theme-options.php:83
+msgid "Choose a style"
+msgstr ""
+
+#: inc/theme-options.php:91
+msgid "Upload a custom logo"
+msgstr ""
+
+#: inc/theme-options.php:99
+msgid "Facebook url"
+msgstr ""
+
+#: inc/theme-options.php:107
+msgid "Twitter url"
+msgstr ""
+
+#: inc/theme-options.php:115
+msgid "Legal disclaimer"
+msgstr ""
+
+#: inc/theme-options.php:123
+msgid "Facebook App ID"
+msgstr ""
+
+#: inc/theme-options.php:147
+msgid "Logo url"
+msgstr ""
+
+#: inc/theme-options.php:148
+msgid "Upload"
+msgstr ""
+
+#: inc/widgets/single-map.php:14
+msgid "JEO Map Widget"
+msgstr ""
+
+#: inc/widgets/single-map.php:15
+msgid "Display a map"
+msgstr ""
+
+#: inc/widgets/single-map.php:44
+msgid "Title"
+msgstr ""
+
+#: inc/widgets/single-map.php:57
+msgid "Display map posts"
+msgstr ""
+
+#: inc/widgets/single-map.php:60
+msgid "Map height"
+msgstr ""
+
+#: search.php:23
+msgid "Search results for:"
+msgstr ""
+
+#: search.php:32
+msgid "Advanced navigation"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search here..."
+msgstr ""
+
+#: yarpp-template-newsroom.php:4
+msgid "Related Posts"
+msgstr ""

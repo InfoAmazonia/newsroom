@@ -1,0 +1,79 @@
+@import "../../../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../../../bower_components/neat/app/assets/stylesheets/neat";
+
+$mobile: new-breakpoint(max-width 480px 4);
+
+.newsroom-square-posts {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      height: 90px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      article {
+        padding: 10px;
+        .square-posts-thumbnail {
+          width: 40%;
+          float: left;
+          margin: -10px 10px -10px -10px;
+          margin-right: 10px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .square-posts-post-content {
+          line-height: 1.3;
+          overflow: hidden;
+          h2,
+          p {
+            font-size: 1.2em;
+            display: inline;
+            margin: 0;
+          }
+          p {
+            font-size: 1em;
+            color: #666;
+          }
+        }
+      }
+      &.no-thumbnail {
+        background: #f4f4f4;
+      }
+    }
+  }
+  &.per-row-4 {
+    li {
+      @include span-columns(3);
+      @include omega(4n);
+    }
+  }
+  &.per-row-3 {
+    li {
+      @include span-columns(4);
+      @include omega(3n);
+    }
+  }
+  &.per-row-2 {
+    li {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+  }
+  @include media($mobile) {
+    &,
+    &.per-row-4,
+    &.per-row-3,
+    &.per-row-2 {
+      li {
+        @include span-columns(12 of 12);
+        @include row();
+        article {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}

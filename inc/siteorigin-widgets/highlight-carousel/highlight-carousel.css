@@ -1,0 +1,106 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.newsroom-highlight-carousel {
+  position: relative;
+  height: 380px;
+  overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  .newsroom-highlight-carousel {
+    height: 540px;
+  }
+}
+.newsroom-highlight-carousel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.newsroom-highlight-carousel ul li {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.newsroom-highlight-carousel ul li article {
+  display: block;
+  background: #f4f4f4;
+}
+.newsroom-highlight-carousel ul li article::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.newsroom-highlight-carousel ul li article .highlight-carousel-thumbnail {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+}
+.newsroom-highlight-carousel ul li article .highlight-carousel-thumbnail:last-child {
+  margin-right: 0;
+}
+.newsroom-highlight-carousel ul li article .highlight-carousel-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+.newsroom-highlight-carousel ul li article .highlight-carousel-post-content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.newsroom-highlight-carousel ul li article .highlight-carousel-post-content:last-child {
+  margin-right: 0;
+}
+.newsroom-highlight-carousel ul li article .highlight-carousel-post-content h2 {
+  margin: 0;
+}
+.newsroom-highlight-carousel ul li article .highlight-carousel-post-content .date {
+  color: #666;
+}
+@media screen and (max-width: 480px) {
+  .newsroom-highlight-carousel ul li article .highlight-carousel-thumbnail,
+  .newsroom-highlight-carousel ul li article .highlight-carousel-post-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .newsroom-highlight-carousel ul li article .highlight-carousel-thumbnail:last-child,
+  .newsroom-highlight-carousel ul li article .highlight-carousel-post-content:last-child {
+    margin-right: 0;
+  }
+  .newsroom-highlight-carousel ul li article .highlight-carousel-post-content {
+    padding: 5px;
+  }
+}
+.newsroom-highlight-carousel nav {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+.newsroom-highlight-carousel nav a {
+  float: left;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background: #fff;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  outline: none;
+}
+.newsroom-highlight-carousel nav a.active {
+  background: #3893cb;
+}
+
+/*# sourceMappingURL=highlight-carousel.css.map */
