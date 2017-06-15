@@ -384,6 +384,3 @@ function author_card_func() {
 }
 add_shortcode('author_card', 'author_card_func');
 
-
-
-

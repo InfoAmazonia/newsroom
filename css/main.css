@@ -188,6 +188,7 @@ h1.author-headline {
   border-bottom:solid 1px #e8e8e8;
   padding-bottom: 2em
 }
+<<<<<<< HEAD
 .author-bio {position: relative;}
 .author-bio-avatar {position: absolute;left:0; top:10px;}
 .author-bio-avatar img { border:solid 4px #fff; -webkit-box-shadow:1px 1px 3px #ccc;-moz-box-shadow:1px 1px 3px #ccc;box-shadow:1px 1px 3px #ccc;}
@@ -203,6 +204,8 @@ p.author-card-about {font-size: 14px; color:#3f5ba8;font-style: italic;margin:0 
 .author-card-count ul li { border-left:solid 1px #e8e8e8;display: inline-block;padding:8px 15px;color:#777;}
 .author-card-count ul li a { text-decoration: none}
 
+=======
+>>>>>>> 410e805a1dc4a604d645237e5a9cbc4a04727ff6
 @media screen and (max-width:600px) {
 
   .authorsList {
@@ -218,6 +221,7 @@ p.author-card-about {font-size: 14px; color:#3f5ba8;font-style: italic;margin:0 
   .author-postlist li h2 {
     font-size: 1.4em
   }
+<<<<<<< HEAD
   .author-bio-avatar {left:5%; }
   .author-bio-description {max-width:95%; padding-left: 140px}
 
@@ -228,6 +232,8 @@ p.author-card-about {font-size: 14px; color:#3f5ba8;font-style: italic;margin:0 
   .author-card-count ul li { width:49%;}
   .author-card-count ul li a { text-decoration: none}
   .mobHide { display: none}
+=======
+>>>>>>> 410e805a1dc4a604d645237e5a9cbc4a04727ff6
 }
 
 /******************************************/
