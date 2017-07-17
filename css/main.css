@@ -123,124 +123,9 @@ h6 {
   line-height: 1;
 }
 
-/*************** AUTHORS ******************/
-.authorsList {
-  padding:0 0 1em 0;
-  content: ""; display: table; clear: both;
-}
-.authorListing {
-  width:33.33333%;
-  float:left;
-}
-.author-alphabet a {
-  display: inline-block;
-  padding:3px 6px;
-  text-decoration: none;
-  font-size: 1.2em;
-  font-weight: 400
-}
-.alphabetListing {
-  padding:1em 0 0 0;
-  margin-bottom: .5em;
-  border-bottom: dotted 1px #999;
-  font-size: 1.2em;
-  clear: left
-}
-.author-topline {
-  display: block;
-  font-size: 1.2em;
-  padding-bottom: .3em;
-  border-bottom: dotted 1px #999;
-  margin-bottom: .5em
-}
-h1.author-headline {
-  font-size: 30px!important;
-  padding-top: .5em
-}
-.author-bio img {
-  float: left;
-  margin:0 .8em .5em 0;
-}
-.author-leadin {
-  font-weight: 600;
-  clear:left;
-  padding-top: 2em;
-  padding-bottom: .3em;
-  border-bottom: dotted 1px #999;
-  margin-bottom: 2em
-}
-.author-postlist {
-  padding:0;
-  margin:0;
-  list-style-type: none
-}
-
-.author-postlist a:hover {
-  text-decoration: underline;
-
-}
-.author-postlist li h2 {
-  font-size: 1.6em
-}
-.author-postlist li {
-  margin-bottom: 2em;
-  content: ""; display: table; clear: both; 
-  border-bottom:solid 1px #e8e8e8;
-  padding-bottom: 2em
-}
-<<<<<<< HEAD
-.author-bio {position: relative;}
-.author-bio-avatar {position: absolute;left:0; top:10px;}
-.author-bio-avatar img { border:solid 4px #fff; -webkit-box-shadow:1px 1px 3px #ccc;-moz-box-shadow:1px 1px 3px #ccc;box-shadow:1px 1px 3px #ccc;}
-.author-bio-description {padding-left: 120px; max-width: 60%; min-height: 100px}
-
-.author-card {margin:1em 0;position: relative;-webkit-box-shadow:1px 1px 3px #ccc;-moz-box-shadow:1px 1px 3px #ccc;box-shadow:1px 1px 3px #ccc;}
-.author-card .author-bio-description { max-width: 100%;  font-size: .76em; padding:1em 1em 1em 140px;}
-.author-card .author-bio-avatar { left:1em; top:1em;}
-h3.author-headline { margin-top:10px!important; margin-bottom: 10px!important}
-p.author-card-about {font-size: 14px; color:#3f5ba8;font-style: italic;margin:0 0 5px 0;}
-.author-card-count {background-color: #f6f2f2; font-size: 16px}
-.author-card-count ul {list-style-type: none; padding:0; margin:0; text-align: right;}
-.author-card-count ul li { border-left:solid 1px #e8e8e8;display: inline-block;padding:8px 15px;color:#777;}
-.author-card-count ul li a { text-decoration: none}
-
-=======
->>>>>>> 410e805a1dc4a604d645237e5a9cbc4a04727ff6
-@media screen and (max-width:600px) {
-
-  .authorsList {
-    padding:1em;
-  }
-
-  .authorListing {
-    width:50%;
-  }
-  h1.author-headline {
-    font-size: 24px!important;
-  }
-  .author-postlist li h2 {
-    font-size: 1.4em
-  }
-<<<<<<< HEAD
-  .author-bio-avatar {left:5%; }
-  .author-bio-description {max-width:95%; padding-left: 140px}
-
-  .author-card { text-align: center;}
-  .author-card .author-bio-description { padding:1em;}
-  .author-card .author-bio-avatar { position: relative;left:auto; }
-  .author-card-count ul { text-align: center;}
-  .author-card-count ul li { width:49%;}
-  .author-card-count ul li a { text-decoration: none}
-  .mobHide { display: none}
-=======
->>>>>>> 410e805a1dc4a604d645237e5a9cbc4a04727ff6
-}
-
-/******************************************/
-
 #masthead,
 .content-area {
-  max-width: 68em;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -925,7 +810,7 @@ p.author-card-about {font-size: 14px; color:#3f5ba8;font-style: italic;margin:0 
 }
 
 .share-page {
-  max-width: 68em;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1273,7 +1158,7 @@ p.author-card-about {font-size: 14px; color:#3f5ba8;font-style: italic;margin:0 
   color: #fff;
 }
 #colophon .footer-content {
-  max-width: 68em;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1334,5 +1219,211 @@ p.author-card-about {font-size: 14px; color:#3f5ba8;font-style: italic;margin:0 
 #colophon #footer-sidebar .credits {
   text-align: center;
 }
+
+/*************** AUTHORS ******************/
+.authorsList {
+  padding: 0 0 1em 0;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.authorListing {
+  width: 33.33333%;
+  float: left;
+}
+
+.author-alphabet a {
+  display: inline-block;
+  padding: 3px 6px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.alphabetListing {
+  padding: 1em 0 0 0;
+  margin-bottom: .5em;
+  border-bottom: dotted 1px #999;
+  font-size: 1.2em;
+  clear: left;
+}
+
+.author-topline {
+  display: block;
+  font-size: 1.2em;
+  padding-bottom: .3em;
+  border-bottom: dotted 1px #999;
+  margin-bottom: 0.5em;
+}
+
+h1.author-headline {
+  font-size: 3.2em !important;
+  padding-top: 0.5em;
+}
+
+.author-bio img {
+  float: left;
+  margin: 0 .8em .5em 0;
+}
+
+.author-leadin {
+  font-weight: 600;
+  clear: left;
+  padding-top: 2em;
+  padding-bottom: .3em;
+  border-bottom: dotted 1px #999;
+  margin-bottom: 2em;
+}
+
+.author-postlist {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.author-postlist a:hover {
+  text-decoration: underline;
+}
+.author-postlist li {
+  margin-bottom: 2em;
+  content: "";
+  display: table;
+  clear: both;
+  border-bottom: solid 1px #e8e8e8;
+  padding-bottom: 2em;
+}
+.author-postlist li h2 {
+  font-size: 2.8em;
+}
+.author-postlist li p {
+  font-size: 20px;
+}
+
+.author-bio {
+  position: relative;
+}
+
+.author-bio-avatar {
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.author-bio-avatar img {
+  border: solid 4px #fff;
+  -webkit-box-shadow: 1px 1px 3px #ccc;
+  -moz-box-shadow: 1px 1px 3px #ccc;
+  box-shadow: 1px 1px 3px #ccc;
+}
+
+.author-bio-description {
+  padding-left: 120px;
+  max-width: 60%;
+  min-height: 100px;
+}
+.author-bio-description p {
+  font-size: 20px;
+}
+
+.author-card {
+  margin: 1em 0;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 3px #ccc;
+  -moz-box-shadow: 1px 1px 3px #ccc;
+  box-shadow: 1px 1px 3px #ccc;
+}
+.author-card .author-bio-description {
+  max-width: 100%;
+  font-size: .76em;
+  padding: 1em 1em 1em 140px;
+}
+.author-card .author-bio-avatar {
+  left: 1em;
+  top: 1em;
+}
+
+h3.author-headline {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+p.author-card-about {
+  font-size: 14px;
+  color: #3f5ba8;
+  font-style: italic;
+  margin: 0 0 5px 0;
+}
+
+.author-card-count {
+  background-color: #f6f2f2;
+  font-size: 16px;
+}
+.author-card-count ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+.author-card-count ul li {
+  border-left: solid 1px #e8e8e8;
+  display: inline-block;
+  padding: 8px 15px;
+  color: #777;
+}
+.author-card-count ul li a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .authorsList {
+    padding: 1em;
+  }
+
+  .authorListing {
+    width: 50%;
+  }
+
+  h1.author-headline {
+    font-size: 24px !important;
+  }
+
+  .author-postlist li h2 {
+    font-size: 1.4em;
+  }
+
+  .author-bio-avatar {
+    left: 5%;
+  }
+
+  .author-bio-description {
+    max-width: 95%;
+    padding-left: 140px;
+  }
+
+  .author-card {
+    text-align: center;
+  }
+  .author-card .author-bio-description {
+    padding: 1em;
+  }
+  .author-card .author-bio-avatar {
+    position: relative;
+    left: auto;
+  }
+
+  .author-card-count ul {
+    text-align: center;
+  }
+  .author-card-count ul li {
+    width: 49%;
+  }
+  .author-card-count ul li a {
+    text-decoration: none;
+  }
+
+  .mobHide {
+    display: none;
+  }
+}
+/*************** AUTHORS ******************/
 
 /*# sourceMappingURL=main.css.map */
