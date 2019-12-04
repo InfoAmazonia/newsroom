@@ -20,7 +20,7 @@ get_header(); ?>
 	<div id="content" class="site-content" role="main">
 
 		<div class="archive-header">
-			<h1 class="search-title"><?php _e('Search results for:', 'jeo'); ?> <?php echo $_GET['s'] ? $_GET['s'] : $_GET['newsroom_filter_s']; ?></h1>
+			<h1 class="search-title"><?php _e('Search results for:', 'jeo'); ?> <?php /* by mohjak 2019-11-21 */ echo isset($_GET['s']) ? $_GET['s'] : $_GET['newsroom_filter_s']; ?></h1>
 		</div>
 
     <div class="row">
