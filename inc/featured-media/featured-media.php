@@ -108,9 +108,14 @@ class Newsroom_Featured_Media {
 
   function the_content($content) {
     global $post;
-    if('post_media' == get_post_meta($post->ID, 'newsroom_featured_media_type', true)) {
-      $content = str_replace(get_post_meta($post->ID, '_newsroom_first_media', true), '', $content);
+    // by mohjak 2019-10-19
+    $content = '';
+    if(isset($post)) {
+        if('post_media' == get_post_meta($post->ID, 'newsroom_featured_media_type', true)) {
+            $content = str_replace(get_post_meta($post->ID, '_newsroom_first_media', true), '', $content);
+        }
     }
+
     return $content;
   }
 

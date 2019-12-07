@@ -182,8 +182,9 @@ function newsroom_main_scripts() {
 add_action('wp_enqueue_scripts', 'newsroom_main_scripts');
 
 function newsroom_pb_parse_query($pb_query) {
-	$query = wp_parse_args($pb_query);
-	if($query['tax_query']) {
+    $query = wp_parse_args($pb_query);
+    // by mohjak: 2019-11-21 issue#113
+	if(isset($query['tax_query']) && $query['tax_query']) {
 		$tax_args = explode(',', $query['tax_query']);
 		$query['tax_query'] = array();
 		foreach($tax_args as $tax_arg) {
@@ -362,14 +363,14 @@ function author_card_func() {
 
 	$authorcard = '<div class="author-card">';
 		$authorcard .= '<div class="author-bio-avatar">';
-			$authorcard .= get_avatar( get_the_author_meta( 'user_email' ) ); 
+			$authorcard .= get_avatar( get_the_author_meta( 'user_email' ) );
 		$authorcard .= '</div>';
 
 		$authorcard .= '<div class="author-bio-description">';
 		$authorcard .= '<h3 class="author-headline">' . get_the_author() . '</h3>';
-		if ( get_the_author_meta( 'description' ) ) : 
+		if ( get_the_author_meta( 'description' ) ) :
 				$authorcard .= '<p class="author-card-about">About the author</p>';
-				$authorcard .= get_the_author_meta( 'description' ); 
+				$authorcard .= get_the_author_meta( 'description' );
 		endif;
 		$authorcard .= '</div>';
 		$authorcard .= '<div class="author-card-count">';
