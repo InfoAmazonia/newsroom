@@ -22,6 +22,8 @@ get_header(); ?>
     <div class="archive-header">
       <?php
       $search_term = substr($_SERVER['REQUEST_URI'],1);
+      // by mohjak: 2020-03-09 fix issue All category landing pages broken issue#203
+      $s = "";
       // by mohjak: 2019-11-21 issue#114 + excel line 21 issue#120
       if (function_exists('qtrans_getLanguage')) {
           $find = array("'.html'", "'" . qtrans_getLanguage() . "/'", "'[-/_]'");

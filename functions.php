@@ -1,6 +1,70 @@
 <?php
 
+// by mohjak fix Websites with JEO Newsroom theme won't show OpenGraph or Twitter tags issue#226
+// Adding the Open Graph in the Language Attributes
+function add_opengraph_doctype( $output ) {
+	return $output . ' xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"';
+}
+add_filter('language_attributes', 'add_opengraph_doctype');
 
+$siteIcon = get_site_icon_url();
+$fallbackImage = get_theme_file_uri('TheThirdPoleLogo.png'); // This fallback image is related to thirdpole, it should be replaced with a one related to the site.
+
+// Add Open Graph Meta Info
+function insert_fb_in_head() {
+	global $post;
+	if (!is_singular()) //if it is not a post or a page
+		return;
+
+	echo '<meta property="fb:admins" content="YOUR USER ID"/>'; // facebook User ID to view metrics about shared posts. [USER ID 1],[USER ID 2].
+	echo '<meta property="fb:app_id" content="YOUR APP ID"/>'; // facebook App ID.
+	echo '<meta property="og:title" content="' . get_the_title() . '"/>';
+	echo '<meta property="og:type" content="article"/>';
+	echo '<meta property="og:url" content="' . get_permalink() . '"/>';
+	echo '<meta property="og:site_name" content="'. get_bloginfo('name') .'"/>';
+	echo '<meta property="og:description" content="'. get_the_excerpt() .'"/>';
+	echo '<meta property="og:description" content="'. get_the_excerpt() .'"/>';
+	if (!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
+		$default_image = $siteIcon ? $siteIcon : $fallbackImage; // replace this with a default image on your server or an image in your media library
+		echo '<meta property="og:image" content="' . $default_image . '"/>';
+	}
+	else {
+		$thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
+		echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
+	}
+	echo "";
+}
+add_action( 'wp_head', 'insert_fb_in_head', 5 );
+
+// Add Twitter Cards Meta Info
+function insert_twitter_cards_in_head() {
+	global $post;
+	if (!is_singular()) //if it is not a post or a page
+		return;
+
+	$twitter_url	= get_permalink();
+	$twitter_title  = get_the_title();
+	$twitter_desc   = get_the_excerpt();
+	$twitter_thumbs = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), full );
+	$twitter_thumb  = $twitter_thumbs[0];
+
+	if (!$twitter_thumb) {
+		$twitter_thumb = $siteIcon ? $siteIcon : $fallbackImage;  // replace this with a default image on your server or an image in your media library
+	}
+
+	$twitter_name   = str_replace('@', '', get_the_author_meta('twitter'));	?>
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:url" value="<?php echo $twitter_url; ?>" />
+	<meta name="twitter:title" value="<?php echo $twitter_title; ?>" />
+	<meta name="twitter:description" value="<?php echo $twitter_desc; ?>" />
+	<meta name="twitter:image" value="<?php echo $twitter_thumb; ?>" />
+	<meta name="twitter:site" value="@libdemvoice" />
+<?php if ($twitter_name) { ?>
+	<meta name="twitter:creator" value="@<?php echo $twitter_name; ?>" />
+<?php }
+}
+add_action( 'wp_head', 'insert_twitter_cards_in_head', 6 );
 
 /*
  * Plugin dependencies
