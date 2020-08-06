@@ -65,6 +65,7 @@ class Newsroom_AdvancedNav {
             // by mohjak 2019-11-24 Fix excel line 3 issue#20
             // $prefix_value = $_GET[$this->prefix];
 
+			// by mohjak 2019-11-24 Fix excel line 3 issue#20
 			if(isset($_GET[$this->prefix])) {
 
 				$tax_query = array();
@@ -178,19 +179,19 @@ class Newsroom_AdvancedNav {
 				}
 				?>
 				<?php
-                $posts_asc = get_posts(array('posts_per_page' => 1, 'order' => 'ASC', 'orderby' => 'date'));
-                $posts_desc =  get_posts(array('posts_per_page' => 1, 'order' => 'DESC', 'orderby' => 'date'));
+				$posts_asc = get_posts(array('posts_per_page' => 1, 'order' => 'ASC', 'orderby' => 'date'));
+				$posts_desc =  get_posts(array('posts_per_page' => 1, 'order' => 'DESC', 'orderby' => 'date'));
 
-                // by mohjak 2019-11-24 tag excel line 10 issue#120
-                $oldest = array_shift($posts_asc);
-                $newest = array_shift($posts_desc);
-                // by mohjak 2019-11-24 Trying to get property 'post_date' of non-object
-                if (isset($oldest) && $oldest) {
-                    $before = $oldest->post_date;
-                }
-                if (isset($newest) && $newest) {
-                    $after = $newest->post_date;
-                }
+				// by mohjak 2019-11-24 tag excel line 10 issue#120
+				$oldest = array_shift($posts_asc);
+				$newest = array_shift($posts_desc);
+				// by mohjak 2019-11-24 Trying to get property 'post_date' of non-object
+				if (isset($oldest) && $oldest) {
+					$before = $oldest->post_date;
+				}
+				if (isset($newest) && $newest) {
+					$after = $newest->post_date;
+				}
 				?>
 				<div class="date-input adv-nav-input">
 					<p class="label"><label for="<?php echo $this->prefix; ?>date_start"><?php _e('Date range', 'newsroom'); ?></label></p>
@@ -236,7 +237,8 @@ class Newsroom_AdvancedNav {
 					$('.tax-input').each(function() {
 						$(this).find('select').chosen();
 					});
-                    // by mohjak 2019-11-24 Undefined variable: after, before
+          
+          // by mohjak 2019-11-24 Undefined variable: after, before
 					var min = moment('<?php echo (isset($before) && $before) ? $before : ''; ?>').toDate();
 					var max = moment('<?php echo (isset($after) && $after) ? $after : ''; ?>').toDate();
 

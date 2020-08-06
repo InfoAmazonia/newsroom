@@ -17,14 +17,14 @@ get_header();
 	<div id="content" class="site-content" role="main">
 		<div class="entry-content">
 			<?php
-            // by mohjak 2019-11-26 Fix blank landing pages
+			// by mohjak 2019-11-26 Fix blank landing pages
 			if (is_page()) {
-                if (function_exists('siteorigin_panels_render')) {
-                    echo siteorigin_panels_render($post->ID);
-                } else {
-                    the_post();
-                    the_content();
-                }
+				if (function_exists('siteorigin_panels_render')) {
+					echo siteorigin_panels_render($post->ID);
+				} else {
+					the_post();
+					the_content();
+        }
 			}
 			?>
 		</div>
