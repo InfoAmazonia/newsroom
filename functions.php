@@ -1,6 +1,72 @@
 <?php
 
+// by mohjak fix Websites with JEO Newsroom theme won't show OpenGraph or Twitter tags issue#226
+// Adding the Open Graph in the Language Attributes
+function add_opengraph_doctype( $output ) {
+	return $output . ' xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"';
+}
+add_filter('language_attributes', 'add_opengraph_doctype');
 
+// Add Open Graph Meta Info
+function insert_fb_in_head() {
+	$siteIcon = get_site_icon_url();
+
+	global $post;
+	if (!is_singular()) //if it is not a post or a page
+			return;
+
+	echo '<meta property="og:title" content="' . get_the_title() . '"/>';
+	echo '<meta property="og:type" content="article"/>';
+	echo '<meta property="og:url" content="' . get_permalink() . '"/>';
+	echo '<meta property="og:site_name" content="'. get_bloginfo('name') .'"/>';
+	echo '<meta property="og:description" content="'. get_the_excerpt() .'"/>';
+
+	// Added by mohjak 2020-07-03 fix issue#248 https://tech.openinfo.cc/earth/openearth/-/issues/248
+	if (has_post_thumbnail( $post->ID )) {
+		$thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
+		$width = $thumbnail_src[1];
+		$height = $thumbnail_src[2];
+		echo '<meta property="og:image:width" content="' . $width . '" />';
+		echo '<meta property="og:image:height" content="' . $height . '" />';
+		echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
+	} else if ($siteIcon) { // the post does not have featured image, use the siteicon image
+		echo '<meta property="og:image" content="' . $siteIcon . '"/>';
+	}
+	echo "";
+}
+add_action( 'wp_head', 'insert_fb_in_head', 5 );
+
+// Add Twitter Cards Meta Info
+function insert_twitter_cards_in_head() {
+	$siteIcon = get_site_icon_url();
+
+	global $post;
+	if (!is_singular()) //if it is not a post or a page
+			return;
+
+	$twitter_url    = get_permalink();
+	$twitter_title  = get_the_title();
+	$twitter_desc = get_the_excerpt();
+	$twitter_thumbs = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
+	$twitter_thumb  = $twitter_thumbs[0];
+
+	if ($twitter_thumb) { ?>
+			<meta name="twitter:image" content="<?php echo $twitter_thumb; ?>" />
+	<?php } else if ($siteIcon) { ?>
+			<meta name="twitter:image" content="<?php echo $siteIcon; ?>" />
+	<?php }
+
+	$twitter_name   = str_replace('@', '', get_the_author_meta('twitter')); ?>
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:url" content="<?php echo $twitter_url; ?>" />
+	<meta name="twitter:title" content="<?php echo $twitter_title; ?>" />
+	<meta name="twitter:description" content="<?php echo $twitter_desc; ?>" />
+<?php if ($twitter_name) { ?>
+	<meta name="twitter:creator" content="@<?php echo $twitter_name; ?>" />
+<?php }
+}
+add_action( 'wp_head', 'insert_twitter_cards_in_head', 6 );
 
 /*
  * Plugin dependencies
@@ -183,7 +249,8 @@ add_action('wp_enqueue_scripts', 'newsroom_main_scripts');
 
 function newsroom_pb_parse_query($pb_query) {
 	$query = wp_parse_args($pb_query);
-	if($query['tax_query']) {
+	// by mohjak: 2019-11-21 issue#113
+	if(isset($query['tax_query']) && $query['tax_query']) {
 		$tax_args = explode(',', $query['tax_query']);
 		$query['tax_query'] = array();
 		foreach($tax_args as $tax_arg) {
@@ -349,3 +416,38 @@ function author_list_func( ){
 
 }
 add_shortcode( 'author_list', 'author_list_func' );
+
+
+
+/******************************************
+CUSTOM AUTHOR CARD SHORTCODE
+******************************************/
+
+function author_card_func() {
+
+	$author_id = get_the_author_meta( 'ID' );
+
+	$authorcard = '<div class="author-card">';
+		$authorcard .= '<div class="author-bio-avatar">';
+			$authorcard .= get_avatar( get_the_author_meta( 'user_email' ) );
+		$authorcard .= '</div>';
+
+		$authorcard .= '<div class="author-bio-description">';
+		$authorcard .= '<h3 class="author-headline">' . get_the_author() . '</h3>';
+		if ( get_the_author_meta( 'description' ) ) :
+				$authorcard .= '<p class="author-card-about">About the author</p>';
+				$authorcard .= get_the_author_meta( 'description' );
+		endif;
+		$authorcard .= '</div>';
+		$authorcard .= '<div class="author-card-count">';
+			$authorcard .= '<ul>';
+				$authorcard .= '<li>' . count_user_posts($author_id) . ' Posts</li>';
+				$authorcard .= '<li><a href="' . get_bloginfo('url') . '/author/' . get_the_author_meta( 'user_nicename' ) . '">See all <span class="mobHide">posts by this author</span></a></li>';
+			$authorcard .= '</ul>';
+		$authorcard .= '</div>';
+	$authorcard .= '</div>';
+
+	return $authorcard;
+}
+add_shortcode('author_card', 'author_card_func');
+

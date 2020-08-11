@@ -23,7 +23,8 @@ if($list_posts_query->have_posts()) :
         <article id="list-posts-<?php the_ID(); ?>">
           <?php if(has_post_thumbnail()) : ?>
             <div class="list-posts-thumbnail">
-              <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('list-thumb'); ?></a>
+              <?php // by mohjak: fix issue of Changing featured images #188 ?>
+              <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('highlight-carousel'); ?></a>
             </div>
           <?php endif; ?>
           <div class="list-posts-post-content">

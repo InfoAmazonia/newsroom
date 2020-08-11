@@ -8,18 +8,22 @@
     <article id="primary" class="content-area" role="main">
 		<header class="page-header">
 			<span class="author-topline">Author</span>
-			<h1 class="author-headline"><?php echo $curauth->first_name; ?> <?php echo $curauth->last_name; ?> </h1>
 		</header>
 
 		<section class="page-content">
 
 			<div class="author-bio">
-				<?php if ( get_the_author_meta( 'description' ) ) : ?>
-					<?php echo get_avatar( get_the_author_meta( 'user_email' ) ); ?>
-				<?php endif; ?>
 
-			    <?php echo $curauth->user_description; ?>
-			</p>
+				<?php //if ( get_the_author_meta( 'description' ) ) : ?>
+					<div class="author-bio-avatar">
+						<?php echo get_avatar( get_the_author_meta( 'user_email' ) ); ?>
+					</div>
+				<?php //endif; ?>
+
+				<div class="author-bio-description">
+					<h1 class="author-headline"><?php echo $curauth->first_name; ?> <?php echo $curauth->last_name; ?> </h1>
+				  <p><?php echo $curauth->user_description; ?></p> 
+				</div>
 
     		<p class="author-leadin">Articles by <?php echo $curauth->first_name; ?> <?php echo $curauth->last_name; ?></p>
 

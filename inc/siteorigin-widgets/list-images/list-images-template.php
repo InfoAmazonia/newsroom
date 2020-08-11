@@ -14,7 +14,7 @@
         $src = wp_get_attachment_image_src($image['image'], 'full');
         ?>
         <li>
-          <?php if($image['url']) : ?><a href="<?php echo $image['url']; ?>" title="<?php echo $image['title']; ?>"><?php endif; ?>
+          <?php if($image['url']) : ?><a href="<?php echo $image['url']; ?>" title="<?php /* by mohjak 2019-11-21 issue#119 */ echo isset($image['title']) ? $image['title'] : ''; ?>"><?php endif; ?>
           <img src="<?php echo $src[0]; ?>" />
           <?php if($image['url']) echo '</a>'; ?>
         </li>
